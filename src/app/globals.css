@@ -1,0 +1,560 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* ================================================================
+   DARK MODE (PRIMARY) — Blue-tinted near-black precision aesthetic
+   Accent: warm amber/gold
+   ================================================================ */
+.dark {
+  /* Background layers — subtle blue undertone, NOT flat black */
+  --background: hsl(220 13% 4%);          /* deepest base */
+  --surface: hsl(220 13% 7%);             /* editor panels, cards */
+  --elevated: hsl(220 13% 10%);           /* popovers, dropdowns */
+  --hover: hsl(220 13% 13%);              /* hover states */
+
+  /* Map to shadcn tokens */
+  --foreground: hsl(0 0% 93%);            /* primary text */
+  --card: hsl(220 13% 7%);
+  --card-foreground: hsl(0 0% 93%);
+  --popover: hsl(220 13% 10%);
+  --popover-foreground: hsl(0 0% 93%);
+
+  /* Primary = accent amber/gold */
+  --primary: hsl(45 93% 58%);
+  --primary-foreground: hsl(220 13% 4%);
+
+  /* Secondary = subtle surface variation */
+  --secondary: hsl(220 13% 10%);
+  --secondary-foreground: hsl(0 0% 80%);
+
+  /* Muted */
+  --muted: hsl(220 10% 12%);
+  --muted-foreground: hsl(0 0% 45%);
+
+  /* Accent = same as primary for consistency */
+  --accent: hsl(45 93% 58%);
+  --accent-foreground: hsl(220 13% 4%);
+
+  /* Destructive — warm red, not alarming */
+  --destructive: hsl(0 62% 55%);
+
+  /* Borders — near invisible */
+  --border: hsl(220 10% 15%);
+  --input: hsl(220 10% 15%);
+  --ring: hsl(45 93% 58%);
+
+  /* Status colors — muted, not neon */
+  --success: hsl(145 45% 45%);
+  --warning: hsl(38 70% 50%);
+
+  /* Chart colors */
+  --chart-1: hsl(45 93% 58%);
+  --chart-2: hsl(175 60% 45%);
+  --chart-3: hsl(280 50% 55%);
+  --chart-4: hsl(0 60% 55%);
+  --chart-5: hsl(220 50% 55%);
+
+  --radius: 0.5rem;
+
+  /* Text hierarchy */
+  --text-primary: hsl(0 0% 93%);
+  --text-secondary: hsl(0 0% 60%);
+  --text-tertiary: hsl(0 0% 40%);
+  --text-disabled: hsl(0 0% 25%);
+
+  /* Glow color */
+  --glow: hsl(45 93% 58% / 0.15);
+  --glow-strong: hsl(45 93% 58% / 0.25);
+
+  /* Sidebar */
+  --sidebar: hsl(220 13% 5%);
+  --sidebar-foreground: hsl(0 0% 93%);
+  --sidebar-primary: hsl(45 93% 58%);
+  --sidebar-primary-foreground: hsl(220 13% 4%);
+  --sidebar-accent: hsl(220 13% 10%);
+  --sidebar-accent-foreground: hsl(0 0% 93%);
+  --sidebar-border: hsl(220 10% 15%);
+  --sidebar-ring: hsl(45 93% 58%);
+}
+
+/* ================================================================
+   LIGHT MODE (SECONDARY) — Warm cream/white, properly designed
+   ================================================================ */
+:root {
+  --background: hsl(40 20% 98%);          /* warm cream */
+  --surface: hsl(0 0% 100%);              /* pure white for panels */
+  --elevated: hsl(0 0% 100%);
+  --hover: hsl(40 15% 95%);
+
+  --foreground: hsl(220 15% 12%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(220 15% 12%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(220 15% 12%);
+
+  /* Primary = amber adapted for light backgrounds */
+  --primary: hsl(40 90% 38%);
+  --primary-foreground: hsl(0 0% 100%);
+
+  --secondary: hsl(40 10% 94%);
+  --secondary-foreground: hsl(220 15% 20%);
+
+  --muted: hsl(40 10% 94%);
+  --muted-foreground: hsl(220 10% 45%);
+
+  --accent: hsl(40 90% 38%);
+  --accent-foreground: hsl(0 0% 100%);
+
+  --destructive: hsl(0 62% 45%);
+
+  --border: hsl(220 10% 88%);
+  --input: hsl(220 10% 88%);
+  --ring: hsl(40 90% 38%);
+
+  --success: hsl(145 50% 38%);
+  --warning: hsl(38 75% 45%);
+
+  --chart-1: hsl(40 90% 45%);
+  --chart-2: hsl(175 55% 40%);
+  --chart-3: hsl(280 45% 50%);
+  --chart-4: hsl(0 55% 50%);
+  --chart-5: hsl(220 45% 50%);
+
+  --radius: 0.5rem;
+
+  --text-primary: hsl(220 15% 12%);
+  --text-secondary: hsl(220 10% 40%);
+  --text-tertiary: hsl(220 8% 58%);
+  --text-disabled: hsl(220 5% 75%);
+
+  --glow: hsl(40 90% 38% / 0.1);
+  --glow-strong: hsl(40 90% 38% / 0.2);
+
+  --sidebar: hsl(40 15% 97%);
+  --sidebar-foreground: hsl(220 15% 12%);
+  --sidebar-primary: hsl(40 90% 38%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(40 10% 94%);
+  --sidebar-accent-foreground: hsl(220 15% 12%);
+  --sidebar-border: hsl(220 10% 88%);
+  --sidebar-ring: hsl(40 90% 38%);
+}
+
+/* ================================================================
+   BASE LAYER
+   ================================================================ */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* ================================================================
+   GLOBAL TRANSITIONS — "snappy but smooth"
+   ================================================================ */
+html {
+  transition: background-color 150ms ease-out, color 150ms ease-out;
+}
+
+/* ================================================================
+   NOISE TEXTURE OVERLAY — 2-3% opacity for depth
+   ================================================================ */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* ================================================================
+   CUSTOM ANIMATION CURVES
+   ================================================================ */
+:root {
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ================================================================
+   SHIMMER EFFECT — for convert button loading state
+   ================================================================ */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    hsl(45 93% 70% / 0.3) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ================================================================
+   SCANNING LINE — for conversion start animation
+   ================================================================ */
+@keyframes scan-line {
+  0% { top: 0; opacity: 0.6; }
+  100% { top: 100%; opacity: 0; }
+}
+
+.scan-line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  box-shadow: 0 0 8px var(--glow-strong);
+  animation: scan-line 300ms ease-out forwards;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* ================================================================
+   FOCUS RINGS — double ring, accessible + beautiful
+   ================================================================ */
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px var(--glow);
+}
+
+/* ================================================================
+   MONACO EDITOR OVERRIDES
+   ================================================================ */
+.monaco-editor .overflow-guard {
+  border-radius: 0 !important;
+}
+
+.monaco-editor {
+  --vscode-editor-background: transparent !important;
+}
+
+.monaco-editor .margin {
+  background: transparent !important;
+}
+
+/* Thin scrollbar, rounded, subtle */
+.monaco-editor .scrollbar .slider {
+  border-radius: 4px !important;
+}
+
+/* ================================================================
+   CUSTOM SCROLLBAR (non-Monaco)
+   ================================================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(220 10% 25%);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(220 10% 35%);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: hsl(220 10% 20%);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: hsl(220 10% 30%);
+}
+
+/* ================================================================
+   FAQ DETAILS/SUMMARY
+   ================================================================ */
+details summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::after {
+  content: "+";
+  float: right;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1;
+  color: var(--text-tertiary);
+  transition: transform 200ms var(--ease-out-expo);
+}
+
+details[open] summary::after {
+  content: "\2212"; /* minus sign */
+  color: var(--primary);
+}
+
+.faq-summary:hover {
+  background: var(--hover);
+}
+
+/* ================================================================
+   GRADIENT BORDER UTILITY
+   ================================================================ */
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary) / 0.2, transparent);
+  pointer-events: none;
+}
+
+/* ================================================================
+   STATUS BAR
+   ================================================================ */
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot-idle {
+  background: var(--success);
+  box-shadow: 0 0 4px var(--success);
+}
+
+.status-dot-active {
+  background: var(--primary);
+  box-shadow: 0 0 4px var(--primary);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* ================================================================
+   SKELETON LOADING
+   ================================================================ */
+@keyframes skeleton-shimmer {
+  0% { background-position: -468px 0; }
+  100% { background-position: 468px 0; }
+}
+
+.skeleton-line {
+  height: 14px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--muted) 25%, var(--hover) 37%, var(--muted) 63%);
+  background-size: 936px 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+
+/* ================================================================
+   LANDING PAGE — Hero animations
+   ================================================================ */
+@keyframes grid-shift {
+  0% { background-position: 0 0; }
+  100% { background-position: 60px 60px; }
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.06;
+  }
+  10% {
+    opacity: 0.06;
+  }
+  90% {
+    opacity: 0.02;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+/* Hero demo typing reveal */
+.demo-line {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: demo-reveal 0.8s var(--ease-out-expo) both;
+}
+
+@keyframes demo-reveal {
+  0% {
+    max-width: 0;
+    opacity: 0;
+  }
+  100% {
+    max-width: 100%;
+    opacity: 1;
+  }
+}
+
+/* sugar-high syntax highlighting tokens */
+[data-sh-theme] .sh__line { display: block; }
+code [class*="sh__token--"] { font-family: inherit; }
+
+/* ================================================================
+   MONACO SCROLLBAR — appear on hover with fade
+   ================================================================ */
+.monaco-editor .scrollbar .slider {
+  opacity: 0;
+  transition: opacity 200ms ease !important;
+}
+
+.monaco-editor:hover .scrollbar .slider,
+.monaco-editor .scrollbar .slider.active {
+  opacity: 1;
+}
+
+/* ================================================================
+   HIGH CONTRAST / FORCED COLORS
+   ================================================================ */
+@media (forced-colors: active) {
+  .status-dot,
+  .status-dot-idle,
+  .status-dot-active {
+    forced-color-adjust: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid LinkText;
+    outline-offset: 2px;
+  }
+}
+
+/* ================================================================
+   SKIP LINKS
+   ================================================================ */
+.sr-only:focus {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 100;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  clip: auto;
+  clip-path: none;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+/* ================================================================
+   TYPEWRITER REVEAL — output code reveal effect
+   ================================================================ */
+@keyframes typewriter-reveal {
+  0% {
+    clip-path: inset(0 0 100% 0);
+    opacity: 0.3;
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+.typewriter-reveal {
+  animation: typewriter-reveal 400ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.typewriter-reveal-fast {
+  animation: typewriter-reveal 200ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ================================================================
+   REDUCED MOTION — respect user preferences
+   ================================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
