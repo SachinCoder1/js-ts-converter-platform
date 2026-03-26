@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { PanelLeftClose, PanelLeft } from 'lucide-react';
 import { SIDEBAR_CATEGORIES } from '@/lib/tool-config';
 import { useSidebar } from './sidebar-context';
@@ -29,20 +30,20 @@ export function Sidebar() {
           className="flex items-center gap-2 px-3 shrink-0"
           style={{ height: 48, borderBottom: '1px solid var(--sidebar-border)' }}
         >
-          <div
-            className="flex items-center gap-0.5 font-mono text-xs font-semibold tracking-tight shrink-0"
-            style={{ color: 'var(--primary)' }}
-          >
-            <span style={{ color: 'var(--text-tertiary)' }}>&lt;</span>
-            D
-            <span style={{ color: 'var(--text-tertiary)' }}>/&gt;</span>
-          </div>
+          <Image
+            src="/snipshift_logo_transparent.png"
+            alt="SnipShift"
+            width={24}
+            height={24}
+            className="rounded shrink-0"
+            style={{ width: 24, height: 24 }}
+          />
           {!isCollapsed && (
             <span
               className="text-sm font-semibold truncate"
               style={{ letterSpacing: '-0.02em', color: 'var(--text-primary)' }}
             >
-              DevShift
+              SnipShift
             </span>
           )}
         </div>
@@ -65,17 +66,11 @@ export function Sidebar() {
         {/* Collapse toggle */}
         <button
           onClick={toggleCollapsed}
-          className="flex items-center justify-center shrink-0 transition-colors duration-150"
+          className="flex items-center justify-center shrink-0 transition-colors duration-150 hover:bg-[var(--hover)]"
           style={{
             height: 36,
             color: 'var(--text-tertiary)',
             borderTop: '1px solid var(--sidebar-border)',
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background = 'var(--hover)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = 'transparent';
           }}
           aria-label={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
         >

@@ -8,7 +8,7 @@ export function SqlToTsSeoContent() {
     {
       num: '02',
       title: 'Click Convert',
-      desc: 'Our AI analyzes your schema, maps SQL types to TypeScript, detects foreign key relations, and generates precise interfaces — or Prisma/Drizzle schemas.',
+      desc: 'Our AI analyzes your schema, maps SQL types to TypeScript, detects foreign key relations, and generates precise interfaces  or Prisma/Drizzle schemas.',
     },
     {
       num: '03',
@@ -18,7 +18,7 @@ export function SqlToTsSeoContent() {
   ];
 
   const benefits = [
-    { title: 'Type-Safe Database Access', desc: 'Generated interfaces ensure your queries return exactly the types you expect — catch schema mismatches at compile time, not in production.' },
+    { title: 'Type-Safe Database Access', desc: 'Generated interfaces ensure your queries return exactly the types you expect  catch schema mismatches at compile time, not in production.' },
     { title: 'Relation Inference', desc: 'AI detects REFERENCES and FOREIGN KEY constraints, adding typed relation comments so you know how your tables connect.' },
     { title: 'Prisma & Drizzle Support', desc: 'Beyond TypeScript interfaces, generate Prisma schema models or Drizzle ORM table definitions directly from your SQL.' },
     { title: 'Instant AST Preview', desc: 'See TypeScript types update in real-time as you type SQL, powered by a regex-based parser that runs entirely in your browser.' },
@@ -27,7 +27,7 @@ export function SqlToTsSeoContent() {
   const faqs = [
     {
       q: 'Which SQL dialects are supported?',
-      a: 'PostgreSQL, MySQL, and SQLite. Each dialect handles its specific types — SERIAL and JSONB for PostgreSQL, AUTO_INCREMENT and ENUM() for MySQL, and flexible typing for SQLite.',
+      a: 'PostgreSQL, MySQL, and SQLite. Each dialect handles its specific types  SERIAL and JSONB for PostgreSQL, AUTO_INCREMENT and ENUM() for MySQL, and flexible typing for SQLite.',
     },
     {
       q: 'How accurate is the AI-generated output?',
@@ -43,7 +43,7 @@ export function SqlToTsSeoContent() {
     },
     {
       q: 'What is Select + Insert mode?',
-      a: 'Select + Insert generates two types per table. The Select type includes all columns, while the Insert type makes auto-generated fields (id, created_at, columns with DEFAULT) optional — matching how you actually insert rows.',
+      a: 'Select + Insert generates two types per table. The Select type includes all columns, while the Insert type makes auto-generated fields (id, created_at, columns with DEFAULT) optional  matching how you actually insert rows.',
     },
   ];
 

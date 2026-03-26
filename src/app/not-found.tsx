@@ -5,14 +5,39 @@ export const metadata: Metadata = { title: 'Page Not Found' };
 
 export default function NotFound() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-6 text-center">
-      <h1 className="text-6xl font-bold">404</h1>
-      <p className="text-lg text-muted-foreground">Page not found</p>
+    <div
+      className="flex min-h-screen flex-col items-center justify-center gap-6 text-center px-6"
+      style={{ background: 'var(--background)' }}
+    >
+      <div
+        className="font-mono text-7xl font-bold"
+        style={{
+          color: 'var(--primary)',
+          opacity: 0.3,
+          letterSpacing: '-0.05em',
+        }}
+      >
+        404
+      </div>
+      <h1
+        className="text-xl font-semibold"
+        style={{ color: 'var(--text-primary)', letterSpacing: '-0.02em' }}
+      >
+        Page not found
+      </h1>
+      <p className="text-sm max-w-sm" style={{ color: 'var(--text-tertiary)' }}>
+        The page you&apos;re looking for doesn&apos;t exist or has been moved.
+      </p>
       <Link
         href="/"
-        className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+        className="rounded-md px-5 py-2.5 text-sm font-semibold transition-all duration-200"
+        style={{
+          background: 'var(--primary)',
+          color: 'var(--primary-foreground)',
+          boxShadow: '0 0 0 1px color-mix(in srgb, var(--primary) 50%, transparent), 0 1px 2px rgba(0,0,0,0.2), 0 0 20px var(--glow)',
+        }}
       >
-        Back to DevShift
+        Back to SnipShift
       </Link>
       <div className="flex flex-col gap-2 mt-4">
         <p

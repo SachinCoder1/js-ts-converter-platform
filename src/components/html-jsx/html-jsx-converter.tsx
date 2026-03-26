@@ -51,7 +51,7 @@ export function HtmlJsxConverter() {
       outputFileType={outputFileType}
       downloadFileName={`converted.${downloadExt}`}
       emptyStateMessage="JSX output will appear here"
-      emptyStateHint="Paste HTML on the left — conversion is live"
+      emptyStateHint="Paste HTML on the left  conversion is live"
       isAstFallback={hasWarnings}
       astFallbackMessage={warningMessage}
       statusText={statusText}

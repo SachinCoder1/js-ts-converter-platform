@@ -3,6 +3,8 @@ import type { ConversionRequest, ConversionResult, AIProvider, ConversionStats }
 import { hashCode, stripMarkdownFences, sanitizeOutput, checkOutputRatio } from '../utils';
 import { getFromCache, setCache } from './cache';
 import { convertWithGemini } from './ai-providers/gemini';
+import { convertWithOpenAI } from './ai-providers/openai';
+import { convertWithKimi } from './ai-providers/kimi';
 import { convertWithDeepSeek } from './ai-providers/deepseek';
 import { convertWithOpenRouter } from './ai-providers/openrouter';
 import { astConvert } from '../ast';
@@ -13,11 +15,13 @@ type ProviderFn = (code: string, fileType: ConversionRequest['fileType']) => Pro
 
 const providerMap: Record<Exclude<AIProvider, 'ast-only'>, ProviderFn> = {
   gemini: convertWithGemini,
+  openai: convertWithOpenAI,
+  kimi: convertWithKimi,
   deepseek: convertWithDeepSeek,
   openrouter: convertWithOpenRouter,
 };
 
-const defaultChain: Exclude<AIProvider, 'ast-only'>[] = ['gemini', 'deepseek', 'openrouter'];
+const defaultChain: Exclude<AIProvider, 'ast-only'>[] = ['gemini', 'openai', 'kimi', 'openrouter', 'deepseek'];
 
 export async function convertCode(request: ConversionRequest): Promise<ConversionResult> {
   const startTime = Date.now();
@@ -50,18 +54,20 @@ export async function convertCode(request: ConversionRequest): Promise<Conversio
 
         // Check for suspicious content
         if (!sanitizeOutput(cleaned)) {
+          console.warn(`[converter] ${providerName}: sanitization failed`);
           continue; // Try next provider
         }
 
         // Flag suspicious output ratio (but don't reject)
         if (!checkOutputRatio(request.code.length, cleaned.length)) {
-          // Suspicious ratio — log but continue
+          // Suspicious ratio  log but continue
           logSecurityEvent('output_ratio_flag', 'converter', { inputLength: request.code.length, outputLength: cleaned.length });
         }
 
         // Validate it parses as TypeScript
         const parseResult = parseTypeScript(cleaned);
         if (!parseResult.ast) {
+          console.warn(`[converter] ${providerName}: TypeScript parse failed`);
           continue; // Try next provider
         }
 
@@ -80,13 +86,13 @@ export async function convertCode(request: ConversionRequest): Promise<Conversio
         await setCache(cacheKey, result);
 
         return result;
-      } catch {
-        // Provider failed, try next
+      } catch (err) {
+        console.warn(`[converter] ${providerName} failed:`, err instanceof Error ? err.message : err);
         continue;
       }
     }
 
-    // All AI providers failed — fall back to AST-only conversion
+    // All AI providers failed  fall back to AST-only conversion
     return astOnlyFallback(request, startTime);
   } catch {
     // Absolute fallback

@@ -92,7 +92,7 @@ export async function convertJsonToTs(request: JsonToTsRequest): Promise<JsonToT
       }
     }
 
-    // All AI providers failed — fall back to local conversion
+    // All AI providers failed  fall back to local conversion
     return localFallback(request, startTime);
   } catch {
     return localFallback(request, startTime);

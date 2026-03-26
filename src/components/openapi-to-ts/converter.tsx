@@ -9,7 +9,7 @@ import { useToolConversion } from '@/hooks/use-tool-conversion';
 import { useKeyboardShortcut } from '@/hooks/use-keyboard-shortcut';
 import { computeStatusText, computeStatusState } from '@/lib/converter-utils';
 import { DEFAULT_OPENAPI_EXAMPLE } from '@/lib/constants';
-import type { AIProvider, OpenApiToTsOptions, OpenApiToTsResult } from '@/lib/types';
+import type { OpenApiToTsOptions, OpenApiToTsResult } from '@/lib/types';
 
 export function OpenApiToTsConverter() {
   const [inputSpec, setInputSpec] = useState(DEFAULT_OPENAPI_EXAMPLE);
@@ -20,7 +20,6 @@ export function OpenApiToTsConverter() {
     enumStyle: 'union',
     addJsDoc: true,
   });
-  const [selectedProvider, setSelectedProvider] = useState<AIProvider | 'auto'>('auto');
   const [isScanning, setIsScanning] = useState(false);
 
   const stableOptions = useMemo(() => options, [
@@ -40,11 +39,10 @@ export function OpenApiToTsConverter() {
   const outputCode = result?.convertedCode || preview;
 
   const handleConvert = useCallback(() => {
-    const provider = selectedProvider === 'auto' ? undefined : selectedProvider;
     setIsScanning(true);
     setTimeout(() => setIsScanning(false), 350);
-    convert({ spec: inputSpec, options, preferredProvider: provider });
-  }, [inputSpec, options, selectedProvider, convert]);
+    convert({ spec: inputSpec, options });
+  }, [inputSpec, options, convert]);
 
   useKeyboardShortcut('Enter', handleConvert, !isConverting && !isRateLimited);
 
@@ -69,10 +67,10 @@ export function OpenApiToTsConverter() {
       isConverting={isConverting}
       error={displayError}
       isAstFallback={isAstOnly}
-      astFallbackMessage="AI models unavailable — showing basic types. Complex $ref resolution and API client generation require AI."
+      astFallbackMessage="AI models unavailable  showing basic types. Complex $ref resolution and API client generation require AI."
       fromCache={fromCache}
       resultKey={result?.convertedCode}
-      statusText={computeStatusText(isConverting, result, selectedProvider)}
+      statusText={computeStatusText(isConverting, result)}
       statusState={computeStatusState(isConverting, result)}
       inputIsScanning={isScanning}
       rateLimitRemaining={rateLimitInfo.remaining}
@@ -81,8 +79,6 @@ export function OpenApiToTsConverter() {
         <OpenApiToTsControlBar
           options={options}
           onOptionsChange={setOptions}
-          selectedProvider={selectedProvider}
-          onProviderChange={setSelectedProvider}
           onConvert={handleConvert}
           isConverting={isConverting || isRateLimited}
         />

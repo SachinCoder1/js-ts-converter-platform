@@ -9,14 +9,12 @@ import {
 } from '@/components/ui/select';
 import { Switch } from '@/components/ui/switch';
 import { ConvertButton } from '@/components/shared/convert-button';
-import { ProviderSelector, KeyboardShortcutHint } from '@/components/shared/provider-selector';
-import type { AIProvider, JsonToTsOptions, JsonOutputStyle, JsonOptionalFields } from '@/lib/types';
+import { PoweredByIndicator, KeyboardShortcutHint } from '@/components/shared/provider-selector';
+import type { JsonToTsOptions, JsonOutputStyle, JsonOptionalFields } from '@/lib/types';
 
 interface JsonToTsControlBarProps {
   options: JsonToTsOptions;
   onOptionsChange: (options: JsonToTsOptions) => void;
-  selectedProvider: AIProvider | 'auto';
-  onProviderChange: (provider: AIProvider | 'auto') => void;
   onConvert: () => void;
   isConverting: boolean;
 }
@@ -24,8 +22,6 @@ interface JsonToTsControlBarProps {
 export function JsonToTsControlBar({
   options,
   onOptionsChange,
-  selectedProvider,
-  onProviderChange,
   onConvert,
   isConverting,
 }: JsonToTsControlBarProps) {
@@ -48,7 +44,7 @@ export function JsonToTsControlBar({
             color: 'var(--text-secondary)',
           }}
         >
-          <SelectValue />
+          <span>{options.outputStyle === 'interface' ? 'interface' : 'type alias'}</span>
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="interface">interface</SelectItem>
@@ -95,7 +91,7 @@ export function JsonToTsControlBar({
             color: 'var(--text-secondary)',
           }}
         >
-          <SelectValue />
+          <span>{{ required: 'All required', optional: 'All optional', smart: 'Smart (AI)' }[options.optionalFields]}</span>
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="required">All required</SelectItem>
@@ -135,7 +131,7 @@ export function JsonToTsControlBar({
 
       <div className="hidden sm:block h-5 w-px" style={{ background: 'var(--border)' }} />
 
-      <ProviderSelector value={selectedProvider} onChange={onProviderChange} />
+      <PoweredByIndicator />
 
       <KeyboardShortcutHint />
     </div>

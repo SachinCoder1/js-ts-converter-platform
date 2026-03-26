@@ -12,8 +12,9 @@ interface ThemeContextValue {
 
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
-const STORAGE_KEY = 'devshift-theme';
-const OLD_STORAGE_KEY = 'typeshift-theme';
+const STORAGE_KEY = 'snipshift-theme';
+const OLD_STORAGE_KEY = 'devshift-theme';
+const LEGACY_STORAGE_KEY = 'typeshift-theme';
 
 function applyTheme(theme: Theme) {
   const html = document.documentElement;
@@ -28,11 +29,12 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>('dark');
 
   useEffect(() => {
-    // One-time migration from old key
-    const oldStored = localStorage.getItem(OLD_STORAGE_KEY);
+    // One-time migration from old keys
+    const oldStored = localStorage.getItem(OLD_STORAGE_KEY) || localStorage.getItem(LEGACY_STORAGE_KEY);
     if (oldStored) {
       localStorage.setItem(STORAGE_KEY, oldStored);
       localStorage.removeItem(OLD_STORAGE_KEY);
+      localStorage.removeItem(LEGACY_STORAGE_KEY);
     }
 
     // Check localStorage first

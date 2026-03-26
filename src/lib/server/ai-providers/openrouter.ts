@@ -28,7 +28,7 @@ export async function callOpenRouter(prompt: PromptParts): Promise<string> {
         'X-Title': SITE_NAME,
       },
       body: JSON.stringify({
-        model: 'deepseek/deepseek-chat-v3-0324:free',
+        model: 'qwen/qwen3-235b-a22b:free',
         messages: [
           { role: 'system', content: prompt.system },
           { role: 'user', content: prompt.user },
@@ -40,7 +40,8 @@ export async function callOpenRouter(prompt: PromptParts): Promise<string> {
     });
 
     if (!response.ok) {
-      throw new Error(`OpenRouter API error: ${response.status}`);
+      const errorBody = await response.text().catch(() => '');
+      throw new Error(`OpenRouter API error: ${response.status} ${errorBody}`);
     }
 
     const data: OpenRouterResponse = await response.json();

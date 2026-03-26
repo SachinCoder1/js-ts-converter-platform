@@ -8,7 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import type { AIProvider } from '@/lib/types';
+import { PoweredByIndicator, KeyboardShortcutHint } from '@/components/shared/provider-selector';
 import type {
   TailwindConversionOptions,
   TailwindInputFormat,
@@ -19,8 +19,6 @@ import type {
 interface TailwindControlBarProps {
   options: TailwindConversionOptions;
   onOptionsChange: (options: TailwindConversionOptions) => void;
-  selectedProvider: AIProvider | 'auto';
-  onProviderChange: (provider: AIProvider | 'auto') => void;
   onConvert: () => void;
   isConverting: boolean;
 }
@@ -93,8 +91,6 @@ function ConvertButton({
 export function TailwindControlBar({
   options,
   onOptionsChange,
-  selectedProvider,
-  onProviderChange,
   onConvert,
   isConverting,
 }: TailwindControlBarProps) {
@@ -120,7 +116,7 @@ export function TailwindControlBar({
             color: 'var(--text-secondary)',
           }}
         >
-          <SelectValue />
+          <span>{options.inputFormat === 'classes' ? 'Class String' : 'HTML with Classes'}</span>
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="classes">Class String</SelectItem>
@@ -141,7 +137,7 @@ export function TailwindControlBar({
             color: 'var(--text-secondary)',
           }}
         >
-          <SelectValue />
+          <span>{{ single: 'Single Ruleset', grouped: 'Grouped by Category', 'media-queries': 'With Media Queries' }[options.outputFormat]}</span>
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="single">Single Ruleset</SelectItem>
@@ -163,7 +159,7 @@ export function TailwindControlBar({
             color: 'var(--text-secondary)',
           }}
         >
-          <SelectValue />
+          <span>{options.twVersion === 'v3' ? 'TW v3' : 'TW v4'}</span>
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="v3">TW v3</SelectItem>
@@ -197,49 +193,9 @@ export function TailwindControlBar({
 
       <div className="hidden sm:block h-5 w-px" style={{ background: 'var(--border)' }} />
 
-      {/* Provider selector */}
-      <Select
-        value={selectedProvider}
-        onValueChange={(v) => onProviderChange(v as AIProvider | 'auto')}
-      >
-        <SelectTrigger
-          className="h-8 w-[160px] rounded-md border text-xs"
-          style={{
-            borderColor: 'var(--border)',
-            background: 'var(--surface)',
-            color: 'var(--text-secondary)',
-          }}
-        >
-          <SelectValue />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectItem value="auto">Auto (Best Available)</SelectItem>
-          <SelectItem value="gemini">Gemini</SelectItem>
-          <SelectItem value="deepseek">DeepSeek</SelectItem>
-          <SelectItem value="openrouter">OpenRouter Free</SelectItem>
-          <SelectItem value="ast-only">Rule-Based Only</SelectItem>
-        </SelectContent>
-      </Select>
+      <PoweredByIndicator />
 
-      {/* Keyboard shortcut hint */}
-      <span
-        className="hidden sm:flex items-center gap-1 text-[10px] font-mono"
-        style={{ color: 'var(--text-disabled)', letterSpacing: '0.05em' }}
-      >
-        <kbd
-          className="rounded px-1.5 py-0.5"
-          style={{ background: 'var(--muted)', color: 'var(--text-tertiary)' }}
-        >
-          {typeof navigator !== 'undefined' && /Mac/.test(navigator.userAgent) ? '\u2318' : 'Ctrl'}
-        </kbd>
-        <span>+</span>
-        <kbd
-          className="rounded px-1.5 py-0.5"
-          style={{ background: 'var(--muted)', color: 'var(--text-tertiary)' }}
-        >
-          Enter
-        </kbd>
-      </span>
+      <KeyboardShortcutHint />
     </div>
   );
 }

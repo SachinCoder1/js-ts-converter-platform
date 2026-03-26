@@ -171,10 +171,10 @@ function convertComments(html: string, stats: HtmlToJsxStats): string {
 
 function checkWarnings(html: string, warnings: string[]): void {
   if (/<script[\s>]/i.test(html)) {
-    warnings.push('Inline <script> blocks detected — these need special handling in React (use useEffect or a script loader).');
+    warnings.push('Inline <script> blocks detected  these need special handling in React (use useEffect or a script loader).');
   }
   if (/<style[\s>]/i.test(html)) {
-    warnings.push('Inline <style> blocks detected — consider using CSS modules, styled-components, or inline styles in React.');
+    warnings.push('Inline <style> blocks detected  consider using CSS modules, styled-components, or inline styles in React.');
   }
 }
 

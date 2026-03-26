@@ -10,12 +10,11 @@ import { useKeyboardShortcut } from '@/hooks/use-keyboard-shortcut';
 import { DEFAULT_EXAMPLE_CODE } from '@/lib/constants';
 import { getOutputFileType, getMonacoLanguage } from '@/lib/utils';
 import { computeStatusText, computeStatusState } from '@/lib/converter-utils';
-import type { FileType, AIProvider } from '@/lib/types';
+import type { FileType } from '@/lib/types';
 
 export function Converter() {
   const [inputCode, setInputCode] = useState(DEFAULT_EXAMPLE_CODE);
   const [fileType, setFileType] = useState<FileType>('jsx');
-  const [selectedProvider, setSelectedProvider] = useState<AIProvider | 'auto'>('auto');
   const [isScanning, setIsScanning] = useState(false);
 
   const { preview } = useAstPreview(inputCode, fileType);
@@ -27,11 +26,10 @@ export function Converter() {
   const inputLanguage = getMonacoLanguage(fileType);
 
   const handleConvert = useCallback(() => {
-    const provider = selectedProvider === 'auto' ? undefined : selectedProvider;
     setIsScanning(true);
     setTimeout(() => setIsScanning(false), 350);
-    convert(inputCode, fileType, provider);
-  }, [inputCode, fileType, selectedProvider, convert]);
+    convert(inputCode, fileType);
+  }, [inputCode, fileType, convert]);
 
   useKeyboardShortcut('Enter', handleConvert, !isConverting && !isRateLimited);
 
@@ -48,12 +46,12 @@ export function Converter() {
       isConverting={isConverting}
       error={error}
       isAstFallback={result?.provider === 'ast-only'}
-      astFallbackMessage="AI models unavailable — showing basic conversion. Some types may need manual refinement."
+      astFallbackMessage="AI models unavailable  showing basic conversion. Some types may need manual refinement."
       fromCache={fromCache}
       resultKey={result?.convertedCode}
-      statusText={computeStatusText(isConverting, result, selectedProvider)}
+      statusText={computeStatusText(isConverting, result)}
       statusState={computeStatusState(isConverting, result)}
-      modelIndicator={selectedProvider === 'auto' ? 'Auto' : selectedProvider}
+      modelIndicator="Auto"
       inputIsScanning={isScanning}
       rateLimitRemaining={rateLimitInfo.remaining}
       rateLimitTotal={rateLimitInfo.limit}
@@ -61,8 +59,6 @@ export function Converter() {
         <ControlBar
           fileType={fileType}
           onFileTypeChange={setFileType}
-          selectedProvider={selectedProvider}
-          onProviderChange={setSelectedProvider}
           onConvert={handleConvert}
           isConverting={isConverting || isRateLimited}
         />

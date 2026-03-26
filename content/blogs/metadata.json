@@ -1,0 +1,4879 @@
+{
+  "blogs": [
+    {
+      "slug": "absolute-imports-nextjs-tsconfig",
+      "title": "How to Configure Absolute Imports in Next.js (tsconfig Paths)",
+      "description": "Set up absolute imports in Next.js using tsconfig paths. Configure @/ aliases, understand src vs root directory, and avoid common mistakes.",
+      "keyword": "absolute imports nextjs tsconfig",
+      "tags": [
+        "nextjs",
+        "typescript",
+        "tsconfig",
+        "imports",
+        "configuration"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-01",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "fix-module-not-found-cant-resolve",
+        "tsconfig-json-every-option-explained",
+        "call-api-page-load-react-2026",
+        "client-only-component-nextjs-no-ssr"
+      ]
+    },
+    {
+      "slug": "add-typescript-to-react-project",
+      "title": "How to Add TypeScript to an Existing React Project (Step-by-Step)",
+      "description": "Add TypeScript to your existing React project step by step: install deps, add tsconfig, rename files, fix errors, and configure paths. Complete tutorial.",
+      "keyword": "add typescript to react project",
+      "tags": [
+        "typescript",
+        "react",
+        "tutorial",
+        "migration"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-03",
+      "difficulty": "beginner",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "jsx-to-tsx-react-typescript",
+        "convert-javascript-to-typescript",
+        "avoid-prop-drilling-react-solutions",
+        "call-api-page-load-react-2026"
+      ]
+    },
+    {
+      "slug": "animate-height-zero-to-auto-css",
+      "title": "How to Animate Height from 0 to Auto in CSS (The Unsolved Problem)",
+      "description": "Animate height from 0 to auto in CSS  the max-height hack, Grid 0fr trick, interpolate-size proposal, JS FLIP, and Framer Motion solutions.",
+      "keyword": "animate height auto css",
+      "tags": [
+        "css",
+        "animation",
+        "transition",
+        "react",
+        "framer motion",
+        "tailwind"
+      ],
+      "category": "react",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-05",
+      "difficulty": "advanced",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "dark-mode-nextjs-tailwind-next-themes",
+        "sticky-header-hide-scroll-direction",
+        "css-gradient-border",
+        "css-grid-equal-height-items"
+      ]
+    },
+    {
+      "slug": "api-authentication-headers-guide",
+      "title": "How to Add Authentication Headers to API Calls (Bearer Token, API Key)",
+      "description": "Learn how to add API authentication headers  Bearer tokens, API keys, and Basic auth  to fetch and axios calls. Includes secure storage and interceptors.",
+      "keyword": "api authentication headers",
+      "tags": [
+        "api",
+        "authentication",
+        "javascript",
+        "security",
+        "fetch"
+      ],
+      "category": "security",
+      "tool": "/curl-to-code",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-06",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "handle-api-errors-javascript",
+        "api-rate-limiting-explained",
+        "typed-fetch-wrapper-typescript-generic",
+        "build-api-hono-typescript"
+      ]
+    },
+    {
+      "slug": "api-rate-limiting-explained",
+      "title": "Rate Limiting Explained: How to Protect Your API",
+      "description": "Learn API rate limiting  token bucket, sliding window, and fixed window algorithms. With Node.js implementation, rate limit headers, and 429 handling.",
+      "keyword": "api rate limiting explained",
+      "tags": [
+        "api",
+        "rate-limiting",
+        "node-js",
+        "security",
+        "backend"
+      ],
+      "category": "devops",
+      "tool": "/curl-to-code",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-08",
+      "difficulty": "intermediate",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "api-authentication-headers-guide",
+        "build-api-hono-typescript",
+        "call-api-page-load-react-2026",
+        "handle-api-errors-javascript"
+      ]
+    },
+    {
+      "slug": "avoid-prop-drilling-react-solutions",
+      "title": "How to Avoid Prop Drilling in React (5 Actual Solutions)",
+      "description": "Learn 5 real ways to avoid prop drilling in React: composition, Context, Zustand, URL state, and server components. With TypeScript examples for each.",
+      "keyword": "avoid prop drilling react",
+      "tags": [
+        "react",
+        "state-management",
+        "typescript",
+        "patterns",
+        "hooks"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-10",
+      "difficulty": "intermediate",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "persist-state-react-page-refresh",
+        "type-custom-hook-return-typescript",
+        "type-react-context-typescript",
+        "type-usereducer-typescript"
+      ]
+    },
+    {
+      "slug": "backend-for-frontend-pattern",
+      "title": "The BFF Pattern: Why Your Frontend Needs Its Own Backend",
+      "description": "Learn the Backend for Frontend (BFF) pattern: what it solves, how to implement it with Next.js API routes and tRPC, and when to skip it entirely.",
+      "keyword": "backend for frontend pattern",
+      "tags": [
+        "bff",
+        "architecture",
+        "nextjs",
+        "trpc",
+        "api-design"
+      ],
+      "category": "react",
+      "tool": "/curl-to-code",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-12",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "server-vs-client-components-nextjs",
+        "trpc-tutorial-type-safe-api",
+        "trpc-vs-rest-vs-graphql-nextjs",
+        "absolute-imports-nextjs-tsconfig"
+      ]
+    },
+    {
+      "slug": "biome-vs-eslint-prettier-2026",
+      "title": "Biome vs ESLint + Prettier: Should You Switch in 2026?",
+      "description": "Biome vs ESLint and Prettier compared  speed, rule coverage, plugin ecosystem, and an honest take on whether switching is worth it in 2026.",
+      "keyword": "biome vs eslint prettier",
+      "tags": [
+        "biome",
+        "eslint",
+        "prettier",
+        "linting",
+        "formatting",
+        "devtools"
+      ],
+      "category": "devops",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-13",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "eslint-prettier-typescript-setup",
+        "eslint-flat-config-typescript-2026",
+        "debug-nodejs-beyond-console-log",
+        "editorconfig-why-every-project-needs-one"
+      ]
+    },
+    {
+      "slug": "build-api-hono-typescript",
+      "title": "How to Build an API with Hono.js and TypeScript",
+      "description": "Build a fast, type-safe API with Hono.js and TypeScript. Covers routing, middleware, Zod validation, and deploying to Cloudflare Workers.",
+      "keyword": "hono js typescript api",
+      "tags": [
+        "hono",
+        "typescript",
+        "api",
+        "cloudflare-workers",
+        "bun"
+      ],
+      "category": "typescript",
+      "tool": "/curl-to-code",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-15",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "express-fastify-hono-comparison",
+        "handle-api-errors-javascript",
+        "health-check-endpoint-nodejs",
+        "supabase-typescript-types-guide"
+      ]
+    },
+    {
+      "slug": "build-cli-typescript-commander",
+      "title": "How to Build a CLI Tool with TypeScript and Commander.js",
+      "description": "Build a complete CLI tool from scratch with TypeScript and Commander.js. Project setup, Zod validation, colored output, tsup bundling, and npm publishing.",
+      "keyword": "build cli tool typescript commander",
+      "tags": [
+        "typescript",
+        "cli",
+        "commander",
+        "node.js",
+        "npm",
+        "tsup"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-17",
+      "difficulty": "intermediate",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "npm-package-dual-esm-cjs-output",
+        "publish-typescript-npm-package-2026",
+        "package-json-exports-main-module",
+        "fix-eresolve-dependency-tree-npm"
+      ]
+    },
+    {
+      "slug": "bun-package-manager-instead-of-npm",
+      "title": "How to Use Bun as a Package Manager (Instead of npm)",
+      "description": "Switch from npm to Bun for faster installs, simpler lockfiles, and full npm compatibility. Covers speed, workspaces, and when it's safe to migrate.",
+      "keyword": "bun package manager vs npm",
+      "tags": [
+        "bun",
+        "npm",
+        "pnpm",
+        "nodejs",
+        "package-manager"
+      ],
+      "category": "devops",
+      "tool": null,
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-19",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "bun-vs-node-production-2026",
+        "package-json-exports-field",
+        "run-typescript-directly-tsx",
+        "websocket-server-typescript-guide"
+      ]
+    },
+    {
+      "slug": "bun-vs-node-production-2026",
+      "title": "Bun vs Node.js in 2026: Is It Ready for Production?",
+      "description": "An honest look at Bun vs Node.js in 2026  speed benchmarks, compatibility gaps, what works in production, and what still doesn't.",
+      "keyword": "bun vs node 2026 production",
+      "tags": [
+        "bun",
+        "nodejs",
+        "runtime",
+        "javascript",
+        "performance"
+      ],
+      "category": "devops",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-20",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "bun-package-manager-instead-of-npm",
+        "debug-nodejs-beyond-console-log",
+        "commonjs-vs-es-modules-node",
+        "core-web-vitals-explained-fix"
+      ]
+    },
+    {
+      "slug": "call-api-page-load-react-2026",
+      "title": "How to Call an API on Page Load in React (The Right Way in 2026)",
+      "description": "Learn how to call an API on page load in React using useEffect, React Query, SWR, and server components. With TypeScript examples and proper error handling.",
+      "keyword": "call api on page load react",
+      "tags": [
+        "react",
+        "api",
+        "typescript",
+        "nextjs",
+        "data-fetching"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-22",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "type-nextjs-api-routes-typescript",
+        "client-only-component-nextjs-no-ssr",
+        "nextauth-v5-auth-js-app-router-setup",
+        "server-components-vs-remix-loaders"
+      ]
+    },
+    {
+      "slug": "center-div-css-every-method",
+      "title": "How to Center a Div in CSS (Every Method)",
+      "description": "Every way to center a div in CSS  flexbox, grid, position+transform, margin auto, and more. Comparison table shows when each method works best.",
+      "keyword": "center div css",
+      "tags": [
+        "css",
+        "centering",
+        "flexbox",
+        "css grid",
+        "layout"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-24",
+      "difficulty": "beginner",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "css-grid-equal-height-items",
+        "css-grid-vs-flexbox-when-to-use",
+        "responsive-css-without-media-queries",
+        "core-web-vitals-explained-fix"
+      ]
+    },
+    {
+      "slug": "changesets-versioning-changelog-setup",
+      "title": "How to Set Up Changesets for Versioning and Changelogs",
+      "description": "Set up @changesets/cli for automated versioning, changelog generation, and npm releases. Includes GitHub Actions workflow and monorepo support.",
+      "keyword": "changesets versioning changelog",
+      "tags": [
+        "changesets",
+        "npm",
+        "versioning",
+        "changelog",
+        "github-actions",
+        "ci-cd"
+      ],
+      "category": "devops",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-26",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "publish-typescript-npm-package-2026",
+        "github-actions-deploy-vercel-manual",
+        "github-actions-first-workflow",
+        "bun-package-manager-instead-of-npm"
+      ]
+    },
+    {
+      "slug": "check-if-string-valid-json",
+      "title": "How to Check if a String Is Valid JSON in JavaScript",
+      "description": "Learn how to check if a string is valid JSON in JavaScript using JSON.parse with try/catch. Covers edge cases, a reusable utility function, and common pitfalls.",
+      "keyword": "check if string is valid json javascript",
+      "tags": [
+        "javascript",
+        "json",
+        "validation",
+        "typescript",
+        "tips"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-02-27",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "typescript-enum-to-array",
+        "common-typescript-mistakes",
+        "commonjs-vs-es-modules-node",
+        "convert-javascript-to-typescript"
+      ]
+    },
+    {
+      "slug": "client-only-component-nextjs-no-ssr",
+      "title": "How to Render a Component Only on the Client in Next.js (No SSR)",
+      "description": "Learn how to render a component client-only in Next.js with no SSR. Covers dynamic import, useEffect mount check, and suppressHydrationWarning.",
+      "keyword": "render component client only nextjs no ssr",
+      "tags": [
+        "nextjs",
+        "react",
+        "ssr",
+        "typescript",
+        "components"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-01",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "call-api-page-load-react-2026",
+        "fix-hydration-mismatch-nextjs",
+        "fix-jsx-element-no-construct-signatures",
+        "generic-react-component-typescript"
+      ]
+    },
+    {
+      "slug": "common-typescript-mistakes",
+      "title": "10 Common TypeScript Mistakes (And How to Fix Them)",
+      "description": "Avoid these 10 common TypeScript mistakes: overusing any, ignoring null checks, wrong generic constraints, skipping discriminated unions, and more.",
+      "keyword": "common typescript mistakes",
+      "tags": [
+        "typescript",
+        "mistakes",
+        "best-practices",
+        "tips"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-03",
+      "difficulty": "intermediate",
+      "readTime": "10 min read",
+      "relatedSlugs": [
+        "check-if-string-valid-json",
+        "javascript-vs-typescript-benefits",
+        "typescript-enum-to-array",
+        "typescript-ignore-line-ts-ignore"
+      ]
+    },
+    {
+      "slug": "commonjs-vs-es-modules-node",
+      "title": "CommonJS vs ES Modules in Node.js: Which One Should You Use in 2026?",
+      "description": "Compare CommonJS and ES Modules in Node.js  require vs import, package.json config, interop gotchas, and what the ecosystem has settled on in 2026.",
+      "keyword": "commonjs vs es modules node",
+      "tags": [
+        "nodejs",
+        "javascript",
+        "commonjs",
+        "es-modules",
+        "typescript"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-05",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "fix-cannot-use-import-statement-outside-module",
+        "convert-require-to-import-typescript",
+        "check-if-string-valid-json",
+        "connect-postgresql-nodejs"
+      ]
+    },
+    {
+      "slug": "connect-postgresql-nodejs",
+      "title": "How to Connect to PostgreSQL from Node.js (pg vs Prisma vs Drizzle)",
+      "description": "Connect to PostgreSQL from Node.js using pg, Prisma, or Drizzle ORM  connection pooling, .env setup, and which ORM to pick based on your project size.",
+      "keyword": "connect postgresql node js",
+      "tags": [
+        "nodejs",
+        "postgresql",
+        "prisma",
+        "drizzle",
+        "database",
+        "typescript"
+      ],
+      "category": "typescript",
+      "tool": "/sql-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-06",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "prisma-full-text-search-postgresql",
+        "prisma-raw-sql-when-to-use",
+        "drizzle-orm-nextjs-postgresql-setup",
+        "prisma-nextjs-too-many-connections-fix"
+      ]
+    },
+    {
+      "slug": "convert-javascript-to-typescript",
+      "title": "How to Convert JavaScript to TypeScript (Without Losing Your Mind)",
+      "description": "Learn how to convert JavaScript to TypeScript with a practical migration strategy. File-by-file approach, strictness levels, handling any types, and common gotchas.",
+      "keyword": "convert javascript to typescript",
+      "tags": [
+        "typescript",
+        "javascript",
+        "migration",
+        "tutorial"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-08",
+      "difficulty": "intermediate",
+      "readTime": "12 min read",
+      "relatedSlugs": [
+        "sort-array-objects-by-property",
+        "typescript-migration-strategy",
+        "add-typescript-to-react-project",
+        "check-if-string-valid-json"
+      ]
+    },
+    {
+      "slug": "convert-require-to-import-typescript",
+      "title": "How to Convert require() to import in TypeScript",
+      "description": "Learn how to convert require to import in TypeScript: CommonJS vs ES Modules, module.exports to export, dynamic require, and interop gotchas.",
+      "keyword": "convert require to import typescript",
+      "tags": [
+        "typescript",
+        "javascript",
+        "modules",
+        "commonjs",
+        "esmodules"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-10",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "commonjs-vs-es-modules-node",
+        "check-if-string-valid-json",
+        "convert-javascript-to-typescript",
+        "fix-cannot-find-module-typescript"
+      ]
+    },
+    {
+      "slug": "convert-string-to-number-javascript",
+      "title": "How to Convert a String to a Number in JavaScript (Every Way)",
+      "description": "Learn every way to convert string to number in JavaScript  Number(), parseInt(), parseFloat(), unary +, and more with edge cases and a quick reference table.",
+      "keyword": "convert string to number javascript",
+      "tags": [
+        "javascript",
+        "fundamentals",
+        "type conversion",
+        "numbers"
+      ],
+      "category": "general",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-12",
+      "difficulty": "beginner",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "javascript-destructuring-explained",
+        "javascript-object-vs-json",
+        "optional-chaining-nullish-coalescing",
+        "remove-duplicates-array-javascript"
+      ]
+    },
+    {
+      "slug": "copy-to-clipboard-react",
+      "title": "How to Implement Copy to Clipboard in React (With Fallback)",
+      "description": "Build a copy to clipboard feature in React with navigator.clipboard, execCommand fallback, a custom hook with auto-reset, and TypeScript typing.",
+      "keyword": "copy to clipboard react",
+      "tags": [
+        "react",
+        "hooks",
+        "typescript",
+        "browser-api",
+        "clipboard"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-13",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "debounce-input-react-typescript-hook",
+        "detect-click-outside-react-hook",
+        "persist-state-react-page-refresh"
+      ]
+    },
+    {
+      "slug": "core-web-vitals-explained-fix",
+      "title": "Core Web Vitals Explained: LCP, FID, CLS (And How to Fix Them)",
+      "description": "What LCP, FID, and CLS actually measure, why they matter for Google rankings, and specific fixes to improve each Core Web Vital on your site.",
+      "keyword": "core web vitals explained",
+      "tags": [
+        "performance",
+        "seo",
+        "web-vitals",
+        "javascript",
+        "css"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-15",
+      "difficulty": "intermediate",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "dark-mode-toggle-css-javascript",
+        "bun-vs-node-production-2026",
+        "deep-clone-object-javascript",
+        "fix-unique-key-prop-react"
+      ]
+    },
+    {
+      "slug": "css-container-queries-guide",
+      "title": "CSS Container Queries: The Feature That Changes Everything",
+      "description": "Learn CSS container queries  syntax, @container rules, container-type, real-world examples, and how they compare to media queries for responsive components.",
+      "keyword": "css container queries",
+      "tags": [
+        "css",
+        "container queries",
+        "responsive design",
+        "components"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-17",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "css-grid-vs-flexbox-when-to-use",
+        "responsive-css-without-media-queries",
+        "center-div-css-every-method",
+        "core-web-vitals-explained-fix"
+      ]
+    },
+    {
+      "slug": "css-custom-properties-guide",
+      "title": "CSS Custom Properties (Variables): The Complete Guide",
+      "description": "Master CSS custom properties  syntax, cascading, fallbacks, theming, dark mode, animation, calc(), and JavaScript access. Everything you need to know.",
+      "keyword": "css custom properties variables",
+      "tags": [
+        "css",
+        "css variables",
+        "custom properties",
+        "theming",
+        "dark mode"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-19",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "dark-mode-toggle-css-javascript",
+        "dark-mode-nextjs-tailwind-next-themes",
+        "center-div-css-every-method",
+        "core-web-vitals-explained-fix"
+      ]
+    },
+    {
+      "slug": "css-gradient-border",
+      "title": "How to Create a CSS Gradient Border (Not as Simple as You'd Think)",
+      "description": "Create a CSS gradient border using border-image, background-clip, and the mask hack for rounded corners. Includes Tailwind implementation.",
+      "keyword": "css gradient border",
+      "tags": [
+        "css",
+        "gradient",
+        "border",
+        "tailwind",
+        "design"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-20",
+      "difficulty": "intermediate",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "css-grid-equal-height-items",
+        "css-truncate-text-ellipsis-multiline",
+        "style-scrollbar-css-cross-browser",
+        "tailwind-class-not-working-fix"
+      ]
+    },
+    {
+      "slug": "css-grid-equal-height-items",
+      "title": "How to Make CSS Grid Items Equal Height (Without Hacks)",
+      "description": "Make CSS grid equal height items using 1fr rows, align-items stretch, minmax, and subgrid. Comparison with flexbox approach included.",
+      "keyword": "css grid equal height",
+      "tags": [
+        "css",
+        "css grid",
+        "layout",
+        "flexbox",
+        "tailwind"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-22",
+      "difficulty": "intermediate",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "center-div-css-every-method",
+        "css-grid-vs-flexbox-when-to-use",
+        "css-gradient-border",
+        "css-truncate-text-ellipsis-multiline"
+      ]
+    },
+    {
+      "slug": "css-grid-vs-flexbox-when-to-use",
+      "title": "CSS Grid vs Flexbox: When to Use Which",
+      "description": "Learn when to use CSS Grid vs Flexbox with visual examples. Covers 1D vs 2D layouts, real use cases, performance, and when to combine both.",
+      "keyword": "css grid vs flexbox",
+      "tags": [
+        "css",
+        "css grid",
+        "flexbox",
+        "layout",
+        "responsive design"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-24",
+      "difficulty": "intermediate",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "center-div-css-every-method",
+        "css-grid-equal-height-items",
+        "responsive-css-without-media-queries",
+        "css-container-queries-guide"
+      ]
+    },
+    {
+      "slug": "css-has-selector-guide",
+      "title": "CSS :has() Selector: The Parent Selector CSS Got",
+      "description": "Learn the CSS :has() selector  syntax, real use cases like form validation, empty states, and sibling logic. The parent selector CSS developers waited years for.",
+      "keyword": "css has selector",
+      "tags": [
+        "css",
+        "has selector",
+        "selectors",
+        "form validation",
+        "modern css"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-25",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "center-div-css-every-method",
+        "core-web-vitals-explained-fix",
+        "css-container-queries-guide",
+        "css-custom-properties-guide"
+      ]
+    },
+    {
+      "slug": "css-truncate-text-ellipsis-multiline",
+      "title": "How to Truncate Text with Ellipsis in CSS (Single and Multi-Line)",
+      "description": "CSS truncate text with ellipsis for single and multi-line. Covers text-overflow, line-clamp, cross-browser support, and Tailwind classes.",
+      "keyword": "css truncate text ellipsis multiline",
+      "tags": [
+        "css",
+        "text-overflow",
+        "ellipsis",
+        "line-clamp",
+        "tailwind"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-26",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "css-gradient-border",
+        "css-grid-equal-height-items",
+        "style-scrollbar-css-cross-browser",
+        "tailwind-class-not-working-fix"
+      ]
+    },
+    {
+      "slug": "custom-domain-vercel-cloudflare-setup",
+      "title": "How to Set Up a Custom Domain on Vercel (With Cloudflare DNS)",
+      "description": "Connect your custom domain to Vercel using Cloudflare DNS  CNAME setup, SSL Full Strict, proxy settings, www redirect, and fixing common DNS issues.",
+      "keyword": "custom domain vercel cloudflare",
+      "tags": [
+        "vercel",
+        "cloudflare",
+        "dns",
+        "custom-domain",
+        "deployment"
+      ],
+      "category": "devops",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-27",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "github-actions-deploy-vercel-manual",
+        "deploy-nextjs-vps-docker",
+        "upload-files-cloudflare-r2-nodejs",
+        "vercel-cron-job-nextjs-setup"
+      ]
+    },
+    {
+      "slug": "dark-mode-nextjs-tailwind-next-themes",
+      "title": "How to Add Dark Mode to Next.js with Tailwind & next-themes",
+      "description": "Add dark mode to your Next.js app using Tailwind CSS and next-themes  ThemeProvider setup, toggle component, no-flash fix, and system preference support.",
+      "keyword": "dark mode nextjs tailwind next-themes",
+      "tags": [
+        "nextjs",
+        "tailwind",
+        "dark mode",
+        "next-themes",
+        "css",
+        "react"
+      ],
+      "category": "react",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-28",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "animate-height-zero-to-auto-css",
+        "sticky-header-hide-scroll-direction",
+        "call-api-page-load-react-2026",
+        "client-only-component-nextjs-no-ssr"
+      ]
+    },
+    {
+      "slug": "dark-mode-toggle-css-javascript",
+      "title": "Dark Mode Toggle with CSS and JavaScript",
+      "description": "Build a dark mode toggle with CSS custom properties, prefers-color-scheme, localStorage persistence, and smooth transitions. Full working code included.",
+      "keyword": "dark mode toggle css javascript",
+      "tags": [
+        "css",
+        "javascript",
+        "dark mode",
+        "css variables",
+        "theming"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-29",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "css-custom-properties-guide",
+        "core-web-vitals-explained-fix",
+        "dark-mode-nextjs-tailwind-next-themes",
+        "center-div-css-every-method"
+      ]
+    },
+    {
+      "slug": "debounce-input-react-typescript-hook",
+      "title": "How to Debounce Input in React with TypeScript (Custom Hook)",
+      "description": "Build a reusable useDebounce hook in React with TypeScript. Generic typing, cleanup on unmount, search input example, and comparison with lodash.debounce.",
+      "keyword": "debounce input react typescript hook",
+      "tags": [
+        "react",
+        "typescript",
+        "hooks",
+        "debounce",
+        "performance"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-30",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "copy-to-clipboard-react",
+        "detect-click-outside-react-hook",
+        "fix-unique-key-prop-react"
+      ]
+    },
+    {
+      "slug": "debug-nodejs-beyond-console-log",
+      "title": "How to Debug Node.js Applications (5 Techniques Beyond console.log)",
+      "description": "Five powerful Node.js debugging techniques beyond console.log  Chrome DevTools, VS Code debugger, breakpoints, logpoints, and debugging in Docker.",
+      "keyword": "debug node js application",
+      "tags": [
+        "nodejs",
+        "debugging",
+        "javascript",
+        "devtools"
+      ],
+      "category": "devops",
+      "tool": "/curl-to-code",
+      "author": "SnipShift Team",
+      "publishDate": "2026-03-31",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "fix-cannot-use-import-statement-outside-module",
+        "bun-vs-node-production-2026",
+        "commonjs-vs-es-modules-node",
+        "fix-cannot-read-properties-undefined-map"
+      ]
+    },
+    {
+      "slug": "deep-clone-object-javascript",
+      "title": "How to Deep Clone an Object in JavaScript (5 Ways)",
+      "description": "Learn 5 ways to deep clone an object in JavaScript  from structuredClone to lodash. Includes performance benchmarks and gotcha guide.",
+      "keyword": "deep clone object javascript",
+      "tags": [
+        "javascript",
+        "deep clone",
+        "objects",
+        "structuredClone",
+        "performance"
+      ],
+      "category": "performance",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-01",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "javascript-memory-leak-find-fix",
+        "reduce-javascript-bundle-size",
+        "remove-duplicates-array-javascript",
+        "bun-vs-node-production-2026"
+      ]
+    },
+    {
+      "slug": "deploy-nextjs-vps-docker",
+      "title": "How to Deploy a Next.js App to a VPS with Docker",
+      "description": "Deploy Next.js to a VPS with Docker  Dockerfile, docker-compose, nginx reverse proxy, SSL with Let's Encrypt, and GitHub Actions CI/CD. Full setup guide.",
+      "keyword": "deploy nextjs vps docker",
+      "tags": [
+        "nextjs",
+        "docker",
+        "vps",
+        "deployment",
+        "nginx",
+        "ci/cd",
+        "devops"
+      ],
+      "category": "react",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-02",
+      "difficulty": "advanced",
+      "readTime": "10 min read",
+      "relatedSlugs": [
+        "self-host-nextjs-docker-coolify",
+        "docker-compose-beginners-guide",
+        "github-actions-deploy-vercel-manual",
+        "yaml-syntax-complete-guide"
+      ]
+    },
+    {
+      "slug": "detect-click-outside-react-hook",
+      "title": "How to Detect Click Outside a Component in React (Custom Hook)",
+      "description": "Build a custom useClickOutside hook in React with TypeScript. Covers useRef, mousedown events, portal handling, generic typing, and mobile touch support.",
+      "keyword": "detect click outside react hook",
+      "tags": [
+        "react",
+        "hooks",
+        "typescript",
+        "custom-hooks",
+        "dom"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-03",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "copy-to-clipboard-react",
+        "debounce-input-react-typescript-hook",
+        "persist-state-react-page-refresh"
+      ]
+    },
+    {
+      "slug": "docker-compose-beginners-guide",
+      "title": "Docker Compose Explained: A Beginner's Guide with Examples",
+      "description": "Learn Docker Compose from scratch  YAML structure, services, volumes, networks, and real-world patterns for Node.js, Postgres, and Redis.",
+      "keyword": "docker compose explained",
+      "tags": [
+        "docker",
+        "docker-compose",
+        "devops",
+        "containers",
+        "yaml"
+      ],
+      "category": "json",
+      "tool": "/json-to-yaml",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-04",
+      "difficulty": "beginner",
+      "readTime": "10 min read",
+      "relatedSlugs": [
+        "yaml-syntax-complete-guide",
+        "github-actions-first-workflow",
+        "deploy-nextjs-vps-docker",
+        "free-uptime-monitoring-setup"
+      ]
+    },
+    {
+      "slug": "drizzle-orm-joins-subqueries",
+      "title": "Drizzle ORM: How to Write Complex Joins and Subqueries",
+      "description": "Master Drizzle ORM joins and subqueries: innerJoin, leftJoin, many-to-many through junction tables, subqueries in where clauses, and raw SQL expressions.",
+      "keyword": "drizzle orm joins subqueries",
+      "tags": [
+        "drizzle",
+        "orm",
+        "typescript",
+        "sql",
+        "database",
+        "joins"
+      ],
+      "category": "typescript",
+      "tool": "/sql-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-05",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "kysely-vs-drizzle-comparison",
+        "drizzle-orm-nextjs-postgresql-setup",
+        "connect-postgresql-nodejs",
+        "prisma-conditional-where-clause"
+      ]
+    },
+    {
+      "slug": "drizzle-orm-nextjs-postgresql-setup",
+      "title": "How to Set Up Drizzle ORM with Next.js and PostgreSQL",
+      "description": "Set up Drizzle ORM with Next.js and PostgreSQL from scratch  schema definition, migrations, typed queries in server components, and drizzle.config.ts setup.",
+      "keyword": "drizzle orm nextjs postgresql setup",
+      "tags": [
+        "drizzle",
+        "orm",
+        "nextjs",
+        "postgresql",
+        "typescript",
+        "database"
+      ],
+      "category": "react",
+      "tool": "/sql-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-06",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "prisma-nextjs-too-many-connections-fix",
+        "connect-postgresql-nodejs",
+        "drizzle-orm-joins-subqueries",
+        "kysely-vs-drizzle-comparison"
+      ]
+    },
+    {
+      "slug": "editorconfig-why-every-project-needs-one",
+      "title": "The .editorconfig File: Why Every Project Needs One",
+      "description": "Learn what .editorconfig does, its syntax, common settings for tabs vs spaces, and how it keeps formatting consistent across editors and teams.",
+      "keyword": "editorconfig file",
+      "tags": [
+        "editorconfig",
+        "developer-tools",
+        "formatting",
+        "workflow"
+      ],
+      "category": "devops",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-07",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "git-commit-message-conventions",
+        "git-hooks-husky-lint-staged",
+        "git-rebase-vs-merge",
+        "biome-vs-eslint-prettier-2026"
+      ]
+    },
+    {
+      "slug": "eslint-flat-config-typescript-2026",
+      "title": "How to Configure ESLint Flat Config for TypeScript in 2026",
+      "description": "Set up ESLint flat config (eslint.config.js) with TypeScript, typescript-eslint v8, shared configs, and proper ignores. Migration from .eslintrc included.",
+      "keyword": "eslint flat config typescript",
+      "tags": [
+        "eslint",
+        "typescript",
+        "configuration",
+        "flat-config",
+        "linting"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-08",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "eslint-prettier-typescript-setup",
+        "pnpm-workspaces-typescript-monorepo",
+        "tsconfig-json-every-option-explained",
+        "typescript-ignore-line-ts-ignore"
+      ]
+    },
+    {
+      "slug": "eslint-prettier-typescript-setup",
+      "title": "How to Set Up ESLint and Prettier in a TypeScript Project (2026)",
+      "description": "Step-by-step ESLint and Prettier setup for TypeScript  flat config, resolve conflicts, VS Code integration, and lint-staged with Husky.",
+      "keyword": "eslint prettier typescript setup",
+      "tags": [
+        "eslint",
+        "prettier",
+        "typescript",
+        "linting",
+        "developer-tools"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-09",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "eslint-flat-config-typescript-2026",
+        "biome-vs-eslint-prettier-2026",
+        "typescript-ignore-line-ts-ignore",
+        "build-api-hono-typescript"
+      ]
+    },
+    {
+      "slug": "express-fastify-hono-comparison",
+      "title": "Express.js vs Fastify vs Hono: Node.js Framework Comparison 2026",
+      "description": "Compare Express.js, Fastify, and Hono for Node.js in 2026  performance benchmarks, TypeScript support, middleware, and when to pick each framework.",
+      "keyword": "express vs fastify vs hono",
+      "tags": [
+        "nodejs",
+        "express",
+        "fastify",
+        "hono",
+        "typescript",
+        "framework-comparison"
+      ],
+      "category": "typescript",
+      "tool": "/curl-to-code",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-10",
+      "difficulty": "intermediate",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "node-js-project-structure",
+        "handle-file-uploads-nodejs",
+        "rest-api-typescript-express-guide",
+        "type-express-request-response-typescript"
+      ]
+    },
+    {
+      "slug": "fix-cannot-find-module-typescript",
+      "title": "How to Fix 'Cannot Find Module' Error in TypeScript",
+      "description": "Step-by-step guide to fix the TypeScript 'Cannot find module' error. Covers missing @types, moduleResolution, paths config, declaration files, and more.",
+      "keyword": "typescript cannot find module",
+      "tags": [
+        "typescript",
+        "debugging",
+        "modules",
+        "tsconfig",
+        "node"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-11",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "fix-module-not-found-cant-resolve",
+        "convert-require-to-import-typescript",
+        "fix-cannot-use-import-statement-outside-module",
+        "package-json-exports-main-module"
+      ]
+    },
+    {
+      "slug": "fix-cannot-read-headers-server-component-nextjs",
+      "title": "How to Fix 'Cannot Read Headers in Server Component' in Next.js",
+      "description": "Fix the Next.js headers() error in server components. Learn where headers and cookies work, dynamic rendering, and the layout.tsx gotcha.",
+      "keyword": "nextjs cannot read headers server component",
+      "tags": [
+        "nextjs",
+        "server-components",
+        "headers",
+        "cookies",
+        "dynamic-rendering"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-12",
+      "difficulty": "intermediate",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "nextjs-server-component-search-params",
+        "nextjs-use-server-vs-use-client",
+        "server-components-vs-remix-loaders",
+        "server-vs-client-components-nextjs"
+      ]
+    },
+    {
+      "slug": "fix-cannot-read-properties-undefined-map",
+      "title": "Fix: 'TypeError: Cannot Read Properties of Undefined (Reading Map)'",
+      "description": "Learn why you get 'cannot read properties of undefined reading map' in JavaScript and React, with 5 proven fixes including optional chaining, default values, and TypeScript.",
+      "keyword": "cannot read properties of undefined reading map",
+      "tags": [
+        "javascript",
+        "typescript",
+        "react",
+        "debugging",
+        "arrays",
+        "error-handling"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-13",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "fix-unique-key-prop-react",
+        "fix-jsx-element-no-construct-signatures",
+        "react-app-slow-debugging-checklist",
+        "react-loading-error-states-pattern"
+      ]
+    },
+    {
+      "slug": "fix-cannot-use-import-statement-outside-module",
+      "title": "Fix: 'Cannot Use Import Statement Outside a Module' in Node.js",
+      "description": "Every cause and fix for the 'Cannot use import statement outside a module' error in Node.js  package.json, file extensions, ts-node, Jest, and more.",
+      "keyword": "cannot use import statement outside a module",
+      "tags": [
+        "nodejs",
+        "javascript",
+        "typescript",
+        "es-modules",
+        "debugging"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-14",
+      "difficulty": "beginner",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "commonjs-vs-es-modules-node",
+        "debug-nodejs-beyond-console-log",
+        "fix-cannot-read-properties-undefined-map",
+        "fix-unique-key-prop-react"
+      ]
+    },
+    {
+      "slug": "fix-eresolve-dependency-tree-npm",
+      "title": "Fix: 'ERESOLVE Unable to Resolve Dependency Tree' in npm",
+      "description": "Learn how to fix the ERESOLVE unable to resolve dependency tree error in npm with practical solutions, flags, and package manager comparisons.",
+      "keyword": "eresolve unable to resolve dependency tree",
+      "tags": [
+        "npm",
+        "node.js",
+        "dependency management",
+        "troubleshooting",
+        "package managers"
+      ],
+      "category": "devops",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-15",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "build-cli-typescript-commander",
+        "bun-package-manager-instead-of-npm",
+        "changesets-versioning-changelog-setup",
+        "npm-package-dual-esm-cjs-output"
+      ]
+    },
+    {
+      "slug": "fix-hydration-mismatch-nextjs",
+      "title": "Fix: 'Hydration Failed Because the Initial UI Does Not Match' in Next.js",
+      "description": "Fix the 'hydration failed because the initial UI does not match' error in Next.js. Every cause explained with real code fixes and examples.",
+      "keyword": "hydration failed initial ui does not match nextjs",
+      "tags": [
+        "nextjs",
+        "react",
+        "hydration",
+        "debugging",
+        "ssr"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-16",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "client-only-component-nextjs-no-ssr",
+        "call-api-page-load-react-2026",
+        "dark-mode-nextjs-tailwind-next-themes",
+        "fix-cannot-read-properties-undefined-map"
+      ]
+    },
+    {
+      "slug": "fix-jsx-element-no-construct-signatures",
+      "title": "Fix: 'JSX Element Type Does Not Have Any Construct or Call Signatures'",
+      "description": "Learn how to fix the TypeScript error 'JSX element type does not have any construct or call signatures' with four common causes and working code fixes.",
+      "keyword": "jsx element type does not have any construct or call signatures",
+      "tags": [
+        "typescript",
+        "react",
+        "jsx",
+        "debugging",
+        "components"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-17",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "client-only-component-nextjs-no-ssr",
+        "fix-cannot-read-properties-undefined-map",
+        "fix-unique-key-prop-react",
+        "generic-react-component-typescript"
+      ]
+    },
+    {
+      "slug": "fix-module-not-found-cant-resolve",
+      "title": "Fix: 'Module Not Found: Can't Resolve' in Next.js / Webpack",
+      "description": "Fix the 'Module not found: Can't resolve' error in Next.js and Webpack. Covers wrong paths, missing packages, case sensitivity, tsconfig aliases, and more.",
+      "keyword": "module not found can't resolve nextjs",
+      "tags": [
+        "nextjs",
+        "webpack",
+        "debugging",
+        "typescript",
+        "modules",
+        "imports"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-18",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "absolute-imports-nextjs-tsconfig",
+        "fix-cannot-find-module-typescript",
+        "call-api-page-load-react-2026",
+        "client-only-component-nextjs-no-ssr"
+      ]
+    },
+    {
+      "slug": "fix-unique-key-prop-react",
+      "title": "Fix: 'Each Child in a List Should Have a Unique Key Prop' in React",
+      "description": "Fix the 'each child in list should have unique key prop' React warning. Learn why keys matter, when index is dangerous, and how to pick the right key strategy.",
+      "keyword": "each child in list should have unique key prop",
+      "tags": [
+        "react",
+        "javascript",
+        "typescript",
+        "debugging",
+        "performance"
+      ],
+      "category": "react",
+      "tool": "/html-to-jsx",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-19",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "fix-cannot-read-properties-undefined-map",
+        "react-app-slow-debugging-checklist",
+        "debounce-input-react-typescript-hook",
+        "fix-jsx-element-no-construct-signatures"
+      ]
+    },
+    {
+      "slug": "free-uptime-monitoring-setup",
+      "title": "How to Set Up Uptime Monitoring for Free (Better Stack, UptimeRobot, Checkly)",
+      "description": "Set up free uptime monitoring with Better Stack, UptimeRobot, and Checkly  what to monitor, alert channels, status pages, and API health checks.",
+      "keyword": "free uptime monitoring",
+      "tags": [
+        "monitoring",
+        "uptime",
+        "devops",
+        "better-stack",
+        "checkly"
+      ],
+      "category": "general",
+      "tool": "/curl-to-code",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-20",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "manage-multiple-env-files",
+        "deploy-nextjs-vps-docker",
+        "docker-compose-beginners-guide",
+        "github-actions-deploy-vercel-manual"
+      ]
+    },
+    {
+      "slug": "generic-react-component-typescript",
+      "title": "How to Create a Generic React Component in TypeScript",
+      "description": "Learn how to build generic React components in TypeScript  generic lists, selects, tables, and more. Constrain and forward generics like a pro.",
+      "keyword": "generic react component typescript",
+      "tags": [
+        "typescript",
+        "react",
+        "generics",
+        "components",
+        "patterns"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-21",
+      "difficulty": "advanced",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "type-custom-hook-return-typescript",
+        "avoid-prop-drilling-react-solutions",
+        "client-only-component-nextjs-no-ssr",
+        "fix-jsx-element-no-construct-signatures"
+      ]
+    },
+    {
+      "slug": "git-commit-message-conventions",
+      "title": "How to Write Good Git Commit Messages",
+      "description": "Learn conventional commits format (feat, fix, chore), why commit message conventions matter for changelogs and versioning, and how to set up commitlint.",
+      "keyword": "git commit message convention",
+      "tags": [
+        "git",
+        "conventional-commits",
+        "developer-tools",
+        "workflow"
+      ],
+      "category": "devops",
+      "tool": "/json-to-yaml",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-22",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "git-hooks-husky-lint-staged",
+        "git-rebase-vs-merge",
+        "editorconfig-why-every-project-needs-one",
+        "git-stash-like-a-pro"
+      ]
+    },
+    {
+      "slug": "git-hooks-husky-lint-staged",
+      "title": "How to Set Up Git Hooks with Husky and lint-staged",
+      "description": "Step-by-step guide to setting up Husky and lint-staged for pre-commit linting, pre-push testing, and commit message validation with commitlint.",
+      "keyword": "husky lint-staged setup",
+      "tags": [
+        "git",
+        "husky",
+        "lint-staged",
+        "developer-tools",
+        "workflow"
+      ],
+      "category": "devops",
+      "tool": "/json-to-yaml",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-23",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "git-commit-message-conventions",
+        "git-rebase-vs-merge",
+        "editorconfig-why-every-project-needs-one",
+        "git-stash-like-a-pro"
+      ]
+    },
+    {
+      "slug": "git-rebase-vs-merge",
+      "title": "Git Rebase vs Merge: When to Use Which",
+      "description": "Understand the difference between git rebase and merge with visual commit diagrams, interactive rebase tips, squash strategies, and team conventions.",
+      "keyword": "git rebase vs merge",
+      "tags": [
+        "git",
+        "version-control",
+        "workflow",
+        "developer-tools"
+      ],
+      "category": "devops",
+      "tool": "/json-to-yaml",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-24",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "git-commit-message-conventions",
+        "git-hooks-husky-lint-staged",
+        "git-stash-like-a-pro",
+        "undo-git-commit-every-scenario"
+      ]
+    },
+    {
+      "slug": "git-stash-like-a-pro",
+      "title": "How to Use Git Stash Like a Pro",
+      "description": "Go beyond basic git stash and pop. Learn stash with message, specific files, list, apply vs pop, stash branch, and partial stash with --patch.",
+      "keyword": "git stash advanced",
+      "tags": [
+        "git",
+        "version-control",
+        "terminal",
+        "developer-tools"
+      ],
+      "category": "devops",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-25",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "undo-git-commit-every-scenario",
+        "git-rebase-vs-merge",
+        "git-commit-message-conventions",
+        "git-hooks-husky-lint-staged"
+      ]
+    },
+    {
+      "slug": "github-actions-deploy-vercel-manual",
+      "title": "GitHub Actions: Deploy to Vercel on Push (Without Git Integration)",
+      "description": "Deploy to Vercel using GitHub Actions  preview deploys on PRs, production on main push, env secrets, and why you'd skip Vercel's built-in Git integration.",
+      "keyword": "github actions deploy vercel",
+      "tags": [
+        "github-actions",
+        "vercel",
+        "ci-cd",
+        "deployment",
+        "devops"
+      ],
+      "category": "devops",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-26",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "github-actions-first-workflow",
+        "changesets-versioning-changelog-setup",
+        "custom-domain-vercel-cloudflare-setup",
+        "deploy-nextjs-vps-docker"
+      ]
+    },
+    {
+      "slug": "github-actions-first-workflow",
+      "title": "GitHub Actions: Write Your First CI/CD Workflow (Step-by-Step)",
+      "description": "A step-by-step GitHub Actions tutorial  triggers, jobs, secrets, matrix builds, caching, and deploying to Vercel from scratch.",
+      "keyword": "github actions tutorial",
+      "tags": [
+        "github-actions",
+        "ci-cd",
+        "devops",
+        "automation",
+        "yaml"
+      ],
+      "category": "json",
+      "tool": "/yaml-to-json",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-27",
+      "difficulty": "beginner",
+      "readTime": "10 min read",
+      "relatedSlugs": [
+        "github-actions-deploy-vercel-manual",
+        "docker-compose-beginners-guide",
+        "yaml-syntax-complete-guide",
+        "changesets-versioning-changelog-setup"
+      ]
+    },
+    {
+      "slug": "gitignore-explained",
+      "title": ".gitignore Explained: What to Ignore (And What Not To)",
+      "description": "Master .gitignore syntax, common patterns for node_modules and .env, global gitignore, negation rules, and debugging with git check-ignore.",
+      "keyword": "gitignore explained",
+      "tags": [
+        "git",
+        "gitignore",
+        "devops",
+        "version-control"
+      ],
+      "category": "devops",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-28",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "git-rebase-vs-merge",
+        "git-stash-like-a-pro",
+        "undo-git-commit-every-scenario",
+        "git-commit-message-conventions"
+      ]
+    },
+    {
+      "slug": "google-oauth-nextjs-nextauth-guide",
+      "title": "How to Add Google OAuth to Next.js with NextAuth.js",
+      "description": "Set up Google OAuth in Next.js with NextAuth.js  from Google Cloud Console to protected routes. Full TypeScript code with session typing included.",
+      "keyword": "google oauth nextjs nextauth",
+      "tags": [
+        "nextjs",
+        "authentication",
+        "oauth",
+        "google",
+        "nextauth",
+        "typescript"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-29",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "nextauth-v5-auth-js-app-router-setup",
+        "absolute-imports-nextjs-tsconfig",
+        "call-api-page-load-react-2026",
+        "client-only-component-nextjs-no-ssr"
+      ]
+    },
+    {
+      "slug": "handle-api-errors-javascript",
+      "title": "How to Handle API Errors Gracefully in JavaScript",
+      "description": "Learn how to handle API errors in JavaScript with typed error responses, retry logic, and user-friendly messages. Practical patterns for fetch and React.",
+      "keyword": "handle api errors javascript",
+      "tags": [
+        "javascript",
+        "typescript",
+        "api",
+        "error-handling",
+        "fetch"
+      ],
+      "category": "typescript",
+      "tool": "/curl-to-code",
+      "author": "SnipShift Team",
+      "publishDate": "2026-04-30",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "typed-fetch-wrapper-typescript-generic",
+        "api-authentication-headers-guide",
+        "fix-cannot-read-properties-undefined-map",
+        "build-api-hono-typescript"
+      ]
+    },
+    {
+      "slug": "handle-file-uploads-nodejs",
+      "title": "How to Handle File Uploads in Node.js (Multer, Busboy, and S3)",
+      "description": "Handle file uploads in Node.js with Multer, Busboy, and S3/R2  multipart form data, size limits, type validation, streaming, and security best practices.",
+      "keyword": "file upload nodejs",
+      "tags": [
+        "nodejs",
+        "file-upload",
+        "multer",
+        "s3",
+        "express",
+        "typescript"
+      ],
+      "category": "typescript",
+      "tool": "/curl-to-code",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-01",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "express-fastify-hono-comparison",
+        "node-js-project-structure",
+        "rest-api-typescript-express-guide",
+        "type-express-request-response-typescript"
+      ]
+    },
+    {
+      "slug": "health-check-endpoint-nodejs",
+      "title": "How to Add a Health Check Endpoint to Your Node.js API",
+      "description": "Build a health check endpoint for your Node.js API  check database, Redis, external services, readiness vs liveness probes, and TypeScript implementation.",
+      "keyword": "health check endpoint nodejs",
+      "tags": [
+        "nodejs",
+        "api",
+        "health-check",
+        "typescript",
+        "kubernetes"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-02",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "type-express-request-response-typescript",
+        "send-email-nodejs-resend-typescript",
+        "build-api-hono-typescript",
+        "commonjs-vs-es-modules-node"
+      ]
+    },
+    {
+      "slug": "http-status-codes-explained",
+      "title": "What Are HTTP Status Codes? (The Ones You Actually Need)",
+      "description": "HTTP status codes explained with real-world scenarios. Covers 200, 201, 204, 301, 400, 401, 403, 404, 409, 422, 429, 500, 502, and 503 with examples.",
+      "keyword": "http status codes explained",
+      "tags": [
+        "http",
+        "api",
+        "web-development",
+        "status-codes",
+        "rest-api"
+      ],
+      "category": "general",
+      "tool": "/curl-to-code",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-03",
+      "difficulty": "beginner",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "rest-api-naming-conventions",
+        "api-authentication-headers-guide",
+        "api-rate-limiting-explained",
+        "build-api-hono-typescript"
+      ]
+    },
+    {
+      "slug": "infinite-scroll-react-without-library",
+      "title": "How to Build Infinite Scroll in React (Without a Library)",
+      "description": "Build infinite scroll in React without any library using IntersectionObserver, a sentinel element, and cursor-based pagination. Full TypeScript implementation.",
+      "keyword": "infinite scroll react without library",
+      "tags": [
+        "react",
+        "typescript",
+        "infinite scroll",
+        "intersection observer",
+        "pagination"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-04",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "add-typescript-to-react-project",
+        "avoid-prop-drilling-react-solutions",
+        "call-api-page-load-react-2026",
+        "client-only-component-nextjs-no-ssr"
+      ]
+    },
+    {
+      "slug": "javascript-destructuring-explained",
+      "title": "What Is Destructuring in JavaScript? (Objects and Arrays)",
+      "description": "Learn javascript destructuring for objects and arrays  default values, renaming, nested patterns, rest syntax, and how to type it all in TypeScript.",
+      "keyword": "javascript destructuring",
+      "tags": [
+        "javascript",
+        "typescript",
+        "fundamentals",
+        "es6"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-05",
+      "difficulty": "beginner",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "optional-chaining-nullish-coalescing",
+        "check-if-string-valid-json",
+        "commonjs-vs-es-modules-node",
+        "convert-javascript-to-typescript"
+      ]
+    },
+    {
+      "slug": "javascript-memory-leak-find-fix",
+      "title": "What Is a Memory Leak in JavaScript? (How to Find and Fix It)",
+      "description": "Learn what causes JavaScript memory leaks  detached DOM nodes, closures, timers, event listeners  and how to find and fix them with Chrome DevTools.",
+      "keyword": "javascript memory leak",
+      "tags": [
+        "javascript",
+        "debugging",
+        "memory",
+        "performance"
+      ],
+      "category": "performance",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-06",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "fix-unique-key-prop-react",
+        "react-app-slow-debugging-checklist",
+        "deep-clone-object-javascript",
+        "reduce-javascript-bundle-size"
+      ]
+    },
+    {
+      "slug": "javascript-object-vs-json",
+      "title": "JavaScript Object vs JSON: What's the Actual Difference?",
+      "description": "Understand the javascript object vs json difference  syntax rules, when to use each, JSON.parse, JSON.stringify, and the gotchas that catch every developer.",
+      "keyword": "javascript object vs json difference",
+      "tags": [
+        "javascript",
+        "json",
+        "fundamentals",
+        "web development"
+      ],
+      "category": "json",
+      "tool": "/js-object-to-json",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-07",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "check-if-string-valid-json",
+        "convert-string-to-number-javascript",
+        "javascript-destructuring-explained",
+        "optional-chaining-nullish-coalescing"
+      ]
+    },
+    {
+      "slug": "javascript-vs-typescript-benefits",
+      "title": "The Real Cost of Untyped JavaScript (And How to Fix It)",
+      "description": "JavaScript vs TypeScript benefits compared with real data: runtime errors caught, refactoring confidence, onboarding speed, and team stories from the field.",
+      "keyword": "javascript vs typescript benefits",
+      "tags": [
+        "typescript",
+        "javascript",
+        "opinion",
+        "best-practices"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-08",
+      "difficulty": "beginner",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "why-use-typescript-2026",
+        "check-if-string-valid-json",
+        "common-typescript-mistakes",
+        "commonjs-vs-es-modules-node"
+      ]
+    },
+    {
+      "slug": "jsdoc-comments-typescript-library",
+      "title": "How to Add JSDoc Comments to Your TypeScript Library (For Better IDE Support)",
+      "description": "Add JSDoc comments to your TypeScript library for better VS Code hover tooltips, IntelliSense, and developer experience. Covers @param, @example, @deprecated, and more.",
+      "keyword": "jsdoc typescript library",
+      "tags": [
+        "typescript",
+        "jsdoc",
+        "tsdoc",
+        "documentation",
+        "dx",
+        "library"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-09",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "build-api-hono-typescript",
+        "build-cli-typescript-commander",
+        "check-if-string-valid-json",
+        "common-typescript-mistakes"
+      ]
+    },
+    {
+      "slug": "jsx-to-tsx-react-typescript",
+      "title": "JSX to TSX: How to Add TypeScript to Your React Components",
+      "description": "Learn how to convert JSX to TSX with proper TypeScript types for React props, event handlers, hooks, and children. Practical examples included.",
+      "keyword": "jsx to tsx conversion",
+      "tags": [
+        "typescript",
+        "react",
+        "jsx",
+        "tsx",
+        "migration"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-10",
+      "difficulty": "intermediate",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "add-typescript-to-react-project",
+        "fix-jsx-element-no-construct-signatures",
+        "avoid-prop-drilling-react-solutions",
+        "call-api-page-load-react-2026"
+      ]
+    },
+    {
+      "slug": "kysely-vs-drizzle-comparison",
+      "title": "Kysely vs Drizzle: Comparing TypeScript SQL Query Builders",
+      "description": "Kysely vs Drizzle ORM compared  philosophy, syntax, migrations, raw SQL, and TypeScript inference. Find out which SQL query builder fits your project.",
+      "keyword": "kysely vs drizzle",
+      "tags": [
+        "typescript",
+        "sql",
+        "kysely",
+        "drizzle",
+        "orm",
+        "database"
+      ],
+      "category": "typescript",
+      "tool": "/sql-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-11",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "drizzle-orm-joins-subqueries",
+        "drizzle-orm-nextjs-postgresql-setup",
+        "connect-postgresql-nodejs",
+        "prisma-conditional-where-clause"
+      ]
+    },
+    {
+      "slug": "large-typescript-migration",
+      "title": "Migrating a 50,000-Line JavaScript Codebase to TypeScript",
+      "description": "A detailed case study of a large TypeScript migration: planning, tooling, timeline, team structure, lessons learned, and the mistakes to avoid.",
+      "keyword": "large typescript migration",
+      "tags": [
+        "typescript",
+        "migration",
+        "case-study",
+        "enterprise"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-12",
+      "difficulty": "advanced",
+      "readTime": "12 min read",
+      "relatedSlugs": [
+        "convert-javascript-to-typescript",
+        "typescript-migration-strategy",
+        "add-typescript-to-react-project",
+        "jsx-to-tsx-react-typescript"
+      ]
+    },
+    {
+      "slug": "manage-multiple-env-files",
+      "title": "How to Manage Multiple .env Files for Different Environments",
+      "description": "Learn how to manage .env.local, .env.production, and .env.test files using dotenv-flow, env-cmd, Next.js built-in support, and CI/CD.",
+      "keyword": "multiple env files different environments",
+      "tags": [
+        "env",
+        "environment-variables",
+        "devops",
+        "nodejs",
+        "configuration"
+      ],
+      "category": "general",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-13",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "yaml-syntax-complete-guide",
+        "free-uptime-monitoring-setup",
+        "absolute-imports-nextjs-tsconfig",
+        "bun-package-manager-instead-of-npm"
+      ]
+    },
+    {
+      "slug": "micro-frontends-when-to-use",
+      "title": "Micro Frontends: When They Make Sense (And When They Don't)",
+      "description": "Learn what micro frontends are, how Module Federation works, and when this architecture helps vs hurts. Honest guide for teams evaluating the approach.",
+      "keyword": "micro frontends",
+      "tags": [
+        "micro-frontends",
+        "architecture",
+        "module-federation",
+        "frontend"
+      ],
+      "category": "general",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-14",
+      "difficulty": "advanced",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "backend-for-frontend-pattern",
+        "monorepo-vs-polyrepo",
+        "node-js-project-structure",
+        "server-vs-client-components-nextjs"
+      ]
+    },
+    {
+      "slug": "monorepo-vs-polyrepo",
+      "title": "Monorepo vs Polyrepo: Which Repository Strategy Is Right for Your Team?",
+      "description": "Compare monorepo vs polyrepo strategies: pros, cons, team size considerations, tooling like Turborepo and Nx, and when each approach breaks down.",
+      "keyword": "monorepo vs polyrepo",
+      "tags": [
+        "monorepo",
+        "polyrepo",
+        "turborepo",
+        "nx",
+        "devops",
+        "architecture"
+      ],
+      "category": "devops",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-15",
+      "difficulty": "intermediate",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "turborepo-vs-nx-2026",
+        "github-actions-deploy-vercel-manual",
+        "gitignore-explained",
+        "backend-for-frontend-pattern"
+      ]
+    },
+    {
+      "slug": "multiple-async-operations-typescript",
+      "title": "How to Handle Multiple Async Operations in TypeScript (Patterns)",
+      "description": "Master sequential, parallel, and rate-limited async patterns in TypeScript. Covers Promise.all, for...of await, p-limit, retry wrappers, and typed error results.",
+      "keyword": "multiple async operations typescript patterns",
+      "tags": [
+        "typescript",
+        "async",
+        "promises",
+        "error handling",
+        "concurrency"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-16",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "promise-all-allsettled-race",
+        "build-api-hono-typescript",
+        "build-cli-typescript-commander",
+        "check-if-string-valid-json"
+      ]
+    },
+    {
+      "slug": "nextauth-v5-auth-js-app-router-setup",
+      "title": "How to Set Up NextAuth v5 (Auth.js) with Next.js App Router",
+      "description": "Step-by-step guide to setting up NextAuth v5 (Auth.js) with Next.js App Router. Covers auth config, middleware, sessions in server and client components.",
+      "keyword": "nextauth v5 app router setup",
+      "tags": [
+        "nextjs",
+        "react",
+        "nextauth",
+        "authentication",
+        "auth-js",
+        "typescript"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-17",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "google-oauth-nextjs-nextauth-guide",
+        "call-api-page-load-react-2026",
+        "client-only-component-nextjs-no-ssr",
+        "type-nextjs-api-routes-typescript"
+      ]
+    },
+    {
+      "slug": "nextjs-app-router-redirect-every-method",
+      "title": "How to Redirect in Next.js App Router (Every Method Explained)",
+      "description": "Learn every way to redirect in Next.js App Router: server components, server actions, middleware, route handlers, and client-side. Know when to use which.",
+      "keyword": "nextjs app router redirect",
+      "tags": [
+        "nextjs",
+        "react",
+        "redirect",
+        "middleware",
+        "routing"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-18",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "nextjs-middleware-capabilities-limitations",
+        "call-api-page-load-react-2026",
+        "client-only-component-nextjs-no-ssr",
+        "dark-mode-nextjs-tailwind-next-themes"
+      ]
+    },
+    {
+      "slug": "nextjs-authentication-approaches",
+      "title": "How to Implement Authentication in Next.js (4 Approaches Compared)",
+      "description": "Compare 4 Next.js authentication approaches: Auth.js, Clerk, Supabase Auth, and custom JWT. Setup complexity, pricing, and when to pick each.",
+      "keyword": "nextjs authentication",
+      "tags": [
+        "nextjs",
+        "authentication",
+        "auth.js",
+        "clerk",
+        "supabase",
+        "jwt"
+      ],
+      "category": "react",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-19",
+      "difficulty": "intermediate",
+      "readTime": "12 min read",
+      "relatedSlugs": [
+        "google-oauth-nextjs-nextauth-guide",
+        "nextauth-v5-auth-js-app-router-setup",
+        "nextjs-middleware-capabilities-limitations",
+        "absolute-imports-nextjs-tsconfig"
+      ]
+    },
+    {
+      "slug": "nextjs-build-slow-speed-up",
+      "title": "Why Is My Next.js Build So Slow? (And How to Speed It Up)",
+      "description": "Diagnose and fix slow Next.js builds  from barrel file imports and unused deps to SWC, Turbopack, and image optimization tricks.",
+      "keyword": "nextjs build slow",
+      "tags": [
+        "nextjs",
+        "performance",
+        "build",
+        "javascript",
+        "react"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-20",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "fix-unique-key-prop-react",
+        "react-app-slow-debugging-checklist",
+        "call-api-page-load-react-2026",
+        "client-only-component-nextjs-no-ssr"
+      ]
+    },
+    {
+      "slug": "nextjs-middleware-capabilities-limitations",
+      "title": "Next.js Middleware: What It Can (And Can't) Do",
+      "description": "What Next.js middleware can and can't do. Edge runtime limitations, auth patterns, redirects, rewrites, A/B testing, geo-routing, and rate limiting explained.",
+      "keyword": "nextjs middleware what it can do",
+      "tags": [
+        "nextjs",
+        "middleware",
+        "edge",
+        "authentication",
+        "routing"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-21",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "nextjs-app-router-redirect-every-method",
+        "google-oauth-nextjs-nextauth-guide",
+        "nextauth-v5-auth-js-app-router-setup",
+        "nextjs-authentication-approaches"
+      ]
+    },
+    {
+      "slug": "nextjs-server-actions-form-validation",
+      "title": "How to Handle Form Submissions in Next.js Server Actions (With Validation)",
+      "description": "Complete guide to Next.js Server Actions form handling with Zod validation, useActionState for errors, useFormStatus for pending states, and revalidation.",
+      "keyword": "nextjs server actions form validation",
+      "tags": [
+        "nextjs",
+        "react",
+        "server-actions",
+        "forms",
+        "zod",
+        "validation"
+      ],
+      "category": "react",
+      "tool": "/json-to-zod",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-22",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "react-forms-typescript-guide",
+        "nextjs-use-server-vs-use-client",
+        "type-nextjs-api-routes-typescript",
+        "call-api-page-load-react-2026"
+      ]
+    },
+    {
+      "slug": "nextjs-server-component-search-params",
+      "title": "How to Use URL Search Params in Next.js Server Components",
+      "description": "Learn how to access URL search params in Next.js server components using the searchParams prop, with TypeScript typing and dynamic rendering tips.",
+      "keyword": "nextjs server component search params",
+      "tags": [
+        "nextjs",
+        "react",
+        "server-components",
+        "search-params",
+        "url-state"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-23",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "nextjs-use-server-vs-use-client",
+        "server-components-vs-remix-loaders",
+        "server-vs-client-components-nextjs",
+        "share-state-server-client-components-nextjs"
+      ]
+    },
+    {
+      "slug": "nextjs-use-server-vs-use-client",
+      "title": "Next.js 'use server' vs 'use client': When to Use Each Directive",
+      "description": "Understand the difference between 'use server' and 'use client' directives in Next.js. Clear up misconceptions about server components and Server Actions.",
+      "keyword": "nextjs use server vs use client",
+      "tags": [
+        "nextjs",
+        "react",
+        "server-components",
+        "server-actions",
+        "directives"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-24",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "nextjs-server-actions-form-validation",
+        "nextjs-server-component-search-params",
+        "server-components-vs-remix-loaders",
+        "server-vs-client-components-nextjs"
+      ]
+    },
+    {
+      "slug": "node-js-project-structure",
+      "title": "How to Structure a Node.js Project (The Way That Scales)",
+      "description": "Learn how to structure a Node.js project that scales  flat vs nested, feature-based vs layer-based, with real folder tree examples for Express and Fastify.",
+      "keyword": "node js project structure",
+      "tags": [
+        "nodejs",
+        "project-structure",
+        "express",
+        "fastify",
+        "typescript",
+        "architecture"
+      ],
+      "category": "typescript",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-25",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "express-fastify-hono-comparison",
+        "handle-file-uploads-nodejs",
+        "rest-api-typescript-express-guide",
+        "type-express-request-response-typescript"
+      ]
+    },
+    {
+      "slug": "npm-package-dual-esm-cjs-output",
+      "title": "How to Set Up Dual ESM and CJS Output for Your npm Package",
+      "description": "Set up dual ESM and CJS output for your npm package using tsup. Covers package.json exports, .d.ts and .d.cts declarations, testing, and common pitfalls.",
+      "keyword": "npm package esm cjs dual output",
+      "tags": [
+        "npm",
+        "esm",
+        "cjs",
+        "typescript",
+        "tsup",
+        "package"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-26",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "package-json-exports-main-module",
+        "publish-typescript-npm-package-2026",
+        "build-cli-typescript-commander",
+        "test-npm-package-locally-before-publish"
+      ]
+    },
+    {
+      "slug": "object-possibly-undefined-fix",
+      "title": "TypeScript 'Object Is Possibly Undefined'  How to Fix It (4 Ways)",
+      "description": "Fix the 'object is possibly undefined' error in TypeScript with optional chaining, type guards, non-null assertion, and default values. Four approaches compared.",
+      "keyword": "object is possibly undefined typescript",
+      "tags": [
+        "typescript",
+        "undefined",
+        "type safety",
+        "optional chaining",
+        "type guards"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-27",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "type-not-assignable-typescript",
+        "type-safe-event-emitter-typescript",
+        "type-safe-object-keys-typescript",
+        "typescript-discriminated-unions-pattern"
+      ]
+    },
+    {
+      "slug": "optimistic-updates-react-query-typescript",
+      "title": "How to Implement Optimistic Updates with React Query and TypeScript",
+      "description": "Implement optimistic updates in React Query with TypeScript. Covers onMutate, rollback in onError, queryClient.setQueryData, and real examples with typed generics.",
+      "keyword": "optimistic updates react query typescript",
+      "tags": [
+        "react query",
+        "typescript",
+        "optimistic updates",
+        "tanstack query",
+        "mutations"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-28",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "absolute-imports-nextjs-tsconfig",
+        "add-typescript-to-react-project",
+        "avoid-prop-drilling-react-solutions",
+        "call-api-page-load-react-2026"
+      ]
+    },
+    {
+      "slug": "optional-chaining-nullish-coalescing",
+      "title": "JavaScript Optional Chaining (?.) and Nullish Coalescing (??) Explained",
+      "description": "Learn javascript optional chaining and nullish coalescing  how ?. and ?? work, when to use them over ||, and real examples with API responses and TypeScript.",
+      "keyword": "javascript optional chaining nullish coalescing",
+      "tags": [
+        "javascript",
+        "typescript",
+        "es2020",
+        "fundamentals"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-29",
+      "difficulty": "beginner",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "javascript-destructuring-explained",
+        "check-if-string-valid-json",
+        "commonjs-vs-es-modules-node",
+        "convert-javascript-to-typescript"
+      ]
+    },
+    {
+      "slug": "package-json-exports-field",
+      "title": "What Is the package.json 'exports' Field? (Node.js Module Resolution)",
+      "description": "Learn what the package.json exports field does  conditional exports, subpath exports, import vs require, and how TypeScript resolves types through it.",
+      "keyword": "package json exports field",
+      "tags": [
+        "nodejs",
+        "package-json",
+        "modules",
+        "exports",
+        "npm"
+      ],
+      "category": "json",
+      "tool": "/json-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-30",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "bun-package-manager-instead-of-npm",
+        "package-json-exports-main-module",
+        "build-cli-typescript-commander",
+        "bun-vs-node-production-2026"
+      ]
+    },
+    {
+      "slug": "package-json-exports-main-module",
+      "title": "package.json 'exports' vs 'main' vs 'module': Which Fields Do You Need?",
+      "description": "Understand the difference between package.json exports, main, and module fields. Learn conditional exports, subpath exports, and the minimum config for 2026.",
+      "keyword": "package json exports vs main vs module",
+      "tags": [
+        "npm",
+        "package-json",
+        "esm",
+        "cjs",
+        "node",
+        "typescript"
+      ],
+      "category": "typescript",
+      "tool": "/json-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-05-31",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "npm-package-dual-esm-cjs-output",
+        "build-cli-typescript-commander",
+        "fix-cannot-find-module-typescript",
+        "publish-typescript-npm-package-2026"
+      ]
+    },
+    {
+      "slug": "persist-state-react-page-refresh",
+      "title": "How to Persist State in React Across Page Refreshes",
+      "description": "Learn how to persist state in React across page refreshes using localStorage, custom hooks, Zustand, URL params, cookies, and IndexedDB. TypeScript examples.",
+      "keyword": "persist state react page refresh",
+      "tags": [
+        "react",
+        "state-management",
+        "typescript",
+        "hooks",
+        "localStorage"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-01",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "type-react-context-typescript",
+        "type-usereducer-typescript",
+        "copy-to-clipboard-react"
+      ]
+    },
+    {
+      "slug": "pnpm-workspaces-typescript-monorepo",
+      "title": "How to Set Up Monorepo with pnpm Workspaces and TypeScript",
+      "description": "Set up a TypeScript monorepo with pnpm workspaces. Package structure, shared tsconfig, cross-package imports, build order, and common gotchas explained.",
+      "keyword": "pnpm workspaces typescript monorepo",
+      "tags": [
+        "pnpm",
+        "monorepo",
+        "typescript",
+        "workspaces",
+        "configuration"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-02",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "eslint-flat-config-typescript-2026",
+        "tsconfig-json-every-option-explained",
+        "typescript-strict-mode",
+        "vite-path-aliases-typescript-setup"
+      ]
+    },
+    {
+      "slug": "prisma-conditional-where-clause",
+      "title": "How to Do Conditional Where Clauses in Prisma (Dynamic Filtering)",
+      "description": "Learn how to build dynamic, conditional where clauses in Prisma using spread patterns, AND/OR/NOT composition, and optional query params.",
+      "keyword": "prisma conditional where clause",
+      "tags": [
+        "prisma",
+        "typescript",
+        "database",
+        "orm",
+        "filtering"
+      ],
+      "category": "typescript",
+      "tool": "/sql-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-03",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "connect-postgresql-nodejs",
+        "drizzle-orm-joins-subqueries",
+        "kysely-vs-drizzle-comparison",
+        "prisma-full-text-search-postgresql"
+      ]
+    },
+    {
+      "slug": "prisma-full-text-search-postgresql",
+      "title": "How to Add Full-Text Search to Prisma (PostgreSQL and MySQL)",
+      "description": "Implement full-text search in Prisma using the preview feature, raw SQL with ts_vector/ts_query for PostgreSQL, MATCH AGAINST for MySQL, and when to use dedicated search engines.",
+      "keyword": "prisma full text search",
+      "tags": [
+        "prisma",
+        "postgresql",
+        "mysql",
+        "full-text-search",
+        "typescript",
+        "database"
+      ],
+      "category": "typescript",
+      "tool": "/sql-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-04",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "connect-postgresql-nodejs",
+        "prisma-raw-sql-when-to-use",
+        "prisma-nextjs-too-many-connections-fix",
+        "prisma-conditional-where-clause"
+      ]
+    },
+    {
+      "slug": "prisma-migrations-production-guide",
+      "title": "How to Handle Prisma Migrations in Production (Without Breaking Things)",
+      "description": "A practical guide to Prisma migrations in production: CI/CD setup, failed migration recovery, shadow databases, team workflows, and db push vs migrate.",
+      "keyword": "prisma migrations production",
+      "tags": [
+        "prisma",
+        "database",
+        "migrations",
+        "production",
+        "ci-cd",
+        "devops"
+      ],
+      "category": "schema",
+      "tool": "/sql-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-05",
+      "difficulty": "advanced",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "connect-postgresql-nodejs",
+        "github-actions-deploy-vercel-manual",
+        "github-actions-first-workflow",
+        "prisma-conditional-where-clause"
+      ]
+    },
+    {
+      "slug": "prisma-nextjs-too-many-connections-fix",
+      "title": "How to Use Prisma with Next.js Without 'Too Many Connections' Error",
+      "description": "Fix the Prisma 'too many connections' error in Next.js with the globalThis singleton pattern, connection pooling, and PgBouncer setup.",
+      "keyword": "prisma nextjs too many connections",
+      "tags": [
+        "prisma",
+        "nextjs",
+        "database",
+        "typescript",
+        "postgresql"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-06",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "drizzle-orm-nextjs-postgresql-setup",
+        "connect-postgresql-nodejs",
+        "prisma-full-text-search-postgresql",
+        "prisma-raw-sql-when-to-use"
+      ]
+    },
+    {
+      "slug": "prisma-raw-sql-when-to-use",
+      "title": "Prisma vs Raw SQL: When to Drop Down to $queryRaw",
+      "description": "Learn when Prisma's query builder falls short and how to safely use $queryRaw, Prisma.sql, and $executeRaw for window functions, CTEs, and more.",
+      "keyword": "prisma raw sql queryraw",
+      "tags": [
+        "prisma",
+        "sql",
+        "typescript",
+        "database",
+        "postgresql"
+      ],
+      "category": "typescript",
+      "tool": "/sql-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-07",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "connect-postgresql-nodejs",
+        "prisma-full-text-search-postgresql",
+        "prisma-nextjs-too-many-connections-fix",
+        "drizzle-orm-joins-subqueries"
+      ]
+    },
+    {
+      "slug": "prisma-seed-database-typescript",
+      "title": "How to Seed a Database with Prisma (Typed, Repeatable, Fast)",
+      "description": "Set up Prisma database seeding with TypeScript: createMany, upsert, faker.js, idempotent seeds, and referencing related records.",
+      "keyword": "prisma seed database typescript",
+      "tags": [
+        "prisma",
+        "typescript",
+        "database",
+        "seeding",
+        "testing"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-08",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "connect-postgresql-nodejs",
+        "prisma-conditional-where-clause",
+        "prisma-full-text-search-postgresql",
+        "prisma-raw-sql-when-to-use"
+      ]
+    },
+    {
+      "slug": "promise-all-allsettled-race",
+      "title": "Promise.all vs Promise.allSettled vs Promise.race: When to Use Which",
+      "description": "Learn the key differences between Promise.all, allSettled, race, and any. Real-world examples for parallel API calls, error handling, and more.",
+      "keyword": "promise all vs allsettled vs race",
+      "tags": [
+        "javascript",
+        "typescript",
+        "promises",
+        "async",
+        "concurrency"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-09",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "multiple-async-operations-typescript",
+        "check-if-string-valid-json",
+        "commonjs-vs-es-modules-node",
+        "convert-javascript-to-typescript"
+      ]
+    },
+    {
+      "slug": "property-does-not-exist-on-type-fix",
+      "title": "How to Fix 'Property Does Not Exist on Type' in TypeScript",
+      "description": "Fix the 'property does not exist on type' error in TypeScript. Learn 5 causes  missing properties, wrong assertions, union types, index signatures, and extending types.",
+      "keyword": "property does not exist on type typescript",
+      "tags": [
+        "typescript",
+        "type errors",
+        "interfaces",
+        "union types",
+        "debugging"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-10",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "type-not-assignable-typescript",
+        "fix-cannot-find-module-typescript",
+        "fix-cannot-use-import-statement-outside-module",
+        "typescript-enums-guide"
+      ]
+    },
+    {
+      "slug": "publish-typescript-npm-package-2026",
+      "title": "How to Build and Publish a TypeScript npm Package in 2026 (tsup + Changesets)",
+      "description": "Learn how to publish a TypeScript npm package with tsup, dual ESM/CJS output, changesets for versioning, and GitHub Actions automation. The complete 2026 workflow.",
+      "keyword": "publish typescript npm package",
+      "tags": [
+        "typescript",
+        "npm",
+        "package",
+        "tsup",
+        "changesets",
+        "github-actions"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-11",
+      "difficulty": "intermediate",
+      "readTime": "12 min read",
+      "relatedSlugs": [
+        "npm-package-dual-esm-cjs-output",
+        "build-cli-typescript-commander",
+        "changesets-versioning-changelog-setup",
+        "package-json-exports-main-module"
+      ]
+    },
+    {
+      "slug": "react-app-slow-debugging-checklist",
+      "title": "Why Is My React App So Slow? (A Debugging Checklist)",
+      "description": "A practical debugging checklist for slow React apps  covering profiling, re-renders, bundle size, state management, and quick wins that actually work.",
+      "keyword": "react app slow performance",
+      "tags": [
+        "react",
+        "performance",
+        "debugging",
+        "javascript"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-12",
+      "difficulty": "intermediate",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "fix-unique-key-prop-react",
+        "fix-cannot-read-properties-undefined-map",
+        "nextjs-build-slow-speed-up",
+        "javascript-memory-leak-find-fix"
+      ]
+    },
+    {
+      "slug": "react-fc-vs-function-declaration",
+      "title": "React.FC vs Function Declaration: Which Should You Use?",
+      "description": "React.FC vs function declaration in TypeScript  the children typing issue, return type differences, and what the community actually uses in 2026.",
+      "keyword": "react fc vs function typescript",
+      "tags": [
+        "typescript",
+        "react",
+        "components",
+        "best-practices"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-13",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "client-only-component-nextjs-no-ssr",
+        "fix-jsx-element-no-construct-signatures",
+        "generic-react-component-typescript",
+        "add-typescript-to-react-project"
+      ]
+    },
+    {
+      "slug": "react-forms-typescript-guide",
+      "title": "How to Handle Forms in React with TypeScript",
+      "description": "The complete guide to React forms with TypeScript  controlled inputs, event types, file uploads, validation, and React Hook Form with Zod integration.",
+      "keyword": "react forms typescript",
+      "tags": [
+        "typescript",
+        "react",
+        "forms",
+        "validation",
+        "zod",
+        "react-hook-form"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-14",
+      "difficulty": "intermediate",
+      "readTime": "10 min read",
+      "relatedSlugs": [
+        "nextjs-server-actions-form-validation",
+        "type-nextjs-api-routes-typescript",
+        "type-safe-localstorage-typescript",
+        "zod-vs-valibot-comparison"
+      ]
+    },
+    {
+      "slug": "react-forwardref-typescript",
+      "title": "React forwardRef with TypeScript: The Complete Guide",
+      "description": "Learn how to use React forwardRef with TypeScript  generic forwardRef, typing refs, useImperativeHandle, and the tricky generic component pattern.",
+      "keyword": "react forwardref typescript",
+      "tags": [
+        "typescript",
+        "react",
+        "forwardref",
+        "refs",
+        "hooks"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-15",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "copy-to-clipboard-react",
+        "debounce-input-react-typescript-hook",
+        "detect-click-outside-react-hook"
+      ]
+    },
+    {
+      "slug": "react-global-state-without-redux",
+      "title": "How to Manage Global State in React Without Redux (2026)",
+      "description": "Learn how to manage React global state without Redux using Context, Zustand, Jotai, and Signals. Comparison table and real code examples included.",
+      "keyword": "react global state without redux",
+      "tags": [
+        "react",
+        "state-management",
+        "zustand",
+        "jotai",
+        "typescript"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-16",
+      "difficulty": "intermediate",
+      "readTime": "10 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "persist-state-react-page-refresh",
+        "type-react-context-typescript",
+        "type-usereducer-typescript"
+      ]
+    },
+    {
+      "slug": "react-loading-error-states-pattern",
+      "title": "How to Handle Loading and Error States in React (Without Spaghetti Code)",
+      "description": "Learn clean patterns for React loading and error states: status enums, discriminated unions, Suspense, error boundaries, and React Query integration.",
+      "keyword": "react loading error states pattern",
+      "tags": [
+        "react",
+        "typescript",
+        "error-handling",
+        "suspense",
+        "patterns"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-17",
+      "difficulty": "intermediate",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "fix-cannot-read-properties-undefined-map",
+        "generic-react-component-typescript",
+        "type-custom-hook-return-typescript"
+      ]
+    },
+    {
+      "slug": "react-typescript-event-handlers",
+      "title": "How to Type React Event Handlers in TypeScript",
+      "description": "Quick reference for react typescript event handler types: onClick, onChange, onSubmit, onKeyDown, and more  with exact types and working examples.",
+      "keyword": "react typescript event handler types",
+      "tags": [
+        "typescript",
+        "react",
+        "events",
+        "quick-reference"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-18",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "typescript-react-hooks-types",
+        "add-typescript-to-react-project",
+        "avoid-prop-drilling-react-solutions",
+        "call-api-page-load-react-2026"
+      ]
+    },
+    {
+      "slug": "react-useeffect-cleanup-explained",
+      "title": "React useEffect Cleanup: Why It Matters and How to Do It Right",
+      "description": "Learn why React useEffect cleanup matters and how to do it right. AbortController, intervals, event listeners, WebSocket, and the strict mode trap explained.",
+      "keyword": "react useeffect cleanup",
+      "tags": [
+        "react",
+        "hooks",
+        "typescript",
+        "debugging",
+        "memory-leaks"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-19",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "copy-to-clipboard-react",
+        "debounce-input-react-typescript-hook",
+        "detect-click-outside-react-hook"
+      ]
+    },
+    {
+      "slug": "reduce-javascript-bundle-size",
+      "title": "How to Reduce JavaScript Bundle Size (Practical Guide)",
+      "description": "Practical techniques to reduce your JavaScript bundle size  tree shaking, code splitting, dynamic imports, and replacing heavy libraries.",
+      "keyword": "reduce javascript bundle size",
+      "tags": [
+        "javascript",
+        "performance",
+        "webpack",
+        "bundling"
+      ],
+      "category": "performance",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-20",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "deep-clone-object-javascript",
+        "javascript-memory-leak-find-fix",
+        "remove-duplicates-array-javascript",
+        "bun-vs-node-production-2026"
+      ]
+    },
+    {
+      "slug": "remove-duplicates-array-javascript",
+      "title": "How to Remove Duplicates from an Array in JavaScript",
+      "description": "Learn 5 ways to remove duplicates from an array in JavaScript  Set, filter, reduce, and more  with performance benchmarks and real code examples.",
+      "keyword": "remove duplicates array javascript",
+      "tags": [
+        "javascript",
+        "arrays",
+        "fundamentals",
+        "performance"
+      ],
+      "category": "performance",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-21",
+      "difficulty": "beginner",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "deep-clone-object-javascript",
+        "javascript-memory-leak-find-fix",
+        "reduce-javascript-bundle-size",
+        "bun-vs-node-production-2026"
+      ]
+    },
+    {
+      "slug": "responsive-css-without-media-queries",
+      "title": "Responsive CSS Without Media Queries",
+      "description": "Build responsive layouts without media queries using clamp(), min(), max(), auto-fit grid, fluid typography, and container queries. Modern CSS is powerful.",
+      "keyword": "responsive css without media queries",
+      "tags": [
+        "css",
+        "responsive design",
+        "clamp",
+        "fluid typography",
+        "css grid"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-22",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "css-grid-vs-flexbox-when-to-use",
+        "center-div-css-every-method",
+        "css-container-queries-guide",
+        "css-grid-equal-height-items"
+      ]
+    },
+    {
+      "slug": "rest-api-naming-conventions",
+      "title": "REST API Naming Conventions: A Practical Guide",
+      "description": "Learn REST API naming conventions that actually matter  plural nouns, nested resources, versioning, and query params. With real examples and common mistakes.",
+      "keyword": "rest api naming conventions",
+      "tags": [
+        "rest-api",
+        "api-design",
+        "backend",
+        "naming-conventions"
+      ],
+      "category": "general",
+      "tool": "/openapi-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-23",
+      "difficulty": "beginner",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "rest-api-pagination-strategies",
+        "rest-api-typescript-express-guide",
+        "http-status-codes-explained",
+        "api-rate-limiting-explained"
+      ]
+    },
+    {
+      "slug": "rest-api-pagination-strategies",
+      "title": "How to Implement Pagination in a REST API (3 Strategies)",
+      "description": "Learn 3 REST API pagination strategies  offset/limit, cursor-based, and keyset. With SQL examples, TypeScript types, and a pros/cons comparison.",
+      "keyword": "rest api pagination",
+      "tags": [
+        "rest-api",
+        "pagination",
+        "sql",
+        "typescript",
+        "backend"
+      ],
+      "category": "typescript",
+      "tool": "/openapi-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-24",
+      "difficulty": "intermediate",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "rest-api-typescript-express-guide",
+        "drizzle-orm-joins-subqueries",
+        "kysely-vs-drizzle-comparison",
+        "prisma-raw-sql-when-to-use"
+      ]
+    },
+    {
+      "slug": "rest-api-typescript-express-guide",
+      "title": "How to Build a REST API with TypeScript and Express (2026 Guide)",
+      "description": "Build a REST API with TypeScript and Express  project setup, typed routes, Zod validation, error handling, Vitest testing, and deployment. Full working code.",
+      "keyword": "rest api typescript express",
+      "tags": [
+        "typescript",
+        "express",
+        "rest-api",
+        "nodejs",
+        "zod",
+        "vitest",
+        "backend"
+      ],
+      "category": "typescript",
+      "tool": "/json-to-zod",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-25",
+      "difficulty": "intermediate",
+      "readTime": "12 min read",
+      "relatedSlugs": [
+        "what-is-middleware-explained",
+        "express-fastify-hono-comparison",
+        "handle-file-uploads-nodejs",
+        "node-js-project-structure"
+      ]
+    },
+    {
+      "slug": "run-typescript-directly-tsx",
+      "title": "How to Run TypeScript Directly with tsx (No Build Step)",
+      "description": "Run TypeScript files directly with tsx  no compilation, no tsconfig headaches. Covers tsx vs ts-node, watch mode, and Bun as an alternative.",
+      "keyword": "run typescript directly tsx",
+      "tags": [
+        "typescript",
+        "tsx",
+        "bun",
+        "nodejs",
+        "ts-node"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-26",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "websocket-server-typescript-guide",
+        "jsx-to-tsx-react-typescript",
+        "send-email-nodejs-resend-typescript",
+        "build-api-hono-typescript"
+      ]
+    },
+    {
+      "slug": "self-host-nextjs-docker-coolify",
+      "title": "How to Self-Host a Next.js App with Docker and Coolify",
+      "description": "Self-host your Next.js app using Docker and Coolify on a VPS  Dockerfile setup, environment variables, auto-deploy from GitHub, SSL, and Postgres.",
+      "keyword": "self host nextjs docker coolify",
+      "tags": [
+        "nextjs",
+        "docker",
+        "coolify",
+        "self-hosting",
+        "vps"
+      ],
+      "category": "react",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-27",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "deploy-nextjs-vps-docker",
+        "absolute-imports-nextjs-tsconfig",
+        "backend-for-frontend-pattern",
+        "call-api-page-load-react-2026"
+      ]
+    },
+    {
+      "slug": "send-email-nodejs-resend-typescript",
+      "title": "How to Send Emails from Node.js with Resend",
+      "description": "Send emails from Node.js using Resend with TypeScript  API setup, React Email templates, error handling, and domain verification. Full working examples.",
+      "keyword": "send email nodejs resend",
+      "tags": [
+        "nodejs",
+        "email",
+        "resend",
+        "typescript",
+        "react-email",
+        "api"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-28",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "health-check-endpoint-nodejs",
+        "type-express-request-response-typescript",
+        "call-api-page-load-react-2026",
+        "run-typescript-directly-tsx"
+      ]
+    },
+    {
+      "slug": "server-components-vs-remix-loaders",
+      "title": "React Server Components vs Remix Loaders: Two Approaches to Server Data",
+      "description": "Compare React Server Components and Remix loaders for server-side data fetching  mental models, streaming, progressive enhancement, and code examples.",
+      "keyword": "react server components vs remix loaders",
+      "tags": [
+        "react",
+        "nextjs",
+        "remix",
+        "server-components",
+        "data-fetching"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-29",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "call-api-page-load-react-2026",
+        "nextjs-server-component-search-params",
+        "nextjs-use-server-vs-use-client",
+        "server-vs-client-components-nextjs"
+      ]
+    },
+    {
+      "slug": "server-vs-client-components-nextjs",
+      "title": "Server Components vs Client Components in Next.js: A Mental Model",
+      "description": "Understand the difference between server components and client components in Next.js. Learn when to use each, common mistakes, and composition patterns.",
+      "keyword": "server components vs client components nextjs",
+      "tags": [
+        "nextjs",
+        "react",
+        "server-components",
+        "architecture"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-06-30",
+      "difficulty": "intermediate",
+      "readTime": "10 min read",
+      "relatedSlugs": [
+        "nextjs-server-component-search-params",
+        "nextjs-use-server-vs-use-client",
+        "server-components-vs-remix-loaders",
+        "share-state-server-client-components-nextjs"
+      ]
+    },
+    {
+      "slug": "share-state-server-client-components-nextjs",
+      "title": "How to Share State Between Server and Client Components in Next.js",
+      "description": "Learn 5 patterns to share state between server and client components in Next.js App Router: props, cookies, URL state, context, and composition.",
+      "keyword": "share state server client component nextjs",
+      "tags": [
+        "nextjs",
+        "react",
+        "server-components",
+        "state-management",
+        "composition"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-01",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "nextjs-server-component-search-params",
+        "nextjs-use-server-vs-use-client",
+        "server-components-vs-remix-loaders",
+        "server-vs-client-components-nextjs"
+      ]
+    },
+    {
+      "slug": "sort-array-objects-by-property",
+      "title": "How to Sort an Array of Objects by Property in JavaScript",
+      "description": "Learn how to sort an array of objects by property in JavaScript using .sort() with custom comparators. Covers strings, numbers, dates, multiple keys, and TypeScript.",
+      "keyword": "sort array of objects javascript",
+      "tags": [
+        "javascript",
+        "arrays",
+        "sorting",
+        "typescript",
+        "tutorial"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-02",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "convert-javascript-to-typescript",
+        "typescript-enum-to-array",
+        "fix-cannot-read-properties-undefined-map",
+        "check-if-string-valid-json"
+      ]
+    },
+    {
+      "slug": "start-testing-javascript-beginner",
+      "title": "How to Start Testing in JavaScript (If You've Never Written a Test Before)",
+      "description": "Learn how to start testing JavaScript from scratch. Set up Vitest, write your first unit and integration test, and understand what's actually worth testing.",
+      "keyword": "start testing javascript beginner",
+      "tags": [
+        "javascript",
+        "testing",
+        "vitest",
+        "beginner",
+        "tutorial"
+      ],
+      "category": "testing",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-03",
+      "difficulty": "beginner",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "vitest-vs-jest-2026",
+        "testing-pyramid-web-application",
+        "convert-javascript-to-typescript",
+        "sort-array-objects-by-property"
+      ]
+    },
+    {
+      "slug": "sticky-header-hide-scroll-direction",
+      "title": "Sticky Header That Hides on Scroll Down, Shows on Scroll Up",
+      "description": "Build a sticky header that hides on scroll down and shows on scroll up. React + Tailwind implementation with smooth transitions and iOS edge cases.",
+      "keyword": "sticky header hide on scroll down show on scroll up",
+      "tags": [
+        "css",
+        "react",
+        "tailwind",
+        "scroll",
+        "header",
+        "ui"
+      ],
+      "category": "react",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-04",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "animate-height-zero-to-auto-css",
+        "dark-mode-nextjs-tailwind-next-themes",
+        "style-scrollbar-css-cross-browser",
+        "css-gradient-border"
+      ]
+    },
+    {
+      "slug": "stripe-nextjs-checkout-webhooks",
+      "title": "How to Add Stripe Payments to Next.js (Checkout + Webhooks)",
+      "description": "Add Stripe payments to Next.js  checkout session creation, success/cancel pages, webhook endpoint with signature verification, and full TypeScript typing.",
+      "keyword": "stripe nextjs checkout webhooks",
+      "tags": [
+        "stripe",
+        "nextjs",
+        "payments",
+        "webhooks",
+        "typescript",
+        "checkout"
+      ],
+      "category": "react",
+      "tool": "/json-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-05",
+      "difficulty": "advanced",
+      "readTime": "11 min read",
+      "relatedSlugs": [
+        "absolute-imports-nextjs-tsconfig",
+        "call-api-page-load-react-2026",
+        "client-only-component-nextjs-no-ssr",
+        "drizzle-orm-nextjs-postgresql-setup"
+      ]
+    },
+    {
+      "slug": "style-scrollbar-css-cross-browser",
+      "title": "How to Style the Scrollbar with CSS (Cross-Browser Guide)",
+      "description": "Style scrollbar CSS across Chrome, Firefox, Safari, and Edge. Covers webkit, standard properties, thin scrollbar, and hiding scrollbar while keeping scroll.",
+      "keyword": "style scrollbar css",
+      "tags": [
+        "css",
+        "scrollbar",
+        "cross-browser",
+        "tailwind",
+        "ui"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-06",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "sticky-header-hide-scroll-direction",
+        "css-gradient-border",
+        "css-grid-equal-height-items",
+        "css-truncate-text-ellipsis-multiline"
+      ]
+    },
+    {
+      "slug": "supabase-typescript-types-guide",
+      "title": "How to Type Supabase Queries with TypeScript (Auto-Generated Types)",
+      "description": "Learn how to use Supabase's auto-generated TypeScript types for fully typed queries, selects, joins, and RPC calls. Stop guessing your database schema.",
+      "keyword": "supabase typescript types",
+      "tags": [
+        "typescript",
+        "supabase",
+        "database",
+        "postgresql",
+        "api"
+      ],
+      "category": "typescript",
+      "tool": "/sql-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-07",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "connect-postgresql-nodejs",
+        "prisma-full-text-search-postgresql",
+        "prisma-raw-sql-when-to-use",
+        "drizzle-orm-nextjs-postgresql-setup"
+      ]
+    },
+    {
+      "slug": "tailwind-class-not-working-fix",
+      "title": "Why Your Tailwind Class Isn't Working (7 Common Reasons)",
+      "description": "Your Tailwind class not working? Here are 7 real reasons  from content paths to specificity conflicts  with fixes for each one.",
+      "keyword": "tailwind class not working",
+      "tags": [
+        "tailwind",
+        "css",
+        "debugging",
+        "tailwind css",
+        "frontend"
+      ],
+      "category": "css",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-08",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "tailwind-v4-migration-from-v3",
+        "css-gradient-border",
+        "css-grid-equal-height-items",
+        "css-truncate-text-ellipsis-multiline"
+      ]
+    },
+    {
+      "slug": "tailwind-v4-migration-from-v3",
+      "title": "Tailwind CSS v4: What Changed and How to Migrate from v3",
+      "description": "Migrate from Tailwind CSS v3 to v4 step by step. CSS-first config, @theme directive, removed utilities, new color syntax, and PostCSS changes explained.",
+      "keyword": "tailwind css v4 migration",
+      "tags": [
+        "tailwind",
+        "css",
+        "migration",
+        "v4",
+        "frontend"
+      ],
+      "category": "typescript",
+      "tool": "/css-to-tailwind",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-09",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "tailwind-class-not-working-fix",
+        "animate-height-zero-to-auto-css",
+        "css-gradient-border",
+        "css-grid-equal-height-items"
+      ]
+    },
+    {
+      "slug": "test-npm-package-locally-before-publish",
+      "title": "How to Test Your npm Package Locally Before Publishing",
+      "description": "Test your npm package locally before publishing using npm link, yalc, verdaccio, and the file: protocol. Avoid broken publishes with these proven methods.",
+      "keyword": "test npm package locally before publish",
+      "tags": [
+        "npm",
+        "testing",
+        "yalc",
+        "verdaccio",
+        "package",
+        "publishing"
+      ],
+      "category": "testing",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-10",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "npm-package-dual-esm-cjs-output",
+        "publish-typescript-npm-package-2026",
+        "start-testing-javascript-beginner",
+        "testing-pyramid-web-application"
+      ]
+    },
+    {
+      "slug": "test-react-components-testing-library",
+      "title": "How to Test React Components with React Testing Library",
+      "description": "Learn how to test React components using React Testing Library. Covers setup, queries, user events, async testing, mocking hooks, and form testing with examples.",
+      "keyword": "test react components testing library",
+      "tags": [
+        "react",
+        "testing",
+        "react-testing-library",
+        "vitest",
+        "components"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-11",
+      "difficulty": "intermediate",
+      "readTime": "10 min read",
+      "relatedSlugs": [
+        "vitest-react-testing-library-typescript",
+        "client-only-component-nextjs-no-ssr",
+        "fix-jsx-element-no-construct-signatures",
+        "generic-react-component-typescript"
+      ]
+    },
+    {
+      "slug": "testing-pyramid-web-application",
+      "title": "What to Test in a Web Application (The Testing Pyramid Explained)",
+      "description": "Understand the testing pyramid and testing trophy for web apps. Learn what to test at the unit, integration, and e2e layers with practical JavaScript examples.",
+      "keyword": "testing pyramid web application",
+      "tags": [
+        "testing",
+        "javascript",
+        "testing-pyramid",
+        "best-practices",
+        "web-development"
+      ],
+      "category": "testing",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-12",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "tests-that-dont-break-on-refactor",
+        "start-testing-javascript-beginner",
+        "javascript-vs-typescript-benefits",
+        "vitest-vs-jest-2026"
+      ]
+    },
+    {
+      "slug": "tests-that-dont-break-on-refactor",
+      "title": "How to Write Tests That Don't Break Every Time You Refactor",
+      "description": "Stop rewriting tests after every refactor. Learn to test behavior over implementation, avoid snapshot traps, and write resilient tests that actually catch bugs.",
+      "keyword": "testing best practices refactoring",
+      "tags": [
+        "testing",
+        "best-practices",
+        "refactoring",
+        "javascript",
+        "react"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-13",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "testing-pyramid-web-application",
+        "fix-cannot-read-properties-undefined-map",
+        "fix-unique-key-prop-react",
+        "nextjs-build-slow-speed-up"
+      ]
+    },
+    {
+      "slug": "trpc-tutorial-type-safe-api",
+      "title": "tRPC Tutorial: Build a Type-Safe API Without Writing Types Twice",
+      "description": "Learn tRPC from scratch  set up with Next.js App Router, define procedures, validate with Zod, call from the client, and handle errors. Full tutorial.",
+      "keyword": "trpc tutorial",
+      "tags": [
+        "trpc",
+        "typescript",
+        "nextjs",
+        "type-safety",
+        "zod"
+      ],
+      "category": "react",
+      "tool": "/json-to-zod",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-14",
+      "difficulty": "intermediate",
+      "readTime": "10 min read",
+      "relatedSlugs": [
+        "trpc-vs-rest-vs-graphql-nextjs",
+        "type-nextjs-api-routes-typescript",
+        "zod-runtime-validation-api-boundaries",
+        "absolute-imports-nextjs-tsconfig"
+      ]
+    },
+    {
+      "slug": "trpc-vs-rest-vs-graphql-nextjs",
+      "title": "tRPC vs REST vs GraphQL: Which API Pattern for Your Next.js App?",
+      "description": "Compare tRPC, REST, and GraphQL for Next.js apps  type safety, setup complexity, performance, and code examples to help you pick the right API pattern.",
+      "keyword": "trpc vs rest vs graphql nextjs",
+      "tags": [
+        "trpc",
+        "rest",
+        "graphql",
+        "nextjs",
+        "api",
+        "typescript"
+      ],
+      "category": "react",
+      "tool": "/graphql-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-15",
+      "difficulty": "intermediate",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "call-api-page-load-react-2026",
+        "trpc-tutorial-type-safe-api",
+        "type-nextjs-api-routes-typescript",
+        "absolute-imports-nextjs-tsconfig"
+      ]
+    },
+    {
+      "slug": "tsconfig-json-every-option-explained",
+      "title": "The Complete tsconfig.json Reference (Every Option Explained Simply)",
+      "description": "Every tsconfig.json option explained in plain English. Strict options, module resolution, paths, output, JSX  what they do and when to enable them.",
+      "keyword": "tsconfig json options explained",
+      "tags": [
+        "typescript",
+        "tsconfig",
+        "configuration",
+        "reference"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-16",
+      "difficulty": "intermediate",
+      "readTime": "14 min read",
+      "relatedSlugs": [
+        "absolute-imports-nextjs-tsconfig",
+        "eslint-flat-config-typescript-2026",
+        "fix-cannot-find-module-typescript",
+        "pnpm-workspaces-typescript-monorepo"
+      ]
+    },
+    {
+      "slug": "tsconfig-paths-import-alias",
+      "title": "What Is the tsconfig.json 'paths' Option? (TypeScript Import Aliases)",
+      "description": "Learn how tsconfig paths and import aliases work in TypeScript  set up @ imports in Next.js, Vite, and webpack with baseUrl and path mapping.",
+      "keyword": "tsconfig paths import alias",
+      "tags": [
+        "typescript",
+        "tsconfig",
+        "import-aliases",
+        "paths",
+        "developer-experience"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-17",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "fix-cannot-find-module-typescript",
+        "tsconfig-json-every-option-explained",
+        "why-use-typescript-2026",
+        "absolute-imports-nextjs-tsconfig"
+      ]
+    },
+    {
+      "slug": "turborepo-vs-nx-2026",
+      "title": "Turborepo vs Nx: Which Monorepo Tool Should You Use in 2026?",
+      "description": "Turborepo vs Nx compared for 2026  caching, task running, plugins, learning curve, and when each monorepo tool makes sense for your team.",
+      "keyword": "turborepo vs nx",
+      "tags": [
+        "monorepo",
+        "turborepo",
+        "nx",
+        "devtools",
+        "build-tools"
+      ],
+      "category": "devops",
+      "tool": "/json-to-yaml",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-18",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "monorepo-vs-polyrepo",
+        "biome-vs-eslint-prettier-2026",
+        "debug-nodejs-beyond-console-log",
+        "pnpm-workspaces-typescript-monorepo"
+      ]
+    },
+    {
+      "slug": "type-axios-response-data-typescript",
+      "title": "How to Type Axios Response Data in TypeScript (Generic Pattern)",
+      "description": "Learn how to properly type Axios responses in TypeScript using generics, interceptors, and a reusable typed API client wrapper. Stop using 'any' on API calls.",
+      "keyword": "type axios response typescript",
+      "tags": [
+        "typescript",
+        "axios",
+        "api",
+        "generics",
+        "http-client"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-19",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "typed-fetch-wrapper-typescript-generic",
+        "build-api-hono-typescript",
+        "handle-api-errors-javascript",
+        "health-check-endpoint-nodejs"
+      ]
+    },
+    {
+      "slug": "type-custom-hook-return-typescript",
+      "title": "How to Type a Custom React Hook That Returns Multiple Values",
+      "description": "Learn how to type custom React hook returns in TypeScript  tuple vs object return, const assertions, generic hooks, and type inference patterns.",
+      "keyword": "type custom react hook return typescript",
+      "tags": [
+        "typescript",
+        "react",
+        "hooks",
+        "generics",
+        "patterns"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-20",
+      "difficulty": "beginner",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "generic-react-component-typescript",
+        "copy-to-clipboard-react",
+        "debounce-input-react-typescript-hook"
+      ]
+    },
+    {
+      "slug": "type-express-request-response-typescript",
+      "title": "How to Type Express Request and Response in TypeScript",
+      "description": "Learn how to type Express req and res in TypeScript  Request generics, extending Request for auth, typed middleware, and the RequestHandler type explained.",
+      "keyword": "type express request response typescript",
+      "tags": [
+        "typescript",
+        "express",
+        "nodejs",
+        "api",
+        "middleware"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-21",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "what-is-middleware-explained",
+        "express-fastify-hono-comparison",
+        "handle-file-uploads-nodejs",
+        "health-check-endpoint-nodejs"
+      ]
+    },
+    {
+      "slug": "type-higher-order-component-typescript",
+      "title": "How to Type a Higher-Order Component (HOC) in TypeScript",
+      "description": "Learn how to type higher-order components in TypeScript  generic HOC patterns, injected props, wrapped components, and when to use HOCs vs hooks in 2026.",
+      "keyword": "typescript higher order component",
+      "tags": [
+        "typescript",
+        "react",
+        "hoc",
+        "patterns",
+        "advanced"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-22",
+      "difficulty": "advanced",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "generic-react-component-typescript",
+        "react-loading-error-states-pattern",
+        "type-custom-hook-return-typescript"
+      ]
+    },
+    {
+      "slug": "type-mongoose-models-typescript",
+      "title": "How to Type Mongoose Models and Schemas in TypeScript",
+      "description": "Learn how to type Mongoose models, schemas, document methods, statics, virtuals, and populate queries in TypeScript. The complete guide to Mongoose + TS.",
+      "keyword": "mongoose typescript types",
+      "tags": [
+        "typescript",
+        "mongoose",
+        "mongodb",
+        "nodejs",
+        "backend"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-23",
+      "difficulty": "advanced",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "rest-api-typescript-express-guide",
+        "what-is-middleware-explained",
+        "commonjs-vs-es-modules-node",
+        "connect-postgresql-nodejs"
+      ]
+    },
+    {
+      "slug": "type-nextjs-api-routes-typescript",
+      "title": "How to Type Next.js API Routes in TypeScript (App Router + Pages Router)",
+      "description": "Learn how to type Next.js API routes in TypeScript for both App Router and Pages Router  typed bodies, params, middleware, and Zod validation patterns.",
+      "keyword": "type nextjs api routes typescript",
+      "tags": [
+        "typescript",
+        "nextjs",
+        "api",
+        "react",
+        "zod"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-24",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "call-api-page-load-react-2026",
+        "client-only-component-nextjs-no-ssr",
+        "nextauth-v5-auth-js-app-router-setup",
+        "nextjs-server-actions-form-validation"
+      ]
+    },
+    {
+      "slug": "type-not-assignable-typescript",
+      "title": "What Does 'Type X Is Not Assignable to Type Y' Mean in TypeScript?",
+      "description": "Fix the 'type is not assignable to type' error in TypeScript. Learn why it happens with structural typing, literal types, and excess properties  with 5 fixes.",
+      "keyword": "type is not assignable to type typescript",
+      "tags": [
+        "typescript",
+        "type errors",
+        "structural typing",
+        "type safety",
+        "debugging"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-25",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "property-does-not-exist-on-type-fix",
+        "fix-cannot-find-module-typescript",
+        "fix-cannot-use-import-statement-outside-module",
+        "object-possibly-undefined-fix"
+      ]
+    },
+    {
+      "slug": "type-process-env-typescript",
+      "title": "How to Type process.env in TypeScript (Without Using 'any')",
+      "description": "Learn how to type process.env in TypeScript using declare global, interface ProcessEnv, and module augmentation  no more 'any' types for env vars.",
+      "keyword": "type process env typescript",
+      "tags": [
+        "typescript",
+        "process-env",
+        "environment-variables",
+        "module-augmentation"
+      ],
+      "category": "typescript",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-26",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "build-api-hono-typescript",
+        "build-cli-typescript-commander",
+        "check-if-string-valid-json",
+        "common-typescript-mistakes"
+      ]
+    },
+    {
+      "slug": "type-react-context-typescript",
+      "title": "How to Type a React Context with TypeScript (No More 'any')",
+      "description": "Learn how to type React Context with TypeScript using generics, custom hooks, and the undefined initial value pattern. Stop using 'any' in your contexts.",
+      "keyword": "type react context typescript",
+      "tags": [
+        "typescript",
+        "react",
+        "context",
+        "hooks",
+        "state-management"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-27",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "persist-state-react-page-refresh",
+        "type-usereducer-typescript",
+        "copy-to-clipboard-react"
+      ]
+    },
+    {
+      "slug": "type-safe-event-emitter-typescript",
+      "title": "How to Create a Type-Safe Event Emitter in TypeScript",
+      "description": "Build a generic, type-safe event emitter in TypeScript with typed event maps, emit/on/off methods, and full type checking. Includes Node.js and mitt alternatives.",
+      "keyword": "type safe event emitter typescript",
+      "tags": [
+        "typescript",
+        "event emitter",
+        "generics",
+        "design patterns",
+        "type safety"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-28",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "type-safe-object-keys-typescript",
+        "typescript-keyof-explained",
+        "object-possibly-undefined-fix",
+        "type-axios-response-data-typescript"
+      ]
+    },
+    {
+      "slug": "type-safe-localstorage-typescript",
+      "title": "How to Type localStorage and sessionStorage in TypeScript (Type-Safe Wrapper)",
+      "description": "Build a type-safe localStorage wrapper in TypeScript with generics, Zod validation, and SSR safety. Stop parsing JSON into 'any' from browser storage.",
+      "keyword": "typescript localstorage type safe",
+      "tags": [
+        "typescript",
+        "localstorage",
+        "browser",
+        "zod",
+        "react"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-29",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "persist-state-react-page-refresh",
+        "react-forms-typescript-guide",
+        "type-nextjs-api-routes-typescript",
+        "add-typescript-to-react-project"
+      ]
+    },
+    {
+      "slug": "type-safe-object-keys-typescript",
+      "title": "How to Create a Type-Safe Object.keys() in TypeScript",
+      "description": "Why Object.keys() returns string[] instead of keyof T, and how to build a type-safe wrapper. Covers structural typing, Object.entries(), and Record iteration.",
+      "keyword": "typescript object keys type safe",
+      "tags": [
+        "typescript",
+        "object keys",
+        "type safety",
+        "utility types",
+        "generics"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-30",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "typescript-keyof-explained",
+        "type-safe-event-emitter-typescript",
+        "object-possibly-undefined-fix",
+        "type-axios-response-data-typescript"
+      ]
+    },
+    {
+      "slug": "type-socket-io-events-typescript",
+      "title": "How to Type Socket.io Events in TypeScript (Client and Server)",
+      "description": "Learn how to type Socket.io events in TypeScript with shared event maps, typed emit/on, namespace typing, and acknowledgment callbacks. Full client + server guide.",
+      "keyword": "socket io typescript types",
+      "tags": [
+        "typescript",
+        "socket-io",
+        "websockets",
+        "realtime",
+        "nodejs"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-07-31",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "commonjs-vs-es-modules-node",
+        "connect-postgresql-nodejs",
+        "express-fastify-hono-comparison",
+        "fix-cannot-use-import-statement-outside-module"
+      ]
+    },
+    {
+      "slug": "type-usereducer-typescript",
+      "title": "How to Type useReducer in TypeScript (With Discriminated Unions)",
+      "description": "Learn how to type useReducer in TypeScript using discriminated unions for actions, proper state typing, and async patterns. No more 'any' dispatches.",
+      "keyword": "type usereducer typescript",
+      "tags": [
+        "typescript",
+        "react",
+        "usereducer",
+        "hooks",
+        "state-management"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-01",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "persist-state-react-page-refresh",
+        "type-react-context-typescript",
+        "copy-to-clipboard-react"
+      ]
+    },
+    {
+      "slug": "type-window-document-typescript",
+      "title": "How to Type window and document in TypeScript (Global Types)",
+      "description": "Learn how to type window and document in TypeScript  extend the Window interface, add custom global properties, handle SSR guards, and configure lib in tsconfig.",
+      "keyword": "type window document typescript",
+      "tags": [
+        "typescript",
+        "window",
+        "document",
+        "global-types",
+        "ssr"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-02",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "client-only-component-nextjs-no-ssr",
+        "build-api-hono-typescript",
+        "build-cli-typescript-commander",
+        "check-if-string-valid-json"
+      ]
+    },
+    {
+      "slug": "typed-fetch-wrapper-typescript-generic",
+      "title": "How to Type a Fetch Wrapper That Works with Any API",
+      "description": "Build a reusable, fully typed fetch wrapper in TypeScript  generic responses, Zod parsing, error unions, timeouts, retries, and interceptors.",
+      "keyword": "typed fetch wrapper typescript",
+      "tags": [
+        "typescript",
+        "fetch",
+        "api",
+        "generics",
+        "type-safety"
+      ],
+      "category": "typescript",
+      "tool": "/curl-to-code",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-03",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "handle-api-errors-javascript",
+        "type-axios-response-data-typescript",
+        "zod-runtime-validation-api-boundaries",
+        "build-api-hono-typescript"
+      ]
+    },
+    {
+      "slug": "typescript-cheatsheet",
+      "title": "TypeScript Type Cheatsheet: Every Type You'll Actually Use",
+      "description": "A practical TypeScript cheatsheet with tables for primitives, utility types, generics, mapped types, template literals, and React-specific types.",
+      "keyword": "typescript cheatsheet",
+      "tags": [
+        "typescript",
+        "cheatsheet",
+        "reference",
+        "types"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-04",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "tsconfig-json-every-option-explained",
+        "typescript-interface-vs-type",
+        "what-is-typescript-declaration-file",
+        "build-api-hono-typescript"
+      ]
+    },
+    {
+      "slug": "typescript-conditional-types-practical",
+      "title": "TypeScript Conditional Types: A Practical Guide (Not the Academic One)",
+      "description": "Learn TypeScript conditional types with real use cases  unwrapping promises, extracting props, filtering unions. Practical patterns you'll actually use in production.",
+      "keyword": "typescript conditional types",
+      "tags": [
+        "typescript",
+        "conditional types",
+        "infer",
+        "advanced types",
+        "generics"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-05",
+      "difficulty": "advanced",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "type-axios-response-data-typescript",
+        "type-safe-event-emitter-typescript",
+        "type-safe-object-keys-typescript",
+        "typed-fetch-wrapper-typescript-generic"
+      ]
+    },
+    {
+      "slug": "typescript-discriminated-unions-pattern",
+      "title": "TypeScript Discriminated Unions: The Pattern That Replaces If/Else Chains",
+      "description": "Learn TypeScript discriminated unions with real examples  API responses, state machines, and form steps. Replace messy if/else chains with exhaustive pattern matching.",
+      "keyword": "typescript discriminated unions",
+      "tags": [
+        "typescript",
+        "discriminated unions",
+        "pattern matching",
+        "type safety",
+        "state machines"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-06",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "object-possibly-undefined-fix",
+        "type-not-assignable-typescript",
+        "type-safe-event-emitter-typescript",
+        "type-safe-object-keys-typescript"
+      ]
+    },
+    {
+      "slug": "typescript-dynamic-keys-object",
+      "title": "How to Type an Object with Dynamic Keys in TypeScript",
+      "description": "Learn how to type objects with dynamic keys in TypeScript using Record, index signatures, Map, and template literal types. Includes real-world API response examples.",
+      "keyword": "typescript dynamic keys object type",
+      "tags": [
+        "typescript",
+        "dynamic keys",
+        "Record",
+        "index signatures",
+        "template literal types"
+      ],
+      "category": "typescript",
+      "tool": "/json-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-07",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "typescript-template-literal-types",
+        "build-api-hono-typescript",
+        "build-cli-typescript-commander",
+        "check-if-string-valid-json"
+      ]
+    },
+    {
+      "slug": "typescript-enum-to-array",
+      "title": "How to Convert a TypeScript Enum to an Array",
+      "description": "Learn how to convert a TypeScript enum to an array using Object.keys() and Object.values(). Covers the numeric enum gotcha that trips up most developers.",
+      "keyword": "typescript enum to array",
+      "tags": [
+        "typescript",
+        "enums",
+        "arrays",
+        "javascript",
+        "tips"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-08",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "check-if-string-valid-json",
+        "sort-array-objects-by-property",
+        "fix-cannot-read-properties-undefined-map",
+        "common-typescript-mistakes"
+      ]
+    },
+    {
+      "slug": "typescript-enums-guide",
+      "title": "How to Use Enums in TypeScript (And When to Avoid Them)",
+      "description": "A complete guide to TypeScript enums  string enums, numeric enums, const enums, and when union types or as const are the better choice for your project.",
+      "keyword": "typescript enums",
+      "tags": [
+        "typescript",
+        "enums",
+        "union types",
+        "as const",
+        "best practices"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-09",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "property-does-not-exist-on-type-fix",
+        "typescript-enum-to-array",
+        "build-api-hono-typescript",
+        "build-cli-typescript-commander"
+      ]
+    },
+    {
+      "slug": "typescript-exclamation-mark-explained",
+      "title": "What Does the Exclamation Mark Do in TypeScript?",
+      "description": "Learn what the TypeScript exclamation mark (non-null assertion operator) does, when to use it safely, and better alternatives like type guards and optional chaining.",
+      "keyword": "typescript exclamation mark",
+      "tags": [
+        "typescript",
+        "type safety",
+        "non-null assertion",
+        "javascript"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-10",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "check-if-string-valid-json",
+        "commonjs-vs-es-modules-node",
+        "convert-javascript-to-typescript",
+        "convert-require-to-import-typescript"
+      ]
+    },
+    {
+      "slug": "typescript-generics-explained",
+      "title": "TypeScript Generics Explained (With Real-World Examples)",
+      "description": "TypeScript generics explained from basics to advanced: generic functions, interfaces, constraints, conditional types, and real-world patterns you'll actually use.",
+      "keyword": "typescript generics explained",
+      "tags": [
+        "typescript",
+        "generics",
+        "tutorial",
+        "advanced"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-11",
+      "difficulty": "advanced",
+      "readTime": "10 min read",
+      "relatedSlugs": [
+        "convert-javascript-to-typescript",
+        "sort-array-objects-by-property",
+        "type-axios-response-data-typescript",
+        "type-safe-event-emitter-typescript"
+      ]
+    },
+    {
+      "slug": "typescript-ignore-line-ts-ignore",
+      "title": "How to Make TypeScript Ignore a Line (// @ts-ignore vs @ts-expect-error)",
+      "description": "Learn the difference between @ts-ignore and @ts-expect-error in TypeScript, when to use each, and why you should probably avoid both.",
+      "keyword": "typescript ignore line",
+      "tags": [
+        "typescript",
+        "type-checking",
+        "eslint",
+        "tips"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-12",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "check-if-string-valid-json",
+        "common-typescript-mistakes",
+        "eslint-flat-config-typescript-2026",
+        "eslint-prettier-typescript-setup"
+      ]
+    },
+    {
+      "slug": "typescript-interface-vs-type",
+      "title": "TypeScript interface vs type: When to Use Which (With Examples)",
+      "description": "TypeScript interface vs type explained with real examples. Learn about declaration merging, extends vs intersection, performance, and when each is better.",
+      "keyword": "typescript interface vs type",
+      "tags": [
+        "typescript",
+        "interfaces",
+        "types",
+        "best-practices"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-13",
+      "difficulty": "intermediate",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "common-typescript-mistakes",
+        "javascript-vs-typescript-benefits",
+        "property-does-not-exist-on-type-fix",
+        "typescript-cheatsheet"
+      ]
+    },
+    {
+      "slug": "typescript-keyof-explained",
+      "title": "What Is 'keyof' in TypeScript and How Do You Actually Use It?",
+      "description": "Learn how TypeScript's keyof operator works with interfaces, objects, and generics. Build type-safe getters, dynamic property access, and constrained generics.",
+      "keyword": "typescript keyof",
+      "tags": [
+        "typescript",
+        "keyof",
+        "generics",
+        "type safety",
+        "utility types"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-14",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "type-safe-object-keys-typescript",
+        "type-safe-event-emitter-typescript",
+        "object-possibly-undefined-fix",
+        "type-axios-response-data-typescript"
+      ]
+    },
+    {
+      "slug": "typescript-migration-strategy",
+      "title": "TypeScript Migration: The 5-Step Strategy That Actually Works",
+      "description": "A practical 5-step typescript migration strategy: rename files, add tsconfig, fix errors incrementally, and enable strict mode last. No big bang required.",
+      "keyword": "typescript migration strategy",
+      "tags": [
+        "typescript",
+        "javascript",
+        "migration",
+        "strategy"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-15",
+      "difficulty": "intermediate",
+      "readTime": "10 min read",
+      "relatedSlugs": [
+        "convert-javascript-to-typescript",
+        "check-if-string-valid-json",
+        "commonjs-vs-es-modules-node",
+        "convert-require-to-import-typescript"
+      ]
+    },
+    {
+      "slug": "typescript-never-type-explained",
+      "title": "What Is 'never' Type in TypeScript and When Do You Use It?",
+      "description": "Understand the TypeScript never type  what it means, how it powers exhaustive checks in discriminated unions, and practical patterns for using it in real code.",
+      "keyword": "typescript never type",
+      "tags": [
+        "typescript",
+        "never type",
+        "discriminated unions",
+        "exhaustive checks",
+        "type narrowing"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-16",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "typescript-discriminated-unions-pattern",
+        "typescript-unknown-vs-any",
+        "build-api-hono-typescript",
+        "build-cli-typescript-commander"
+      ]
+    },
+    {
+      "slug": "typescript-partial-deep-partial",
+      "title": "How to Make All Properties Optional in TypeScript (Partial, DeepPartial)",
+      "description": "Learn how to make all properties optional in TypeScript using Partial<T>, build a DeepPartial type for nested objects, and know when to use each.",
+      "keyword": "typescript make all properties optional",
+      "tags": [
+        "typescript",
+        "utility-types",
+        "partial",
+        "generics",
+        "advanced-types"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-17",
+      "difficulty": "intermediate",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "type-axios-response-data-typescript",
+        "type-safe-event-emitter-typescript",
+        "type-safe-object-keys-typescript",
+        "typed-fetch-wrapper-typescript-generic"
+      ]
+    },
+    {
+      "slug": "typescript-react-hooks-types",
+      "title": "How to Type useState, useRef, and useEffect in TypeScript",
+      "description": "Quick reference for typescript react hooks types: useState generics, useRef for DOM and mutable values, useEffect patterns, and custom hook typing.",
+      "keyword": "typescript react hooks types",
+      "tags": [
+        "typescript",
+        "react",
+        "hooks",
+        "quick-reference"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-18",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "avoid-prop-drilling-react-solutions",
+        "copy-to-clipboard-react",
+        "debounce-input-react-typescript-hook",
+        "detect-click-outside-react-hook"
+      ]
+    },
+    {
+      "slug": "typescript-satisfies-operator-explained",
+      "title": "What Is the 'satisfies' Operator in TypeScript? (And Why It's a Big Deal)",
+      "description": "Learn what TypeScript's satisfies operator does, how it differs from 'as' and type annotations, and when to use it for safer, more precise typing.",
+      "keyword": "typescript satisfies operator",
+      "tags": [
+        "typescript",
+        "satisfies",
+        "type safety",
+        "typescript 4.9",
+        "type inference"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-19",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "typescript-type-assertions-as-keyword",
+        "object-possibly-undefined-fix",
+        "type-not-assignable-typescript",
+        "type-safe-event-emitter-typescript"
+      ]
+    },
+    {
+      "slug": "typescript-strict-mode",
+      "title": "TypeScript Strict Mode: What It Does and Why You Should Enable It",
+      "description": "TypeScript strict mode explained: what each strict flag does, what bugs it catches, and how to enable strictness incrementally without overwhelming your team.",
+      "keyword": "typescript strict mode",
+      "tags": [
+        "typescript",
+        "strict-mode",
+        "configuration",
+        "best-practices"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-20",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "common-typescript-mistakes",
+        "eslint-flat-config-typescript-2026",
+        "javascript-vs-typescript-benefits",
+        "pnpm-workspaces-typescript-monorepo"
+      ]
+    },
+    {
+      "slug": "typescript-template-literal-types",
+      "title": "Template Literal Types in TypeScript: Build Types from Strings",
+      "description": "Learn TypeScript template literal types  combine string unions, generate event names, type API routes, and use Uppercase/Lowercase utility types with real examples.",
+      "keyword": "typescript template literal types",
+      "tags": [
+        "typescript",
+        "template literal types",
+        "string types",
+        "advanced types",
+        "utility types"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-21",
+      "difficulty": "advanced",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "type-safe-object-keys-typescript",
+        "typescript-conditional-types-practical",
+        "typescript-dynamic-keys-object",
+        "typescript-keyof-explained"
+      ]
+    },
+    {
+      "slug": "typescript-type-assertions-as-keyword",
+      "title": "TypeScript 'as' Keyword: Type Assertions Explained",
+      "description": "Learn what TypeScript type assertions do with the 'as' keyword, when they're safe to use, the double assertion hack, and why the satisfies operator is often better.",
+      "keyword": "typescript as keyword type assertion",
+      "tags": [
+        "typescript",
+        "type assertions",
+        "as keyword",
+        "satisfies",
+        "type safety"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-22",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "typescript-satisfies-operator-explained",
+        "object-possibly-undefined-fix",
+        "type-not-assignable-typescript",
+        "type-safe-event-emitter-typescript"
+      ]
+    },
+    {
+      "slug": "typescript-unknown-vs-any",
+      "title": "What Is the Difference Between 'unknown' and 'any' in TypeScript?",
+      "description": "Understand the key difference between unknown and any in TypeScript, when to use each type, and how type narrowing makes unknown the safer choice.",
+      "keyword": "typescript unknown vs any",
+      "tags": [
+        "typescript",
+        "type safety",
+        "unknown",
+        "any",
+        "type narrowing"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-23",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "object-possibly-undefined-fix",
+        "type-not-assignable-typescript",
+        "type-safe-event-emitter-typescript",
+        "type-safe-object-keys-typescript"
+      ]
+    },
+    {
+      "slug": "undo-git-commit-every-scenario",
+      "title": "How to Undo a Git Commit (Every Scenario Covered)",
+      "description": "Learn how to undo a git commit with --amend, reset --soft, reset --hard, revert, and reflog. Covers every scenario from 'just committed' to 'lost everything'.",
+      "keyword": "undo git commit",
+      "tags": [
+        "git",
+        "version-control",
+        "terminal",
+        "developer-tools"
+      ],
+      "category": "devops",
+      "tool": "/env-to-types",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-24",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "git-stash-like-a-pro",
+        "git-rebase-vs-merge",
+        "git-commit-message-conventions",
+        "git-hooks-husky-lint-staged"
+      ]
+    },
+    {
+      "slug": "upload-files-cloudflare-r2-nodejs",
+      "title": "How to Upload Files to Cloudflare R2 from Node.js",
+      "description": "Upload files to Cloudflare R2 from Node.js using the S3-compatible API  bucket setup, presigned URLs, multipart uploads, and TypeScript types included.",
+      "keyword": "upload files cloudflare r2 nodejs",
+      "tags": [
+        "cloudflare",
+        "r2",
+        "nodejs",
+        "file upload",
+        "s3",
+        "typescript",
+        "cloud storage"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-25",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "handle-file-uploads-nodejs",
+        "commonjs-vs-es-modules-node",
+        "connect-postgresql-nodejs",
+        "express-fastify-hono-comparison"
+      ]
+    },
+    {
+      "slug": "vercel-cron-job-nextjs-setup",
+      "title": "How to Add Cron Jobs to a Next.js App on Vercel",
+      "description": "Set up Vercel cron jobs in your Next.js app  vercel.json config, API route handlers, CRON_SECRET auth, execution limits, and alternatives like QStash.",
+      "keyword": "vercel cron job nextjs",
+      "tags": [
+        "vercel",
+        "nextjs",
+        "cron-jobs",
+        "serverless",
+        "scheduling"
+      ],
+      "category": "react",
+      "tool": "/json-to-yaml",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-26",
+      "difficulty": "intermediate",
+      "readTime": "5 min read",
+      "relatedSlugs": [
+        "absolute-imports-nextjs-tsconfig",
+        "backend-for-frontend-pattern",
+        "call-api-page-load-react-2026",
+        "client-only-component-nextjs-no-ssr"
+      ]
+    },
+    {
+      "slug": "vite-path-aliases-typescript-setup",
+      "title": "How to Set Up Path Aliases in Vite with TypeScript",
+      "description": "Configure @/ path aliases in Vite with TypeScript  vite.config.ts, tsconfig.json, and the vite-tsconfig-paths plugin. Stop the ../../../ madness.",
+      "keyword": "vite path aliases typescript",
+      "tags": [
+        "vite",
+        "typescript",
+        "path aliases",
+        "developer experience",
+        "configuration"
+      ],
+      "category": "typescript",
+      "tool": "/json-to-typescript",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-27",
+      "difficulty": "beginner",
+      "readTime": "4 min read",
+      "relatedSlugs": [
+        "eslint-flat-config-typescript-2026",
+        "pnpm-workspaces-typescript-monorepo",
+        "tsconfig-json-every-option-explained",
+        "typescript-strict-mode"
+      ]
+    },
+    {
+      "slug": "vitest-react-testing-library-typescript",
+      "title": "How to Set Up Vitest with React Testing Library and TypeScript",
+      "description": "Step-by-step guide to setting up Vitest with React Testing Library and TypeScript. Config, jsdom, jest-dom matchers, globals, and your first test.",
+      "keyword": "vitest react testing library typescript setup",
+      "tags": [
+        "vitest",
+        "react",
+        "testing",
+        "typescript",
+        "testing-library"
+      ],
+      "category": "react",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-28",
+      "difficulty": "beginner",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "test-react-components-testing-library",
+        "vitest-vs-jest-2026",
+        "add-typescript-to-react-project",
+        "avoid-prop-drilling-react-solutions"
+      ]
+    },
+    {
+      "slug": "vitest-vs-jest-2026",
+      "title": "Vitest vs Jest in 2026: Which Testing Framework Should You Use?",
+      "description": "A practical comparison of Vitest and Jest in 2026. Speed benchmarks, ESM support, TypeScript setup, migration path, and which one to pick for your project.",
+      "keyword": "vitest vs jest",
+      "tags": [
+        "vitest",
+        "jest",
+        "testing",
+        "javascript",
+        "typescript"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-29",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "start-testing-javascript-beginner",
+        "vitest-react-testing-library-typescript",
+        "check-if-string-valid-json",
+        "commonjs-vs-es-modules-node"
+      ]
+    },
+    {
+      "slug": "websocket-server-typescript-guide",
+      "title": "How to Build a WebSocket Server with TypeScript",
+      "description": "Build a WebSocket server in TypeScript using Bun, Node.js (ws), or Deno. Covers typed messages, heartbeat, room patterns, and client reconnection.",
+      "keyword": "websocket server typescript",
+      "tags": [
+        "websocket",
+        "typescript",
+        "bun",
+        "nodejs",
+        "deno"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-30",
+      "difficulty": "intermediate",
+      "readTime": "8 min read",
+      "relatedSlugs": [
+        "run-typescript-directly-tsx",
+        "build-api-hono-typescript",
+        "commonjs-vs-es-modules-node",
+        "connect-postgresql-nodejs"
+      ]
+    },
+    {
+      "slug": "what-is-middleware-explained",
+      "title": "What Is Middleware? (Explained for Developers Who Nod Along but Don't Really Get It)",
+      "description": "Middleware explained simply  the onion model, Express middleware chain, real examples for auth, logging, and error handling, plus how to write your own.",
+      "keyword": "what is middleware explained",
+      "tags": [
+        "nodejs",
+        "express",
+        "middleware",
+        "typescript",
+        "backend"
+      ],
+      "category": "typescript",
+      "tool": "/curl-to-code",
+      "author": "SnipShift Team",
+      "publishDate": "2026-08-31",
+      "difficulty": "beginner",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "rest-api-typescript-express-guide",
+        "type-express-request-response-typescript",
+        "express-fastify-hono-comparison",
+        "handle-file-uploads-nodejs"
+      ]
+    },
+    {
+      "slug": "what-is-typescript-declaration-file",
+      "title": "What Is a TypeScript Declaration File (.d.ts)?",
+      "description": "Learn what TypeScript declaration files (.d.ts) are, when you need them, how to create them, and how DefinitelyTyped works. A practical guide for every skill level.",
+      "keyword": "typescript declaration file d.ts",
+      "tags": [
+        "typescript",
+        "declaration files",
+        "d.ts",
+        "DefinitelyTyped",
+        "types"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-09-01",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "typescript-cheatsheet",
+        "typescript-interface-vs-type",
+        "build-api-hono-typescript",
+        "build-cli-typescript-commander"
+      ]
+    },
+    {
+      "slug": "why-use-typescript-2026",
+      "title": "Why Every JavaScript Project Should Adopt TypeScript in 2026",
+      "description": "Why use TypeScript in 2026? Better IDE experience, fewer bugs, documentation-as-code, hiring advantages, and ecosystem maturity make the case clear.",
+      "keyword": "why use typescript",
+      "tags": [
+        "typescript",
+        "javascript",
+        "opinion",
+        "developer-experience"
+      ],
+      "category": "typescript",
+      "tool": "/js-to-ts",
+      "author": "SnipShift Team",
+      "publishDate": "2026-09-02",
+      "difficulty": "beginner",
+      "readTime": "7 min read",
+      "relatedSlugs": [
+        "javascript-vs-typescript-benefits",
+        "check-if-string-valid-json",
+        "commonjs-vs-es-modules-node",
+        "convert-javascript-to-typescript"
+      ]
+    },
+    {
+      "slug": "yaml-syntax-complete-guide",
+      "title": "YAML Syntax: The Complete Guide for Developers",
+      "description": "Master YAML syntax  scalars, sequences, mappings, multiline strings, anchors, aliases, and the gotchas that trip up every developer.",
+      "keyword": "yaml syntax guide",
+      "tags": [
+        "yaml",
+        "configuration",
+        "devops",
+        "syntax",
+        "docker"
+      ],
+      "category": "json",
+      "tool": "/json-to-yaml",
+      "author": "SnipShift Team",
+      "publishDate": "2026-09-03",
+      "difficulty": "beginner",
+      "readTime": "9 min read",
+      "relatedSlugs": [
+        "docker-compose-beginners-guide",
+        "github-actions-first-workflow",
+        "deploy-nextjs-vps-docker",
+        "manage-multiple-env-files"
+      ]
+    },
+    {
+      "slug": "zod-runtime-validation-api-boundaries",
+      "title": "How to Use Zod for Runtime Validation at API Boundaries",
+      "description": "Use Zod to validate data where it enters your system  API requests, env vars, external APIs, and URL params. Architectural patterns, not basics.",
+      "keyword": "zod runtime validation api boundary",
+      "tags": [
+        "zod",
+        "typescript",
+        "schema-validation",
+        "api",
+        "type-safety"
+      ],
+      "category": "typescript",
+      "tool": "/json-to-zod",
+      "author": "SnipShift Team",
+      "publishDate": "2026-09-04",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "typed-fetch-wrapper-typescript-generic",
+        "trpc-tutorial-type-safe-api",
+        "type-nextjs-api-routes-typescript",
+        "build-api-hono-typescript"
+      ]
+    },
+    {
+      "slug": "zod-vs-valibot-comparison",
+      "title": "Zod vs Valibot: Which TypeScript Validation Library Is Lighter?",
+      "description": "Compare Zod and Valibot for TypeScript validation  bundle size, API design, tree-shaking, and type inference. Find out which library fits your project.",
+      "keyword": "zod vs valibot",
+      "tags": [
+        "typescript",
+        "validation",
+        "zod",
+        "valibot",
+        "bundle-size"
+      ],
+      "category": "typescript",
+      "tool": "/json-to-zod",
+      "author": "SnipShift Team",
+      "publishDate": "2026-09-05",
+      "difficulty": "intermediate",
+      "readTime": "6 min read",
+      "relatedSlugs": [
+        "react-forms-typescript-guide",
+        "check-if-string-valid-json",
+        "rest-api-typescript-express-guide",
+        "zod-runtime-validation-api-boundaries"
+      ]
+    }
+  ]
+}

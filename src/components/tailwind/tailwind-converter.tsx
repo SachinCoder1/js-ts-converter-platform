@@ -10,12 +10,10 @@ import { useKeyboardShortcut } from '@/hooks/use-keyboard-shortcut';
 import { computeStatusText, computeStatusState } from '@/lib/converter-utils';
 import { TAILWIND_DEFAULT_EXAMPLE, TAILWIND_DEFAULT_OPTIONS } from '@/lib/tailwind-constants';
 import type { TailwindConversionOptions } from '@/lib/tailwind-types';
-import type { AIProvider } from '@/lib/types';
 
 export function TailwindConverter() {
   const [inputCode, setInputCode] = useState(TAILWIND_DEFAULT_EXAMPLE);
   const [options, setOptions] = useState<TailwindConversionOptions>(TAILWIND_DEFAULT_OPTIONS);
-  const [selectedProvider, setSelectedProvider] = useState<AIProvider | 'auto'>('auto');
   const [isScanning, setIsScanning] = useState(false);
 
   // Memoize options to prevent unnecessary re-renders in useTailwindPreview
@@ -29,11 +27,10 @@ export function TailwindConverter() {
   const inputFileType = options.inputFormat === 'html' ? 'HTML' : 'TW';
 
   const handleConvert = useCallback(() => {
-    const provider = selectedProvider === 'auto' ? undefined : selectedProvider;
     setIsScanning(true);
     setTimeout(() => setIsScanning(false), 350);
-    convert(inputCode, options, provider);
-  }, [inputCode, options, selectedProvider, convert]);
+    convert(inputCode, options);
+  }, [inputCode, options, convert]);
 
   useKeyboardShortcut('Enter', handleConvert, !isConverting && !isRateLimited);
 
@@ -54,10 +51,10 @@ export function TailwindConverter() {
       isConverting={isConverting}
       error={error}
       isAstFallback={isRuleOnly}
-      astFallbackMessage="AI models unavailable — showing rule-based conversion. Some complex utilities may not be fully resolved."
+      astFallbackMessage="AI models unavailable  showing rule-based conversion. Some complex utilities may not be fully resolved."
       fromCache={fromCache}
       resultKey={result?.convertedCss}
-      statusText={computeStatusText(isConverting, result, selectedProvider)}
+      statusText={computeStatusText(isConverting, result)}
       statusState={computeStatusState(isConverting, result)}
       inputIsScanning={isScanning}
       rateLimitRemaining={rateLimitInfo.remaining}
@@ -66,8 +63,6 @@ export function TailwindConverter() {
         <TailwindControlBar
           options={options}
           onOptionsChange={setOptions}
-          selectedProvider={selectedProvider}
-          onProviderChange={setSelectedProvider}
           onConvert={handleConvert}
           isConverting={isConverting || isRateLimited}
         />

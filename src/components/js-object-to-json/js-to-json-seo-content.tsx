@@ -5,12 +5,12 @@ export function JsToJsonSeoContent() {
     {
       num: '01',
       title: 'Paste Your Object',
-      desc: 'Paste a JavaScript object literal into the input editor. Supports messy syntax — single quotes, trailing commas, comments, and more.',
+      desc: 'Paste a JavaScript object literal into the input editor. Supports messy syntax  single quotes, trailing commas, comments, and more.',
     },
     {
       num: '02',
       title: 'See Live JSON',
-      desc: 'Conversion happens automatically as you type. No button to click — your valid JSON appears instantly in the output panel.',
+      desc: 'Conversion happens automatically as you type. No button to click  your valid JSON appears instantly in the output panel.',
     },
     {
       num: '03',
@@ -22,7 +22,7 @@ export function JsToJsonSeoContent() {
   const benefits = [
     {
       title: 'Handles Quirky Syntax',
-      desc: 'Single quotes, trailing commas, unquoted keys, inline comments — all cleaned up automatically.',
+      desc: 'Single quotes, trailing commas, unquoted keys, inline comments  all cleaned up automatically.',
     },
     {
       title: 'Strips Invalid Values',
@@ -45,7 +45,7 @@ export function JsToJsonSeoContent() {
     },
     {
       q: 'Is my code sent to a server?',
-      a: 'No. All conversion happens entirely in your browser. Your code never leaves your machine — there are no API calls or server-side processing.',
+      a: 'No. All conversion happens entirely in your browser. Your code never leaves your machine  there are no API calls or server-side processing.',
     },
     {
       q: 'What happens to functions and undefined?',
@@ -91,7 +91,7 @@ export function JsToJsonSeoContent() {
             style={{ color: 'var(--text-secondary)' }}
           >
             Convert messy JavaScript object literals into clean, valid JSON instantly.
-            Handles single quotes, trailing commas, comments, and JS-only values — all in your browser.
+            Handles single quotes, trailing commas, comments, and JS-only values  all in your browser.
           </p>
         </div>
 

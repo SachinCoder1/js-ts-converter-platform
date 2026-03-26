@@ -1,10 +1,10 @@
 export function computeStatusText(
   isConverting: boolean,
   result: { duration: number } | null,
-  selectedProvider: string
+  _selectedProvider?: string
 ): string {
   if (isConverting) {
-    return `Converting via ${selectedProvider === 'auto' ? 'AI' : selectedProvider}...`;
+    return 'Converting via AI...';
   }
   if (result) {
     return result.duration < 1000

@@ -9,7 +9,7 @@ import { useToolConversion } from '@/hooks/use-tool-conversion';
 import { useKeyboardShortcut } from '@/hooks/use-keyboard-shortcut';
 import { DEFAULT_JSON_EXAMPLE } from '@/lib/constants';
 import { computeStatusText, computeStatusState } from '@/lib/converter-utils';
-import type { AIProvider, JsonToZodOptions, JsonToZodResult } from '@/lib/types';
+import type { JsonToZodOptions, JsonToZodResult } from '@/lib/types';
 
 export function JsonToZodConverter() {
   const [inputJson, setInputJson] = useState(DEFAULT_JSON_EXAMPLE);
@@ -20,7 +20,6 @@ export function JsonToZodConverter() {
     generateInferredType: true,
     schemaVariableName: 'schema',
   });
-  const [selectedProvider, setSelectedProvider] = useState<AIProvider | 'auto'>('auto');
   const [isScanning, setIsScanning] = useState(false);
 
   const stableOptions = useMemo(() => options, [
@@ -40,17 +39,16 @@ export function JsonToZodConverter() {
   const outputCode = result?.convertedCode || preview;
 
   const handleConvert = useCallback(() => {
-    const provider = selectedProvider === 'auto' ? undefined : selectedProvider;
     setIsScanning(true);
     setTimeout(() => setIsScanning(false), 350);
-    convert({ json: inputJson, options, preferredProvider: provider });
-  }, [inputJson, options, selectedProvider, convert]);
+    convert({ json: inputJson, options });
+  }, [inputJson, options, convert]);
 
   useKeyboardShortcut('Enter', handleConvert, !isConverting && !isRateLimited);
 
   const isAstOnly = result?.provider === 'ast-only';
 
-  const statusText = computeStatusText(isConverting, result, selectedProvider);
+  const statusText = computeStatusText(isConverting, result);
   const statusState = computeStatusState(isConverting, result);
 
   return (
@@ -68,7 +66,7 @@ export function JsonToZodConverter() {
       isConverting={isConverting}
       error={error}
       isAstFallback={isAstOnly && !error}
-      astFallbackMessage="AI models unavailable — showing basic schema. Smart validations and descriptions require AI."
+      astFallbackMessage="AI models unavailable  showing basic schema. Smart validations and descriptions require AI."
       fromCache={fromCache}
       resultKey={result?.convertedCode}
       statusText={statusText}
@@ -80,8 +78,6 @@ export function JsonToZodConverter() {
         <JsonToZodControlBar
           options={options}
           onOptionsChange={setOptions}
-          selectedProvider={selectedProvider}
-          onProviderChange={setSelectedProvider}
           onConvert={handleConvert}
           isConverting={isConverting || isRateLimited}
         />

@@ -28,7 +28,7 @@ export function generateToolMetadata(toolId: string): Metadata {
           url: `/api/og?tool=${toolId}`,
           width: 1200,
           height: 630,
-          alt: `${seoData.source} to ${seoData.target} Converter — ${SITE_NAME}`,
+          alt: `${seoData.source} to ${seoData.target} Converter  ${SITE_NAME}`,
         },
       ],
     },

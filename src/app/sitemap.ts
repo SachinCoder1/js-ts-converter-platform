@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { SITE_URL, TOOL_REGISTRY } from '@/lib/constants';
+import { getPublishedPosts } from '@/lib/blog';
 
 const LAST_MODIFIED = new Date('2026-03-20');
 
@@ -17,6 +18,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     }));
 
+  // Blog posts
+  const publishedPosts = getPublishedPosts();
+  const blogPages: MetadataRoute.Sitemap = publishedPosts.map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.publishDate),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
+
   return [
     // Homepage
     {
@@ -27,6 +37,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // Tool pages
     ...toolPages,
+    // Blog listing
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    // Blog posts
+    ...blogPages,
     // Legal pages
     {
       url: `${SITE_URL}/terms`,

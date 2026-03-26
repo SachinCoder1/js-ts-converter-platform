@@ -53,7 +53,7 @@ export function CssToJsonSeoContent() {
     },
     {
       q: 'Is my CSS sent to a server?',
-      a: 'No, all conversion happens entirely in your browser. Your CSS never leaves your machine — there are no API calls or server processing involved.',
+      a: 'No, all conversion happens entirely in your browser. Your CSS never leaves your machine  there are no API calls or server processing involved.',
     },
     {
       q: 'Can I use this for React Native?',

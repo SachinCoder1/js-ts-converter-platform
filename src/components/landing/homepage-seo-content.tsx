@@ -9,27 +9,27 @@ const tools = Object.values(TOOL_REGISTRY).map((t) => ({
 const faqs = [
   {
     q: 'How do I convert JavaScript to TypeScript online?',
-    a: 'Paste your JavaScript or JSX code into DevShift\'s JS to TypeScript converter. Our AI analyzes your code structure, infers types, creates named interfaces, and produces clean TypeScript. The conversion is instant and free — no signup required.',
+    a: 'Paste your JavaScript or JSX code into SnipShift\'s JS to TypeScript converter. Our AI analyzes your code structure, infers types, creates named interfaces, and produces clean TypeScript. The conversion is instant and free  no signup required.',
   },
   {
-    q: 'Is DevShift free?',
-    a: 'Yes, DevShift is completely free with no signup required. All 15+ tools are available without limits. Client-side tools like JSON ↔ YAML, SCSS → CSS, and HTML → JSX run entirely in your browser.',
+    q: 'Is SnipShift free?',
+    a: 'Yes, SnipShift is completely free with no signup required. All 15+ tools are available without limits. Client-side tools like JSON ↔ YAML, SCSS → CSS, and HTML → JSX run entirely in your browser.',
   },
   {
-    q: 'Is my code safe when using DevShift?',
-    a: 'Client-side tools process your code entirely in your browser — nothing is sent to a server. AI-powered tools send your code for processing but never store it permanently. The conversion cache automatically expires after 7 days.',
+    q: 'Is my code safe when using SnipShift?',
+    a: 'Client-side tools process your code entirely in your browser  nothing is sent to a server. AI-powered tools send your code for processing but never store it permanently. The conversion cache automatically expires after 7 days.',
   },
   {
     q: 'What\'s the best JS to TS converter?',
-    a: 'DevShift\'s JS to TypeScript converter uses AI to generate meaningful interface names, proper React component typing, and avoids using "any" types. It supports JSX to TSX conversion, handles complex nested objects, and creates clean, production-ready TypeScript.',
+    a: 'SnipShift\'s JS to TypeScript converter uses AI to generate meaningful interface names, proper React component typing, and avoids using "any" types. It supports JSX to TSX conversion, handles complex nested objects, and creates clean, production-ready TypeScript.',
   },
   {
     q: 'Can I convert React PropTypes to TypeScript?',
-    a: 'Yes, DevShift has a dedicated PropTypes to TypeScript converter. It converts React PropTypes declarations to TypeScript interfaces with proper typing for required/optional props, custom validators, and component default props.',
+    a: 'Yes, SnipShift has a dedicated PropTypes to TypeScript converter. It converts React PropTypes declarations to TypeScript interfaces with proper typing for required/optional props, custom validators, and component default props.',
   },
   {
-    q: 'Does DevShift support JSX to TSX conversion?',
-    a: 'Yes, DevShift\'s JS to TypeScript converter fully supports JSX to TSX conversion. It adds proper React.FC typing, event handler types, and component prop interfaces automatically.',
+    q: 'Does SnipShift support JSX to TSX conversion?',
+    a: 'Yes, SnipShift\'s JS to TypeScript converter fully supports JSX to TSX conversion. It adds proper React.FC typing, event handler types, and component prop interfaces automatically.',
   },
 ];
 
@@ -59,9 +59,9 @@ export function HomepageSeoContent() {
             Free Online Developer Converter Tools
           </h2>
           <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-            DevShift is a free collection of 15+ developer tools designed to convert, transform, and generate code instantly.
+            SnipShift is a free collection of 15+ developer tools designed to convert, transform, and generate code instantly.
             Whether you need to convert JavaScript to TypeScript, generate Zod schemas from JSON, transform CSS to Tailwind
-            utility classes, or compile SCSS to CSS — DevShift has you covered.
+            utility classes, or compile SCSS to CSS  SnipShift has you covered.
           </p>
           <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
             Our AI-powered converters use multiple language models (Gemini, DeepSeek, OpenRouter) to generate meaningful
@@ -73,8 +73,8 @@ export function HomepageSeoContent() {
         {/* Supported Conversions */}
         <div className="space-y-6">
           <h2
-            className="text-lg font-semibold text-center uppercase"
-            style={{ color: 'var(--text-tertiary)', letterSpacing: '0.1em', fontSize: '11px' }}
+            className="text-[11px] font-semibold text-center uppercase tracking-[0.1em]"
+            style={{ color: 'var(--text-tertiary)' }}
           >
             Supported Conversions
           </h2>
@@ -111,8 +111,8 @@ export function HomepageSeoContent() {
         {/* FAQ */}
         <div className="space-y-6">
           <h2
-            className="text-lg font-semibold text-center uppercase"
-            style={{ color: 'var(--text-tertiary)', letterSpacing: '0.1em', fontSize: '11px' }}
+            className="text-[11px] font-semibold text-center uppercase tracking-[0.1em]"
+            style={{ color: 'var(--text-tertiary)' }}
           >
             Frequently Asked Questions
           </h2>

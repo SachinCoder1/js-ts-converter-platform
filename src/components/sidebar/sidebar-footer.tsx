@@ -15,9 +15,9 @@ export function SidebarFooter() {
       {!isCollapsed && (
         <span
           className="text-[11px] font-medium truncate"
-          style={{ color: 'var(--text-disabled)' }}
+          style={{ color: 'var(--text-tertiary)' }}
         >
-          Built by DevShift
+          Built by SnipShift
         </span>
       )}
     </div>

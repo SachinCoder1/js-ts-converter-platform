@@ -5,7 +5,7 @@ export function CssToTailwindSeoContent() {
     {
       num: '01',
       title: 'Paste Your CSS',
-      desc: 'Paste vanilla CSS rules — selectors, media queries, pseudo-classes. The editor highlights your CSS in real-time.',
+      desc: 'Paste vanilla CSS rules  selectors, media queries, pseudo-classes. The editor highlights your CSS in real-time.',
     },
     {
       num: '02',
@@ -20,10 +20,10 @@ export function CssToTailwindSeoContent() {
   ];
 
   const benefits = [
-    { title: 'Faster Development', desc: 'Tailwind utility classes let you style directly in your markup — no more switching between HTML and CSS files.' },
+    { title: 'Faster Development', desc: 'Tailwind utility classes let you style directly in your markup  no more switching between HTML and CSS files.' },
     { title: 'Consistent Design', desc: 'Tailwind\'s design system enforces consistent spacing, colors, and typography across your entire project.' },
     { title: 'Smaller CSS Bundle', desc: 'Tailwind purges unused classes at build time, producing significantly smaller CSS bundles than traditional stylesheets.' },
-    { title: 'Responsive Built-In', desc: 'Media queries become simple prefixes (sm:, md:, lg:) — responsive design is effortless with Tailwind.' },
+    { title: 'Responsive Built-In', desc: 'Media queries become simple prefixes (sm:, md:, lg:)  responsive design is effortless with Tailwind.' },
   ];
 
   const faqs = [

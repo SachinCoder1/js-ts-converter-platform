@@ -65,7 +65,7 @@ export function useTailwindConversion(): UseTailwindConversionResult {
     try {
       const response = await fetch('/api/tailwind-to-css', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'X-DevShift-Client': 'web' },
+        headers: { 'Content-Type': 'application/json', 'X-SnipShift-Client': 'web' },
         body: JSON.stringify({ input, options, preferredProvider: provider }),
       });
 

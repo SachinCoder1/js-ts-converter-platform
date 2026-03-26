@@ -7,7 +7,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Terms of Service',
   description:
-    'Terms of Service for DevShift — free online developer tools for code conversion and transformation.',
+    'Terms of Service for SnipShift  free online developer tools for code conversion and transformation.',
   robots: { index: false, follow: true },
 };
 
@@ -66,17 +66,17 @@ export default function TermsPage() {
           <section style={sectionStyle}>
             <h2 style={h2Style}>1. Acceptance of Terms</h2>
             <p style={pStyle}>
-              By accessing and using DevShift (&quot;the Service&quot;), you agree to be bound by
+              By accessing and using SnipShift (&quot;the Service&quot;), you agree to be bound by
               these Terms of Service. If you do not agree to these terms, please do not use the
               Service.
             </p>
           </section>
 
-          {/* 2. What DevShift Is */}
+          {/* 2. What SnipShift Is */}
           <section style={sectionStyle}>
-            <h2 style={h2Style}>2. What DevShift Is</h2>
+            <h2 style={h2Style}>2. What SnipShift Is</h2>
             <p style={pStyle}>
-              DevShift is a collection of free online developer tools for code conversion and
+              SnipShift is a collection of free online developer tools for code conversion and
               transformation. The tools convert between various code formats including JavaScript,
               TypeScript, JSON, YAML, CSS, HTML, GraphQL, SQL, and more. The Service is provided
               &quot;as-is&quot; with no warranties of any kind, express or implied.
@@ -87,17 +87,17 @@ export default function TermsPage() {
           <section style={sectionStyle}>
             <h2 style={h2Style}>3. How It Works</h2>
             <p style={{ ...pStyle, marginBottom: '1rem' }}>
-              <strong style={{ color: 'var(--text-primary)' }}>Client-side tools</strong> — These
+              <strong style={{ color: 'var(--text-primary)' }}>Client-side tools</strong>  These
               tools run entirely in your browser. Your code never leaves your device. This includes:
               JS Object to JSON, HTML to JSX, JSON to YAML, YAML to JSON, CSS to JSON, SCSS to CSS,
               and Tailwind to CSS.
             </p>
             <p style={pStyle}>
-              <strong style={{ color: 'var(--text-primary)' }}>AI-powered tools</strong> — These
+              <strong style={{ color: 'var(--text-primary)' }}>AI-powered tools</strong>  These
               tools send your code to our server, which forwards it to third-party AI services
               (Google Gemini API, DeepSeek API, OpenRouter API) for processing. Your code is not
               stored by us after the conversion is complete. We cannot guarantee how third-party AI
-              providers handle data — refer to their respective privacy policies. AI-powered tools
+              providers handle data  refer to their respective privacy policies. AI-powered tools
               include: JS to TypeScript, JSON to TypeScript, JSON to Zod, CSS to Tailwind, GraphQL
               to TypeScript, PropTypes to TypeScript, SQL to TypeScript, and OpenAPI to TypeScript.
             </p>
@@ -106,7 +106,7 @@ export default function TermsPage() {
           {/* 4. Acceptable Use */}
           <section style={sectionStyle}>
             <h2 style={h2Style}>4. Acceptable Use</h2>
-            <p style={pStyle}>You agree not to use DevShift to:</p>
+            <p style={pStyle}>You agree not to use SnipShift to:</p>
             <ul style={ulStyle}>
               <li>Process code you don&apos;t have the right to process</li>
               <li>Attempt to attack, overload, or exploit the Service</li>
@@ -127,7 +127,7 @@ export default function TermsPage() {
               ownership of any code you submit for conversion and any converted output you receive.
             </p>
             <p style={pStyle}>
-              DevShift&apos;s interface, design, branding, and underlying technology are the
+              SnipShift&apos;s interface, design, branding, and underlying technology are the
               intellectual property of Annotara (Apexlayer Technologies Pvt Ltd). You may not copy,
               reproduce, or redistribute the Service&apos;s design or codebase without written
               permission.
@@ -139,9 +139,9 @@ export default function TermsPage() {
             <h2 style={h2Style}>6. Limitations of Liability</h2>
             <p style={pStyle}>
               The Service is free and provided &quot;as-is.&quot; To the fullest extent permitted by
-              law, DevShift and its operators are not liable for: incorrect or incomplete
+              law, SnipShift and its operators are not liable for: incorrect or incomplete
               conversions, data loss, service downtime, or any damages arising from the use or
-              inability to use the Service. AI-generated output may contain errors — always review
+              inability to use the Service. AI-generated output may contain errors  always review
               converted code before using it in production.
             </p>
           </section>
@@ -181,8 +181,8 @@ export default function TermsPage() {
             <h2 style={h2Style}>10. Contact</h2>
             <p style={pStyle}>
               Questions about these terms? Reach out to us at{' '}
-              <a href="mailto:hello@devshift.dev" style={linkStyle}>
-                hello@devshift.dev
+              <a href="mailto:hello@snipshift.dev" style={linkStyle}>
+                hello@snipshift.dev
               </a>{' '}
               or visit our{' '}
               <Link href="/contact" style={linkStyle}>
@@ -202,7 +202,7 @@ export default function TermsPage() {
               paddingTop: '1.5rem',
             }}
           >
-            DevShift is operated by Annotara (Apexlayer Technologies Pvt Ltd), based in India.
+            SnipShift is operated by Annotara (Apexlayer Technologies Pvt Ltd), based in India.
           </p>
         </article>
       </main>

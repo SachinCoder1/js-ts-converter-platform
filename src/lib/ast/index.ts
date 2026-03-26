@@ -51,7 +51,7 @@ export function astConvert(code: string, fileType: FileType): ASTConversionResul
       errors: [],
     };
   } catch (err) {
-    // Never throw — return original code as fallback
+    // Never throw  return original code as fallback
     return {
       code,
       stats: emptyStats,

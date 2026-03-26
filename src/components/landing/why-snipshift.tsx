@@ -9,7 +9,7 @@ const features = [
   {
     icon: Sparkles,
     title: 'AI-Powered, Not Just Regex',
-    desc: 'Our TypeScript, Zod, and schema converters use AI to generate meaningful names, smart validations, and proper typing — not just find-and-replace.',
+    desc: 'Our TypeScript, Zod, and schema converters use AI to generate meaningful names, smart validations, and proper typing  not just find-and-replace.',
   },
   {
     icon: ShieldCheck,
@@ -38,7 +38,7 @@ const features = [
   },
 ];
 
-export function WhyDevShift() {
+export function WhySnipShift() {
   const { ref, isInView } = useInView();
   const reduced = useReducedMotion();
 
@@ -53,7 +53,7 @@ export function WhyDevShift() {
           className="mb-12 text-center text-[11px] font-semibold uppercase tracking-[0.1em]"
           style={{ color: 'var(--text-tertiary)' }}
         >
-          Why DevShift
+          Why SnipShift
         </motion.h2>
 
         {/* Feature grid */}

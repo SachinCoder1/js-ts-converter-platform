@@ -9,7 +9,7 @@ import { useToolConversion } from '@/hooks/use-tool-conversion';
 import { useKeyboardShortcut } from '@/hooks/use-keyboard-shortcut';
 import { computeStatusText, computeStatusState } from '@/lib/converter-utils';
 import { DEFAULT_PROPTYPES_EXAMPLE } from '@/lib/constants';
-import type { AIProvider, PropTypesToTsOptions, PropTypesToTsResult } from '@/lib/types';
+import type { PropTypesToTsOptions, PropTypesToTsResult } from '@/lib/types';
 
 export function PropTypesToTsConverter() {
   const [inputCode, setInputCode] = useState(DEFAULT_PROPTYPES_EXAMPLE);
@@ -18,7 +18,6 @@ export function PropTypesToTsConverter() {
     defaultPropsHandling: 'merge-optional',
     functionTypes: 'event-inference',
   });
-  const [selectedProvider, setSelectedProvider] = useState<AIProvider | 'auto'>('auto');
   const [isScanning, setIsScanning] = useState(false);
 
   const stableOptions = useMemo(() => options, [
@@ -36,11 +35,10 @@ export function PropTypesToTsConverter() {
   const outputCode = result?.convertedCode || preview;
 
   const handleConvert = useCallback(() => {
-    const provider = selectedProvider === 'auto' ? undefined : selectedProvider;
     setIsScanning(true);
     setTimeout(() => setIsScanning(false), 350);
-    convert({ code: inputCode, options, preferredProvider: provider });
-  }, [inputCode, options, selectedProvider, convert]);
+    convert({ code: inputCode, options });
+  }, [inputCode, options, convert]);
 
   useKeyboardShortcut('Enter', handleConvert, !isConverting && !isRateLimited);
 
@@ -61,10 +59,10 @@ export function PropTypesToTsConverter() {
       isConverting={isConverting}
       error={error}
       isAstFallback={isAstOnly}
-      astFallbackMessage="AI models unavailable — showing basic conversion. Smart event type inference requires AI."
+      astFallbackMessage="AI models unavailable  showing basic conversion. Smart event type inference requires AI."
       fromCache={fromCache}
       resultKey={result?.convertedCode}
-      statusText={computeStatusText(isConverting, result, selectedProvider)}
+      statusText={computeStatusText(isConverting, result)}
       statusState={computeStatusState(isConverting, result)}
       inputIsScanning={isScanning}
       rateLimitRemaining={rateLimitInfo.remaining}
@@ -73,8 +71,6 @@ export function PropTypesToTsConverter() {
         <PropTypesToTsControlBar
           options={options}
           onOptionsChange={setOptions}
-          selectedProvider={selectedProvider}
-          onProviderChange={setSelectedProvider}
           onConvert={handleConvert}
           isConverting={isConverting || isRateLimited}
         />

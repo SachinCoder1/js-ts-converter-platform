@@ -42,7 +42,7 @@ export function JsonYamlControlBar({ options, onOptionsChange }: JsonYamlControl
               color: 'var(--text-secondary)',
             }}
           >
-            <SelectValue />
+            <span>{{ 2: '2 spaces', 4: '4 spaces', 8: '8 spaces' }[options.indent]}</span>
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="2">2 spaces</SelectItem>
@@ -74,7 +74,7 @@ export function JsonYamlControlBar({ options, onOptionsChange }: JsonYamlControl
               color: 'var(--text-secondary)',
             }}
           >
-            <SelectValue />
+            <span>{options.flowLevel === -1 ? 'Block style' : 'Inline compact'}</span>
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="-1">Block style</SelectItem>

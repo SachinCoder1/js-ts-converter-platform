@@ -23,8 +23,8 @@ export const GLOBAL_RATE_LIMIT = {
 export const MAX_CACHE_SIZE = 500;
 export const CACHE_TTL = 60 * 60 * 1000; // 1 hour in ms
 
-export const SITE_URL = 'https://devshift.dev';
-export const SITE_NAME = 'DevShift';
+export const SITE_URL = 'https://snipshift.dev';
+export const SITE_NAME = 'SnipShift';
 
 export const DEFAULT_EXAMPLE_CODE = `import React, { useState, useEffect } from 'react';
 
@@ -570,6 +570,95 @@ export const DEFAULT_OPENAPI_OPTIONS: OpenApiToTsOptions = {
   addJsDoc: true,
 };
 
+export const DEFAULT_REGEX_PATTERN = String.raw`(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})`;
+export const DEFAULT_REGEX_FLAGS = 'g';
+export const DEFAULT_REGEX_TEST_STRING = `Meeting on 2024-03-15, deadline 2024-06-30, launched 2023-12-01`;
+
+export const DEFAULT_PACKAGE_JSON_EXAMPLE = `{
+  "name": "my-nextjs-app",
+  "version": "2.1.0",
+  "private": false,
+  "license": "MIT",
+  "description": "A modern web application built with Next.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "jest --coverage",
+    "test:e2e": "playwright test",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/react": "^19.0.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.5.0",
+    "jest": "^29.7.0",
+    "@playwright/test": "^1.50.0",
+    "vite": "^6.2.0"
+  }
+}`;
+
+export const DEFAULT_MARKDOWN_TABLE_EXAMPLE = `| Name         | Role          | Experience | Location      | Salary  |
+|--------------|---------------|------------|---------------|---------|
+| Alice Chen   | Senior Dev    | 8 years    | San Francisco | $185k   |
+| Bob Kumar    | Tech Lead     | 12 years   | New York      | $210k   |
+| Carol Santos | Junior Dev    | 1 year     | Austin        | $95k    |
+| Dave Wilson  | DevOps        | 5 years    | Remote        | $155k   |
+| Eve Zhang    | Staff Engineer| 15 years   | Seattle       | $280k   |`;
+
+export const DEFAULT_ENV_EXAMPLE = `# Server
+PORT=3000
+NODE_ENV=production
+API_URL=https://api.example.com/v1
+DATABASE_URL=postgresql://user:pass@localhost:5432/mydb
+
+# Auth
+JWT_SECRET=super-secret-key-here
+JWT_EXPIRY=3600
+ENABLE_OAUTH=true
+
+# Client (Next.js public)
+NEXT_PUBLIC_APP_NAME=MyApp
+NEXT_PUBLIC_API_URL=https://api.example.com
+NEXT_PUBLIC_ENABLE_ANALYTICS=true
+
+# Optional
+SENTRY_DSN=
+DEBUG=false`;
+
+export const DEFAULT_CURL_EXAMPLE = `curl 'https://api.example.com/users' \\
+  -X POST \\
+  -H 'Content-Type: application/json' \\
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIs...' \\
+  -H 'Accept: application/json' \\
+  -d '{
+    "name": "John Doe",
+    "email": "john@example.com",
+    "role": "admin"
+  }' \\
+  --compressed`;
+
+import type { CurlToCodeOptions } from './types';
+
+export const DEFAULT_CURL_OPTIONS: CurlToCodeOptions = {
+  targetLanguage: 'js-fetch',
+  codeStyle: 'async-await',
+  errorHandling: 'try-catch',
+  variableStyle: 'hardcoded',
+};
+
 export const TOOL_REGISTRY = {
   'js-to-ts': {
     id: 'js-to-ts' as const,
@@ -676,6 +765,41 @@ export const TOOL_REGISTRY = {
     path: '/openapi-to-typescript',
     description: 'Generate TypeScript types from OpenAPI/Swagger specs',
   },
+  'regex-tester': {
+    id: 'regex-tester' as const,
+    name: 'Regex Tester & Converter',
+    shortName: 'Regex',
+    path: '/regex-tester',
+    description: 'Test regex patterns live and convert between JavaScript, Python, Go, Rust, PHP, and Java',
+  },
+  'package-to-badges': {
+    id: 'package-to-badges' as const,
+    name: 'Package.json to Badges',
+    shortName: 'Pkg \u2192 Badges',
+    path: '/package-to-badges',
+    description: 'Generate shields.io README badges from package.json',
+  },
+  'markdown-table-converter': {
+    id: 'markdown-table-converter' as const,
+    name: 'Markdown Table Converter',
+    shortName: 'MD Table',
+    path: '/markdown-table-converter',
+    description: 'Convert between Markdown tables, JSON, and CSV',
+  },
+  'env-to-types': {
+    id: 'env-to-types' as const,
+    name: 'Env to Types',
+    shortName: 'ENV → TS',
+    path: '/env-to-types',
+    description: 'Generate TypeScript types or Zod schemas from .env files',
+  },
+  'curl-to-code': {
+    id: 'curl-to-code' as const,
+    name: 'cURL to Code',
+    shortName: 'cURL → Code',
+    path: '/curl-to-code',
+    description: 'Convert cURL commands to code in multiple languages',
+  },
 } as const;
 
 import type { ToolMeta, FilterCategory } from './types';
@@ -687,6 +811,8 @@ export const FILTER_CATEGORIES: { id: FilterCategory; label: string }[] = [
   { id: 'css', label: 'CSS' },
   { id: 'react', label: 'React' },
   { id: 'schema', label: 'Schema' },
+  { id: 'utility', label: 'Utility' },
+  { id: 'markup', label: 'Markup' },
 ];
 
 export const TOOL_META: Record<string, ToolMeta> = {
@@ -795,5 +921,40 @@ export const TOOL_META: Record<string, ToolMeta> = {
     tags: ['AI-Powered'],
     sourceLabel: 'OpenAPI',
     targetLabel: 'TS',
+  },
+  'regex-tester': {
+    id: 'regex-tester',
+    categories: ['utility'],
+    tags: ['AI-Powered'],
+    sourceLabel: 'Regex',
+    targetLabel: 'Multi',
+  },
+  'package-to-badges': {
+    id: 'package-to-badges',
+    categories: ['markup', 'json'],
+    tags: ['Instant'],
+    sourceLabel: 'Pkg',
+    targetLabel: 'Badges',
+  },
+  'markdown-table-converter': {
+    id: 'markdown-table-converter',
+    categories: ['markup'],
+    tags: ['Instant'],
+    sourceLabel: 'MD/JSON/CSV',
+    targetLabel: 'MD/JSON/CSV',
+  },
+  'env-to-types': {
+    id: 'env-to-types',
+    categories: ['typescript', 'schema'],
+    tags: ['Instant'],
+    sourceLabel: '.env',
+    targetLabel: 'TS/Zod',
+  },
+  'curl-to-code': {
+    id: 'curl-to-code',
+    categories: ['utility'],
+    tags: ['AI-Powered', 'Popular'],
+    sourceLabel: 'cURL',
+    targetLabel: 'Code',
   },
 };

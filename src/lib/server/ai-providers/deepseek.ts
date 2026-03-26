@@ -38,7 +38,8 @@ export async function callDeepSeek(prompt: PromptParts): Promise<string> {
     });
 
     if (!response.ok) {
-      throw new Error(`DeepSeek API error: ${response.status}`);
+      const errorBody = await response.text().catch(() => '');
+      throw new Error(`DeepSeek API error: ${response.status} ${errorBody}`);
     }
 
     const data: DeepSeekResponse = await response.json();

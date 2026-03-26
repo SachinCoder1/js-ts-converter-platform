@@ -5,7 +5,7 @@ export function GraphqlToTsSeoContent() {
     {
       num: '01',
       title: 'Paste Your Schema',
-      desc: 'Paste any GraphQL schema definition — types, enums, inputs, queries, mutations. The editor validates your schema in real-time.',
+      desc: 'Paste any GraphQL schema definition  types, enums, inputs, queries, mutations. The editor validates your schema in real-time.',
     },
     {
       num: '02',
@@ -20,7 +20,7 @@ export function GraphqlToTsSeoContent() {
   ];
 
   const benefits = [
-    { title: 'End-to-End Type Safety', desc: 'Generated types ensure your frontend queries match your GraphQL schema exactly — catch breaking changes at compile time, not in production.' },
+    { title: 'End-to-End Type Safety', desc: 'Generated types ensure your frontend queries match your GraphQL schema exactly  catch breaking changes at compile time, not in production.' },
     { title: 'Smart Scalar Mapping', desc: 'AI maps custom scalars like DateTime to Date, JSON to Record<string, unknown>, and generates a Scalars type map for your project.' },
     { title: 'No Manual Type Writing', desc: 'Stop maintaining TypeScript types by hand. Paste your schema and get production-ready interfaces in seconds.' },
     { title: 'Flexible Output', desc: 'Choose between TypeScript enums or union types, Maybe<T> or | null nullability, readonly properties, and more.' },

@@ -42,7 +42,7 @@ export function YamlJsonControlBar({ options, onOptionsChange }: YamlJsonControl
               color: 'var(--text-secondary)',
             }}
           >
-            <SelectValue />
+            <span>{{ '2': '2 spaces', '4': '4 spaces', tab: 'Tab', minified: 'Minified' }[String(options.indent)]}</span>
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="2">2 spaces</SelectItem>
@@ -75,7 +75,7 @@ export function YamlJsonControlBar({ options, onOptionsChange }: YamlJsonControl
               color: 'var(--text-secondary)',
             }}
           >
-            <SelectValue />
+            <span>{options.multiDocument === 'array' ? 'Combine into array' : 'Show separately'}</span>
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="array">Combine into array</SelectItem>

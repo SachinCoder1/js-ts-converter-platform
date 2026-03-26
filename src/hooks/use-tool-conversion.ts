@@ -74,7 +74,7 @@ export function useToolConversion<TResult extends { convertedCode: string; fromC
     try {
       const response = await fetch(apiEndpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'X-DevShift-Client': 'web' },
+        headers: { 'Content-Type': 'application/json', 'X-SnipShift-Client': 'web' },
         body: JSON.stringify(body),
       });
 

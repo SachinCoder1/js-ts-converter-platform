@@ -35,6 +35,16 @@ const FILE_ICON_MAP: Record<string, { bg: string; fg: string; label: string }> =
   HTML: { bg: 'hsl(15 85% 50%)',  fg: 'hsl(15 85% 60%)',  label: 'HT' },
   GQL:  { bg: 'hsl(320 70% 50%)', fg: 'hsl(320 70% 60%)', label: 'GQ' },
   API:  { bg: 'hsl(145 60% 42%)', fg: 'hsl(145 60% 55%)', label: 'AP' },
+  REGEX: { bg: 'hsl(160 70% 45%)', fg: 'hsl(160 70% 55%)', label: 'Rx' },
+  CSV:  { bg: 'hsl(160 60% 45%)', fg: 'hsl(160 60% 55%)', label: 'CV' },
+  MD:   { bg: 'hsl(160 60% 45%)', fg: 'hsl(160 60% 55%)', label: 'MD' },
+  CURL: { bg: 'hsl(160 60% 42%)', fg: 'hsl(160 60% 55%)', label: '>' },
+  SH:   { bg: 'hsl(120 20% 40%)', fg: 'hsl(120 20% 55%)', label: 'SH' },
+  PY:   { bg: 'hsl(210 55% 50%)', fg: 'hsl(210 55% 60%)', label: 'PY' },
+  GO:   { bg: 'hsl(190 70% 45%)', fg: 'hsl(190 70% 55%)', label: 'GO' },
+  RS:   { bg: 'hsl(25 80% 50%)',  fg: 'hsl(25 80% 60%)',  label: 'RS' },
+  PHP:  { bg: 'hsl(240 50% 55%)', fg: 'hsl(240 50% 65%)', label: 'PHP' },
+  RB:   { bg: 'hsl(0 70% 50%)',   fg: 'hsl(0 70% 60%)',   label: 'RB' },
 };
 
 function FileIcon({ type }: { type: string }) {
@@ -105,7 +115,7 @@ export function EditorPanel({
       style={{
         background: 'var(--surface)',
         borderRadius: 0,
-        boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.25), inset 0 0 0 1px var(--border)',
+        boxShadow: 'inset 0 1px 2px rgba(0,0,0,0.06), inset 0 0 0 1px var(--border)',
       }}
       role="region"
       aria-label={`${title} editor panel${readOnly ? ' (read only)' : ''}`}
@@ -113,7 +123,7 @@ export function EditorPanel({
       {/* Scanning line effect */}
       {isScanning && <div className="scan-line absolute inset-0 z-10 pointer-events-none" />}
 
-      {/* Panel header — file tab style */}
+      {/* Panel header  file tab style */}
       <div
         className="flex items-center justify-between px-3 py-1.5"
         style={{
@@ -245,21 +255,6 @@ export function EditorPanel({
         )}
       </div>
 
-      {/* Footer — stats bar */}
-      <div
-        className="flex items-center justify-between px-3 py-1"
-        style={{
-          borderTop: '1px solid var(--border)',
-          background: 'color-mix(in srgb, var(--surface) 50%, var(--background))',
-        }}
-      >
-        <span className="font-mono text-[10px]" style={{ color: 'var(--text-disabled)', letterSpacing: '0.03em' }}>
-          {lineCount} lines
-        </span>
-        <span className="font-mono text-[10px]" style={{ color: 'var(--text-disabled)', letterSpacing: '0.03em' }}>
-          {charCount.toLocaleString()} chars
-        </span>
-      </div>
     </div>
   );
 }

@@ -72,7 +72,7 @@ function generateZodType(
       return `z.array(${elementType})`;
     }
 
-    // Mixed types — use union
+    // Mixed types  use union
     const uniqueTypes = getUniqueZodTypes(value, options, stats, depth);
     if (uniqueTypes.length === 1) {
       return `z.array(${uniqueTypes[0]})`;

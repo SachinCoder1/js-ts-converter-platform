@@ -1,11 +1,11 @@
 export type FileType = 'js' | 'jsx';
 export type OutputFileType = 'ts' | 'tsx';
-export type AIProvider = 'gemini' | 'deepseek' | 'openrouter' | 'ast-only';
+export type AIProvider = 'gemini' | 'openai' | 'kimi' | 'deepseek' | 'openrouter' | 'ast-only';
 export type ToolId = 'js-to-ts' | 'json-to-ts' | 'json-to-zod' | 'css-to-tailwind';
 
 // ---- Landing page types ----
 
-export type ToolCategory = 'typescript' | 'json' | 'css' | 'react' | 'schema';
+export type ToolCategory = 'typescript' | 'json' | 'css' | 'react' | 'schema' | 'markup' | 'utility';
 export type ToolTag = 'AI-Powered' | 'Instant' | 'Popular';
 export type FilterCategory = 'all' | ToolCategory;
 
@@ -302,4 +302,121 @@ export interface OpenApiToTsResult {
   fromCache: boolean;
   stats: OpenApiToTsStats;
   duration: number;
+}
+
+// ---- Regex Tester types ----
+
+export type RegexFlavor = 'javascript' | 'python' | 'go' | 'rust' | 'php' | 'java';
+
+export type RegexFlag = 'g' | 'i' | 'm' | 's' | 'u' | 'y';
+
+export interface RegexMatch {
+  fullMatch: string;
+  index: number;
+  length: number;
+  groups: Record<string, string>;
+  captures: (string | undefined)[];
+}
+
+export interface RegexTestResult {
+  matches: RegexMatch[];
+  matchCount: number;
+  isValid: boolean;
+  error: string | null;
+}
+
+export interface RegexExplainResult {
+  explanation: string;
+  provider: AIProvider;
+  fromCache: boolean;
+  duration: number;
+}
+
+export interface RegexConversionEntry {
+  flavor: RegexFlavor;
+  pattern: string;
+  flags: string;
+  notes: string;
+}
+
+export interface RegexConvertResult {
+  conversions: RegexConversionEntry[];
+  provider: AIProvider;
+  fromCache: boolean;
+  duration: number;
+}
+
+// ---- cURL-to-Code types ----
+
+export type CurlTargetLanguage =
+  | 'js-fetch' | 'js-axios' | 'ts-fetch'
+  | 'python-requests' | 'go-net-http' | 'rust-reqwest'
+  | 'php-curl' | 'ruby-net-http';
+
+export type CurlCodeStyle = 'async-await' | 'promises' | 'callback';
+export type CurlErrorHandling = 'try-catch' | 'none';
+export type CurlVariableStyle = 'hardcoded' | 'extracted';
+
+export interface CurlToCodeOptions {
+  targetLanguage: CurlTargetLanguage;
+  codeStyle: CurlCodeStyle;
+  errorHandling: CurlErrorHandling;
+  variableStyle: CurlVariableStyle;
+}
+
+export interface CurlToCodeRequest {
+  curl: string;
+  options: CurlToCodeOptions;
+  preferredProvider?: AIProvider;
+}
+
+export interface CurlToCodeStats {
+  headersDetected: number;
+  methodDetected: string;
+  hasBody: boolean;
+  hasAuth: boolean;
+  flagsParsed: number;
+}
+
+export interface CurlToCodeResult {
+  convertedCode: string;
+  provider: AIProvider;
+  fromCache: boolean;
+  stats: CurlToCodeStats;
+  duration: number;
+}
+
+// ---- Env-to-Types types ----
+
+export type EnvOutputFormat = 'typescript' | 'zod' | 't3-env' | 'valibot';
+export type EnvOptionalMode = 'all-required' | 'empty-optional' | 'all-optional';
+export type EnvPrefixDetection = 'auto' | 'none';
+
+export interface EnvToTypesOptions {
+  outputFormat: EnvOutputFormat;
+  optionalMode: EnvOptionalMode;
+  addComments: boolean;
+  prefixDetection: EnvPrefixDetection;
+}
+
+// ---- Blog types ----
+
+export type BlogCategory =
+  | 'typescript' | 'json' | 'css' | 'react' | 'schema'
+  | 'devops' | 'security' | 'testing' | 'performance' | 'general';
+
+export interface BlogPostMeta {
+  slug: string;
+  title: string;
+  description: string;
+  keyword: string;
+  tags: string[];
+  category: BlogCategory;
+  tool: string | null;
+  author: string;
+  publishDate: string;
+  difficulty: 'beginner' | 'intermediate' | 'advanced';
+  readTime: string;
+  relatedSlugs: string[];
+  isFeatured?: boolean;
 }

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { TOOL_REGISTRY } from '@/lib/constants';
 
@@ -26,32 +27,32 @@ export function LandingFooter() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <span
-                className="font-mono text-xs font-semibold"
-                style={{ color: 'var(--primary)' }}
-              >
-                <span style={{ color: 'var(--text-tertiary)' }}>&lt;</span>
-                T
-                <span style={{ color: 'var(--text-tertiary)' }}>/&gt;</span>
-              </span>
+              <Image
+                src="/snipshift_logo_transparent.png"
+                alt="SnipShift"
+                width={24}
+                height={24}
+                className="rounded"
+                style={{ width: 24, height: 24 }}
+              />
               <span
                 className="text-sm font-semibold"
                 style={{ color: 'var(--text-primary)', letterSpacing: '-0.02em' }}
               >
-                DevShift
+                SnipShift
               </span>
             </div>
             <p
               className="text-xs leading-relaxed"
-              style={{ color: 'var(--text-disabled)' }}
+              style={{ color: 'var(--text-tertiary)' }}
             >
               Free AI-powered developer tools to convert, type, and transform your code.
             </p>
             <p
               className="text-xs"
-              style={{ color: 'var(--text-disabled)' }}
+              style={{ color: 'var(--text-tertiary)' }}
             >
-              &copy; {new Date().getFullYear()} DevShift
+              &copy; {new Date().getFullYear()} SnipShift
             </p>
           </div>
 
@@ -69,7 +70,7 @@ export function LandingFooter() {
                   <Link
                     href={tool.path}
                     className="text-xs transition-colors duration-150 hover:text-[var(--primary)]"
-                    style={{ color: 'var(--text-disabled)' }}
+                    style={{ color: 'var(--text-tertiary)' }}
                   >
                     {tool.name}
                   </Link>
@@ -92,7 +93,7 @@ export function LandingFooter() {
                   <Link
                     href={tool.path}
                     className="text-xs transition-colors duration-150 hover:text-[var(--primary)]"
-                    style={{ color: 'var(--text-disabled)' }}
+                    style={{ color: 'var(--text-tertiary)' }}
                   >
                     {tool.name}
                   </Link>
@@ -112,12 +113,21 @@ export function LandingFooter() {
               </h3>
               <ul className="space-y-2">
                 <li>
+                  <Link
+                    href="/blog"
+                    className="text-xs transition-colors duration-150 hover:text-[var(--primary)]"
+                    style={{ color: 'var(--text-tertiary)' }}
+                  >
+                    Blog
+                  </Link>
+                </li>
+                <li>
                   <a
                     href="https://github.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-xs transition-colors duration-150 hover:text-[var(--primary)]"
-                    style={{ color: 'var(--text-disabled)' }}
+                    style={{ color: 'var(--text-tertiary)' }}
                   >
                     GitHub
                   </a>
@@ -125,17 +135,9 @@ export function LandingFooter() {
                 <li>
                   <span
                     className="text-xs"
-                    style={{ color: 'var(--text-disabled)', opacity: 0.5 }}
+                    style={{ color: 'var(--text-disabled)' }}
                   >
                     Changelog (coming soon)
-                  </span>
-                </li>
-                <li>
-                  <span
-                    className="text-xs"
-                    style={{ color: 'var(--text-disabled)', opacity: 0.5 }}
-                  >
-                    API (coming soon)
                   </span>
                 </li>
               </ul>
@@ -149,20 +151,22 @@ export function LandingFooter() {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <span
-                    className="text-xs"
-                    style={{ color: 'var(--text-disabled)' }}
+                  <Link
+                    href="/privacy"
+                    className="text-xs transition-colors duration-150 hover:text-[var(--primary)]"
+                    style={{ color: 'var(--text-tertiary)' }}
                   >
                     Privacy Policy
-                  </span>
+                  </Link>
                 </li>
                 <li>
-                  <span
-                    className="text-xs"
-                    style={{ color: 'var(--text-disabled)' }}
+                  <Link
+                    href="/terms"
+                    className="text-xs transition-colors duration-150 hover:text-[var(--primary)]"
+                    style={{ color: 'var(--text-tertiary)' }}
                   >
                     Terms of Service
-                  </span>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -176,9 +180,9 @@ export function LandingFooter() {
         >
           <p
             className="text-[11px] font-mono"
-            style={{ color: 'var(--text-disabled)', letterSpacing: '0.03em', opacity: 0.6 }}
+            style={{ color: 'var(--text-tertiary)', letterSpacing: '0.03em' }}
           >
-            Built with Next.js. Deployed on Vercel.
+            &copy; {new Date().getFullYear()} SnipShift. All rights reserved.
           </p>
         </div>
       </div>

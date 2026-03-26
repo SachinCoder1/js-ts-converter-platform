@@ -1,26 +1,18 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-import type { FileType, AIProvider } from '@/lib/types';
+import { PoweredByIndicator, KeyboardShortcutHint } from '@/components/shared/provider-selector';
+import type { FileType } from '@/lib/types';
 
 interface ControlBarProps {
   fileType: FileType;
   onFileTypeChange: (fileType: FileType) => void;
-  selectedProvider: AIProvider | 'auto';
-  onProviderChange: (provider: AIProvider | 'auto') => void;
   onConvert: () => void;
   isConverting: boolean;
   providerStatus?: string;
 }
 
-/* ─── File type toggle — iOS-style segment control ─── */
+/* ─── File type toggle  iOS-style segment control ─── */
 function FileTypeToggle({
   value,
   onChange,
@@ -60,7 +52,7 @@ function FileTypeToggle({
   );
 }
 
-/* ─── The Convert Button — the star of the show ─── */
+/* ─── The Convert Button  the star of the show ─── */
 function ConvertButton({
   onClick,
   isConverting,
@@ -133,8 +125,6 @@ function ConvertButton({
 export function ControlBar({
   fileType,
   onFileTypeChange,
-  selectedProvider,
-  onProviderChange,
   onConvert,
   isConverting,
   providerStatus,
@@ -154,49 +144,9 @@ export function ControlBar({
 
       <div className="hidden sm:block h-5 w-px" style={{ background: 'var(--border)' }} />
 
-      {/* Provider selector */}
-      <Select
-        value={selectedProvider}
-        onValueChange={(v) => onProviderChange(v as AIProvider | 'auto')}
-      >
-        <SelectTrigger
-          className="h-8 w-[160px] rounded-md border text-xs"
-          style={{
-            borderColor: 'var(--border)',
-            background: 'var(--surface)',
-            color: 'var(--text-secondary)',
-          }}
-        >
-          <SelectValue />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectItem value="auto">Auto (Best Available)</SelectItem>
-          <SelectItem value="gemini">Gemini</SelectItem>
-          <SelectItem value="deepseek">DeepSeek</SelectItem>
-          <SelectItem value="openrouter">OpenRouter Free</SelectItem>
-          <SelectItem value="ast-only">AST Only (No AI)</SelectItem>
-        </SelectContent>
-      </Select>
+      <PoweredByIndicator />
 
-      {/* Keyboard shortcut hint — tertiary, ghost-like */}
-      <span
-        className="hidden sm:flex items-center gap-1 text-[10px] font-mono"
-        style={{ color: 'var(--text-disabled)', letterSpacing: '0.05em' }}
-      >
-        <kbd
-          className="rounded px-1.5 py-0.5"
-          style={{ background: 'var(--muted)', color: 'var(--text-tertiary)' }}
-        >
-          {typeof navigator !== 'undefined' && /Mac/.test(navigator.userAgent) ? '\u2318' : 'Ctrl'}
-        </kbd>
-        <span>+</span>
-        <kbd
-          className="rounded px-1.5 py-0.5"
-          style={{ background: 'var(--muted)', color: 'var(--text-tertiary)' }}
-        >
-          Enter
-        </kbd>
-      </span>
+      <KeyboardShortcutHint />
     </div>
   );
 }

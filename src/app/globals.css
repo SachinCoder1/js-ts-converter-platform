@@ -50,83 +50,7 @@
 }
 
 /* ================================================================
-   DARK MODE (PRIMARY) — Blue-tinted near-black precision aesthetic
-   Accent: warm amber/gold
-   ================================================================ */
-.dark {
-  /* Background layers — subtle blue undertone, NOT flat black */
-  --background: hsl(220 13% 4%);          /* deepest base */
-  --surface: hsl(220 13% 7%);             /* editor panels, cards */
-  --elevated: hsl(220 13% 10%);           /* popovers, dropdowns */
-  --hover: hsl(220 13% 13%);              /* hover states */
-
-  /* Map to shadcn tokens */
-  --foreground: hsl(0 0% 93%);            /* primary text */
-  --card: hsl(220 13% 7%);
-  --card-foreground: hsl(0 0% 93%);
-  --popover: hsl(220 13% 10%);
-  --popover-foreground: hsl(0 0% 93%);
-
-  /* Primary = accent amber/gold */
-  --primary: hsl(45 93% 58%);
-  --primary-foreground: hsl(220 13% 4%);
-
-  /* Secondary = subtle surface variation */
-  --secondary: hsl(220 13% 10%);
-  --secondary-foreground: hsl(0 0% 80%);
-
-  /* Muted */
-  --muted: hsl(220 10% 12%);
-  --muted-foreground: hsl(0 0% 45%);
-
-  /* Accent = same as primary for consistency */
-  --accent: hsl(45 93% 58%);
-  --accent-foreground: hsl(220 13% 4%);
-
-  /* Destructive — warm red, not alarming */
-  --destructive: hsl(0 62% 55%);
-
-  /* Borders — near invisible */
-  --border: hsl(220 10% 15%);
-  --input: hsl(220 10% 15%);
-  --ring: hsl(45 93% 58%);
-
-  /* Status colors — muted, not neon */
-  --success: hsl(145 45% 45%);
-  --warning: hsl(38 70% 50%);
-
-  /* Chart colors */
-  --chart-1: hsl(45 93% 58%);
-  --chart-2: hsl(175 60% 45%);
-  --chart-3: hsl(280 50% 55%);
-  --chart-4: hsl(0 60% 55%);
-  --chart-5: hsl(220 50% 55%);
-
-  --radius: 0.5rem;
-
-  /* Text hierarchy */
-  --text-primary: hsl(0 0% 93%);
-  --text-secondary: hsl(0 0% 60%);
-  --text-tertiary: hsl(0 0% 40%);
-  --text-disabled: hsl(0 0% 25%);
-
-  /* Glow color */
-  --glow: hsl(45 93% 58% / 0.15);
-  --glow-strong: hsl(45 93% 58% / 0.25);
-
-  /* Sidebar */
-  --sidebar: hsl(220 13% 5%);
-  --sidebar-foreground: hsl(0 0% 93%);
-  --sidebar-primary: hsl(45 93% 58%);
-  --sidebar-primary-foreground: hsl(220 13% 4%);
-  --sidebar-accent: hsl(220 13% 10%);
-  --sidebar-accent-foreground: hsl(0 0% 93%);
-  --sidebar-border: hsl(220 10% 15%);
-  --sidebar-ring: hsl(45 93% 58%);
-}
-
-/* ================================================================
-   LIGHT MODE (SECONDARY) — Warm cream/white, properly designed
+   LIGHT MODE (DEFAULT)  Warm cream/white, properly designed
    ================================================================ */
 :root {
   --background: hsl(40 20% 98%);          /* warm cream */
@@ -173,7 +97,7 @@
   --text-primary: hsl(220 15% 12%);
   --text-secondary: hsl(220 10% 40%);
   --text-tertiary: hsl(220 8% 58%);
-  --text-disabled: hsl(220 5% 75%);
+  --text-disabled: hsl(220 5% 55%);
 
   --glow: hsl(40 90% 38% / 0.1);
   --glow-strong: hsl(40 90% 38% / 0.2);
@@ -186,6 +110,82 @@
   --sidebar-accent-foreground: hsl(220 15% 12%);
   --sidebar-border: hsl(220 10% 88%);
   --sidebar-ring: hsl(40 90% 38%);
+}
+
+/* ================================================================
+   DARK MODE  Blue-tinted near-black precision aesthetic
+   Accent: warm amber/gold
+   ================================================================ */
+.dark {
+  /* Background layers  subtle blue undertone, NOT flat black */
+  --background: hsl(220 13% 4%);          /* deepest base */
+  --surface: hsl(220 13% 7%);             /* editor panels, cards */
+  --elevated: hsl(220 13% 10%);           /* popovers, dropdowns */
+  --hover: hsl(220 13% 13%);              /* hover states */
+
+  /* Map to shadcn tokens */
+  --foreground: hsl(0 0% 93%);            /* primary text */
+  --card: hsl(220 13% 7%);
+  --card-foreground: hsl(0 0% 93%);
+  --popover: hsl(220 13% 10%);
+  --popover-foreground: hsl(0 0% 93%);
+
+  /* Primary = accent amber/gold */
+  --primary: hsl(45 93% 58%);
+  --primary-foreground: hsl(220 13% 4%);
+
+  /* Secondary = subtle surface variation */
+  --secondary: hsl(220 13% 10%);
+  --secondary-foreground: hsl(0 0% 80%);
+
+  /* Muted */
+  --muted: hsl(220 10% 12%);
+  --muted-foreground: hsl(0 0% 45%);
+
+  /* Accent = same as primary for consistency */
+  --accent: hsl(45 93% 58%);
+  --accent-foreground: hsl(220 13% 4%);
+
+  /* Destructive  warm red, not alarming */
+  --destructive: hsl(0 62% 55%);
+
+  /* Borders  near invisible */
+  --border: hsl(220 10% 15%);
+  --input: hsl(220 10% 15%);
+  --ring: hsl(45 93% 58%);
+
+  /* Status colors  muted, not neon */
+  --success: hsl(145 45% 45%);
+  --warning: hsl(38 70% 50%);
+
+  /* Chart colors */
+  --chart-1: hsl(45 93% 58%);
+  --chart-2: hsl(175 60% 45%);
+  --chart-3: hsl(280 50% 55%);
+  --chart-4: hsl(0 60% 55%);
+  --chart-5: hsl(220 50% 55%);
+
+  --radius: 0.5rem;
+
+  /* Text hierarchy */
+  --text-primary: hsl(0 0% 93%);
+  --text-secondary: hsl(0 0% 60%);
+  --text-tertiary: hsl(0 0% 40%);
+  --text-disabled: hsl(0 0% 25%);
+
+  /* Glow color */
+  --glow: hsl(45 93% 58% / 0.15);
+  --glow-strong: hsl(45 93% 58% / 0.25);
+
+  /* Sidebar */
+  --sidebar: hsl(220 13% 5%);
+  --sidebar-foreground: hsl(0 0% 93%);
+  --sidebar-primary: hsl(45 93% 58%);
+  --sidebar-primary-foreground: hsl(220 13% 4%);
+  --sidebar-accent: hsl(220 13% 10%);
+  --sidebar-accent-foreground: hsl(0 0% 93%);
+  --sidebar-border: hsl(220 10% 15%);
+  --sidebar-ring: hsl(45 93% 58%);
 }
 
 /* ================================================================
@@ -207,20 +207,33 @@
 }
 
 /* ================================================================
-   GLOBAL TRANSITIONS — "snappy but smooth"
+   TEXT SELECTION  visible in both themes
+   ================================================================ */
+::selection {
+  background: hsl(40 90% 38% / 0.3);
+  color: hsl(220 15% 12%);
+}
+
+.dark ::selection {
+  background: hsl(45 93% 58% / 0.35);
+  color: hsl(0 0% 100%);
+}
+
+/* ================================================================
+   GLOBAL TRANSITIONS  "snappy but smooth"
    ================================================================ */
 html {
   transition: background-color 150ms ease-out, color 150ms ease-out;
 }
 
 /* ================================================================
-   NOISE TEXTURE OVERLAY — 2-3% opacity for depth
+   NOISE TEXTURE OVERLAY  2-3% opacity for depth
    ================================================================ */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 1;
   pointer-events: none;
   opacity: 0.025;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
@@ -238,7 +251,7 @@ body::before {
 }
 
 /* ================================================================
-   SHIMMER EFFECT — for convert button loading state
+   SHIMMER EFFECT  for convert button loading state
    ================================================================ */
 @keyframes shimmer {
   0% { background-position: -200% 0; }
@@ -257,7 +270,7 @@ body::before {
 }
 
 /* ================================================================
-   SCANNING LINE — for conversion start animation
+   SCANNING LINE  for conversion start animation
    ================================================================ */
 @keyframes scan-line {
   0% { top: 0; opacity: 0.6; }
@@ -278,7 +291,7 @@ body::before {
 }
 
 /* ================================================================
-   FOCUS RINGS — double ring, accessible + beautiful
+   FOCUS RINGS  double ring, accessible + beautiful
    ================================================================ */
 :focus-visible {
   outline: 2px solid var(--ring);
@@ -319,12 +332,12 @@ body::before {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(220 10% 25%);
+  background: hsl(220 8% 78%);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(220 10% 35%);
+  background: hsl(220 8% 65%);
 }
 
 .dark ::-webkit-scrollbar-thumb {
@@ -426,7 +439,7 @@ details[open] summary::after {
 }
 
 /* ================================================================
-   LANDING PAGE — Hero animations
+   LANDING PAGE  Hero animations
    ================================================================ */
 @keyframes grid-shift {
   0% { background-position: 0 0; }
@@ -474,11 +487,26 @@ details[open] summary::after {
 }
 
 /* sugar-high syntax highlighting tokens */
-[data-sh-theme] .sh__line { display: block; }
+.sh__line { display: block; }
+.sh__line:empty { height: 1.4em; }
 code [class*="sh__token--"] { font-family: inherit; }
 
+/* sugar-high token colors  dark code blocks */
+.blog-content pre code {
+  --sh-class: #e5c07b;
+  --sh-identifier: #e06c75;
+  --sh-keyword: #c678dd;
+  --sh-string: #98c379;
+  --sh-sign: #abb2bf;
+  --sh-property: #61afef;
+  --sh-entity: #56b6c2;
+  --sh-jsxliterals: #56b6c2;
+  --sh-comment: #5c6370;
+  --sh-space: inherit;
+}
+
 /* ================================================================
-   MONACO SCROLLBAR — appear on hover with fade
+   MONACO SCROLLBAR  appear on hover with fade
    ================================================================ */
 .monaco-editor .scrollbar .slider {
   opacity: 0;
@@ -524,7 +552,7 @@ code [class*="sh__token--"] { font-family: inherit; }
 }
 
 /* ================================================================
-   TYPEWRITER REVEAL — output code reveal effect
+   TYPEWRITER REVEAL  output code reveal effect
    ================================================================ */
 @keyframes typewriter-reveal {
   0% {
@@ -546,7 +574,17 @@ code [class*="sh__token--"] { font-family: inherit; }
 }
 
 /* ================================================================
-   REDUCED MOTION — respect user preferences
+   MOBILE EDITOR  force full width on small screens
+   ================================================================ */
+@media (max-width: 767px) {
+  #editor-pair > * {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+  }
+}
+
+/* ================================================================
+   REDUCED MOTION  respect user preferences
    ================================================================ */
 @media (prefers-reduced-motion: reduce) {
   *,

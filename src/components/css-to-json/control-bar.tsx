@@ -107,7 +107,7 @@ export function CssToJsonControlBar({
             color: 'var(--text-secondary)',
           }}
         >
-          <SelectValue />
+          <span>{{ none: 'No wrapper', stylesheet: 'StyleSheet.create()', css: "css({})" }[options.wrapper]}</span>
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="none">No wrapper</SelectItem>
@@ -119,7 +119,7 @@ export function CssToJsonControlBar({
       {/* Auto-convert hint */}
       <span
         className="hidden sm:flex items-center gap-1.5 text-[10px] font-mono"
-        style={{ color: 'var(--text-disabled)', letterSpacing: '0.05em' }}
+        style={{ color: 'var(--text-tertiary)', letterSpacing: '0.05em' }}
       >
         <div
           className="w-1.5 h-1.5 rounded-full"

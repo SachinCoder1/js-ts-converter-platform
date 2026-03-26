@@ -40,7 +40,7 @@ interface ConverterLayoutProps {
   statusState?: 'idle' | 'active' | 'done';
   modelIndicator?: string;
 
-  // Control bar — render prop for tool-specific controls
+  // Control bar  render prop for tool-specific controls
   renderControlBar: () => React.ReactNode;
 
   // Stats section below editors
@@ -115,6 +115,25 @@ export function ConverterLayout({
       if (reassuranceTimerRef.current) clearTimeout(reassuranceTimerRef.current);
     };
   }, [isConverting]);
+
+  // Track whether user has interacted (don't auto-switch on initial mount/refresh)
+  const hasMountedRef = useRef(false);
+  useEffect(() => {
+    const timer = setTimeout(() => { hasMountedRef.current = true; }, 500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Auto-switch to output tab on mobile when conversion completes
+  const prevStatusRef = useRef(statusState);
+  useEffect(() => {
+    if (!hasMountedRef.current) { prevStatusRef.current = statusState; return; }
+    if (typeof window !== 'undefined' && window.innerWidth < 768) {
+      if (!isLiveMode && statusState === 'done' && prevStatusRef.current === 'active') {
+        setMobileTab('output');
+      }
+    }
+    prevStatusRef.current = statusState;
+  }, [statusState, isLiveMode]);
 
   // Screen reader announcement
   const announceRef = useRef<HTMLDivElement>(null);
@@ -201,6 +220,41 @@ export function ConverterLayout({
         resultKey={resultKey}
       />
 
+      {/* Mobile action button  navigate between Input/Output */}
+      <div className="md:hidden py-3">
+        {mobileTab === 'output' ? (
+          <button
+            onClick={() => setMobileTab('input')}
+            className="flex w-full items-center justify-center gap-2 rounded-md py-2.5 text-sm font-semibold transition-all duration-200"
+            style={{
+              background: 'var(--surface)',
+              color: 'var(--text-secondary)',
+              border: '1px solid var(--border)',
+            }}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M19 12H5" /><path d="m12 19-7-7 7-7" />
+            </svg>
+            Edit Input
+          </button>
+        ) : isLiveMode && inputValue ? (
+          <button
+            onClick={() => setMobileTab('output')}
+            className="flex w-full items-center justify-center gap-2 rounded-md py-2.5 text-sm font-semibold transition-all duration-200"
+            style={{
+              background: 'var(--primary)',
+              color: 'var(--primary-foreground)',
+              boxShadow: '0 0 20px var(--glow)',
+            }}
+          >
+            View Output
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
+            </svg>
+          </button>
+        ) : null}
+      </div>
+
       {/* Reassurance message for long conversions */}
       <AnimatePresence>
         {showReassurance && isConverting && (
@@ -212,7 +266,7 @@ export function ConverterLayout({
             className="text-center text-xs py-1"
             style={{ color: 'var(--text-tertiary)' }}
           >
-            AI is working on complex code — this may take a moment
+            AI is working on complex code  this may take a moment
           </motion.p>
         )}
       </AnimatePresence>

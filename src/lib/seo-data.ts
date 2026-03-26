@@ -15,7 +15,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
   'js-to-ts': {
     id: 'js-to-ts',
     path: '/js-to-ts',
-    metaTitle: 'JS/JSX to TypeScript/TSX Converter — Free AI-Powered Tool',
+    metaTitle: 'JS/JSX to TypeScript/TSX Converter  Free AI-Powered Tool',
     description:
       'Convert JavaScript to TypeScript and JSX to TSX instantly. AI-powered type inference generates proper interfaces, React typing, and generics. Free, no signup required.',
     source: 'JavaScript/JSX',
@@ -35,7 +35,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this JavaScript to TypeScript converter free?',
         answer:
-          "Yes, DevShift's JS to TypeScript converter is completely free with no signup required. Convert unlimited files directly in your browser.",
+          "Yes, SnipShift's JS to TypeScript converter is completely free with no signup required. Convert unlimited files directly in your browser.",
       },
       {
         question: 'Is my code sent to a server?',
@@ -67,7 +67,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
   'json-to-ts': {
     id: 'json-to-ts',
     path: '/json-to-typescript',
-    metaTitle: 'JSON to TypeScript Interface Generator — Free Online Tool',
+    metaTitle: 'JSON to TypeScript Interface Generator  Free Online Tool',
     description:
       'Generate TypeScript interfaces and types from JSON instantly. Supports nested objects, arrays, optional fields, and export options. Free online JSON to TS generator.',
     source: 'JSON',
@@ -87,7 +87,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this JSON to TypeScript converter free?',
         answer:
-          "Yes, DevShift's JSON to TypeScript generator is completely free with no signup required. Generate unlimited TypeScript interfaces from your JSON data.",
+          "Yes, SnipShift's JSON to TypeScript generator is completely free with no signup required. Generate unlimited TypeScript interfaces from your JSON data.",
       },
       {
         question: 'Does it handle nested JSON objects?',
@@ -114,7 +114,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
   'json-to-zod': {
     id: 'json-to-zod',
     path: '/json-to-zod',
-    metaTitle: 'JSON to Zod Schema Generator — Free Online Tool',
+    metaTitle: 'JSON to Zod Schema Generator  Free Online Tool',
     description:
       'Generate Zod validation schemas from JSON instantly. AI adds smart validations like .email(), .url(), .datetime(). Free online Zod schema generator, no signup needed.',
     source: 'JSON',
@@ -134,7 +134,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this JSON to Zod generator free?',
         answer:
-          "Yes, DevShift's JSON to Zod generator is completely free with no signup. Generate Zod schemas from any JSON structure instantly.",
+          "Yes, SnipShift's JSON to Zod generator is completely free with no signup. Generate Zod schemas from any JSON structure instantly.",
       },
       {
         question: 'Does it add smart validations?',
@@ -161,7 +161,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
   'json-to-yaml': {
     id: 'json-to-yaml',
     path: '/json-to-yaml',
-    metaTitle: 'JSON to YAML Converter — Free Online Tool',
+    metaTitle: 'JSON to YAML Converter  Free Online Tool',
     description:
       'Convert JSON to YAML format instantly. Handles nested objects, arrays, and special characters. Free online JSON to YAML converter with proper formatting. No signup required.',
     source: 'JSON',
@@ -181,7 +181,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this JSON to YAML converter free?',
         answer:
-          "Yes, DevShift's JSON to YAML converter is completely free with no signup required. Convert unlimited JSON data to YAML format.",
+          "Yes, SnipShift's JSON to YAML converter is completely free with no signup required. Convert unlimited JSON data to YAML format.",
       },
       {
         question: 'Is my data processed locally?',
@@ -196,7 +196,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Can I convert YAML back to JSON?',
         answer:
-          'Yes! DevShift also offers a YAML to JSON converter. Use it to convert in the reverse direction.',
+          'Yes! SnipShift also offers a YAML to JSON converter. Use it to convert in the reverse direction.',
       },
     ],
     howToSteps: [
@@ -208,7 +208,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
   'yaml-to-json': {
     id: 'yaml-to-json',
     path: '/yaml-to-json',
-    metaTitle: 'YAML to JSON Converter — Free Online Tool',
+    metaTitle: 'YAML to JSON Converter  Free Online Tool',
     description:
       'Convert YAML to JSON format instantly. Handles anchors, aliases, multi-line strings, and complex structures. Free online YAML to JSON converter. No signup required.',
     source: 'YAML',
@@ -228,7 +228,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this YAML to JSON converter free?',
         answer:
-          "Yes, DevShift's YAML to JSON converter is completely free with no signup required. Convert unlimited YAML files to JSON.",
+          "Yes, SnipShift's YAML to JSON converter is completely free with no signup required. Convert unlimited YAML files to JSON.",
       },
       {
         question: 'Is my data processed locally?',
@@ -255,7 +255,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
   'css-to-json': {
     id: 'css-to-json',
     path: '/css-to-json',
-    metaTitle: 'CSS to JSON Converter — Free CSS-in-JS Tool',
+    metaTitle: 'CSS to JSON Converter  Free CSS-in-JS Tool',
     description:
       'Convert CSS rules to JSON objects for CSS-in-JS. Handles selectors, media queries, and pseudo-classes. Free online CSS to JSON converter for React and styled-components.',
     source: 'CSS',
@@ -275,7 +275,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this CSS to JSON converter free?',
         answer:
-          "Yes, DevShift's CSS to JSON converter is completely free with no signup required. Convert unlimited CSS rules to JSON objects.",
+          "Yes, SnipShift's CSS to JSON converter is completely free with no signup required. Convert unlimited CSS rules to JSON objects.",
       },
       {
         question: 'Does it convert property names to camelCase?',
@@ -302,7 +302,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
   'js-object-to-json': {
     id: 'js-object-to-json',
     path: '/js-object-to-json',
-    metaTitle: 'JS Object to JSON Converter — Free Online Tool',
+    metaTitle: 'JS Object to JSON Converter  Free Online Tool',
     description:
       'Convert JavaScript object literals to valid JSON. Handles unquoted keys, trailing commas, single quotes, and template literals. Free online JS to JSON converter.',
     source: 'JavaScript Object',
@@ -322,7 +322,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this JS Object to JSON converter free?',
         answer:
-          "Yes, DevShift's JS Object to JSON converter is completely free with no signup required. Convert unlimited JavaScript objects to valid JSON.",
+          "Yes, SnipShift's JS Object to JSON converter is completely free with no signup required. Convert unlimited JavaScript objects to valid JSON.",
       },
       {
         question: 'What JavaScript syntax does it handle?',
@@ -349,7 +349,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
   'css-to-tailwind': {
     id: 'css-to-tailwind',
     path: '/css-to-tailwind',
-    metaTitle: 'CSS to Tailwind CSS Converter — Free Online Tool',
+    metaTitle: 'CSS to Tailwind CSS Converter  Free Online Tool',
     description:
       'Convert vanilla CSS to Tailwind utility classes instantly. Handles flexbox, grid, responsive, hover states, and custom values. Free online CSS to Tailwind converter.',
     source: 'CSS',
@@ -369,7 +369,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this CSS to Tailwind converter free?',
         answer:
-          "Yes, DevShift's CSS to Tailwind converter is completely free with no signup required. Convert unlimited CSS to Tailwind utility classes.",
+          "Yes, SnipShift's CSS to Tailwind converter is completely free with no signup required. Convert unlimited CSS to Tailwind utility classes.",
       },
       {
         question: 'Does it handle responsive and hover states?',
@@ -396,7 +396,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
   'scss-to-css': {
     id: 'scss-to-css',
     path: '/scss-to-css',
-    metaTitle: 'SCSS to CSS Compiler — Free Online Tool',
+    metaTitle: 'SCSS to CSS Compiler  Free Online Tool',
     description:
       'Compile SCSS/SASS to standard CSS online. Handles variables, mixins, nesting, and imports. Choose expanded or compressed output. Free SCSS compiler, no signup required.',
     source: 'SCSS/SASS',
@@ -416,7 +416,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this SCSS compiler free?',
         answer:
-          "Yes, DevShift's SCSS to CSS compiler is completely free with no signup required. Compile unlimited SCSS/SASS files to CSS.",
+          "Yes, SnipShift's SCSS to CSS compiler is completely free with no signup required. Compile unlimited SCSS/SASS files to CSS.",
       },
       {
         question: 'What SCSS features are supported?',
@@ -443,7 +443,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
   'html-to-jsx': {
     id: 'html-to-jsx',
     path: '/html-to-jsx',
-    metaTitle: 'HTML to JSX/TSX Converter — Free Online Tool',
+    metaTitle: 'HTML to JSX/TSX Converter  Free Online Tool',
     description:
       'Convert HTML to valid JSX/TSX for React instantly. Handles class→className, style objects, self-closing tags, and event handlers. Free online HTML to JSX converter.',
     source: 'HTML',
@@ -463,7 +463,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this HTML to JSX converter free?',
         answer:
-          "Yes, DevShift's HTML to JSX converter is completely free with no signup required. Convert unlimited HTML to valid JSX/TSX.",
+          "Yes, SnipShift's HTML to JSX converter is completely free with no signup required. Convert unlimited HTML to valid JSX/TSX.",
       },
       {
         question: 'What HTML attributes does it convert?',
@@ -490,7 +490,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
   'tailwind-to-css': {
     id: 'tailwind-to-css',
     path: '/tailwind-to-css',
-    metaTitle: 'Tailwind to CSS Converter — Free Online Tool',
+    metaTitle: 'Tailwind to CSS Converter  Free Online Tool',
     description:
       'Convert Tailwind CSS utility classes to vanilla CSS instantly. See the actual CSS behind any Tailwind class. Handles responsive prefixes and states. Free, no signup.',
     source: 'Tailwind CSS',
@@ -510,7 +510,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this Tailwind to CSS converter free?',
         answer:
-          "Yes, DevShift's Tailwind to CSS converter is completely free with no signup required. Convert unlimited Tailwind classes to vanilla CSS.",
+          "Yes, SnipShift's Tailwind to CSS converter is completely free with no signup required. Convert unlimited Tailwind classes to vanilla CSS.",
       },
       {
         question: 'Does it handle responsive prefixes?',
@@ -537,7 +537,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
   'graphql-to-ts': {
     id: 'graphql-to-ts',
     path: '/graphql-to-typescript',
-    metaTitle: 'GraphQL to TypeScript Generator — Free Online Tool',
+    metaTitle: 'GraphQL to TypeScript Generator  Free Online Tool',
     description:
       'Generate TypeScript types from GraphQL schemas instantly. Handles types, inputs, enums, unions, and interfaces. Free online GraphQL to TypeScript code generator.',
     source: 'GraphQL Schema',
@@ -557,7 +557,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this GraphQL to TypeScript generator free?',
         answer:
-          "Yes, DevShift's GraphQL to TypeScript generator is completely free with no signup required. Generate unlimited TypeScript types from GraphQL schemas.",
+          "Yes, SnipShift's GraphQL to TypeScript generator is completely free with no signup required. Generate unlimited TypeScript types from GraphQL schemas.",
       },
       {
         question: 'What GraphQL types does it handle?',
@@ -567,7 +567,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'How is this different from graphql-codegen?',
         answer:
-          'DevShift provides instant, zero-config TypeScript generation right in your browser. No need to install packages, write config files, or set up a build pipeline. Just paste your schema and get types.',
+          'SnipShift provides instant, zero-config TypeScript generation right in your browser. No need to install packages, write config files, or set up a build pipeline. Just paste your schema and get types.',
       },
       {
         question: 'Is my schema sent to a server?',
@@ -581,10 +581,64 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       'Copy the generated TypeScript definitions from the right editor',
     ],
   },
+  'regex-tester': {
+    id: 'regex-tester',
+    path: '/regex-tester',
+    metaTitle: 'Regex Tester & Cross-Language Converter  Free Online Tool',
+    description:
+      'Test regular expressions live with match highlighting, AI-powered explanations, and cross-language conversion between JavaScript, Python, Go, Rust, PHP, and Java. Free, no signup.',
+    source: 'Regex',
+    target: 'Multi-Language',
+    keywords: [
+      'regex tester online',
+      'regex converter',
+      'javascript regex to python',
+      'regex explainer',
+      'regular expression tester',
+      'regex cross-language converter',
+      'regex match highlighter',
+      'regex cheatsheet',
+    ],
+    relatedTools: ['js-to-ts', 'json-to-ts', 'html-to-jsx'],
+    faqItems: [
+      {
+        question: 'Is this regex tester free?',
+        answer:
+          "Yes, SnipShift's Regex Tester is completely free with no signup required. Test patterns, get AI explanations, and convert between languages instantly.",
+      },
+      {
+        question: 'Which regex flavors are supported for conversion?',
+        answer:
+          'The converter supports JavaScript, Python, Go, Rust, PHP, and Java regex flavors. It highlights syntax differences and caveats between languages.',
+      },
+      {
+        question: 'How does the AI regex explanation work?',
+        answer:
+          'The AI analyzes your regex pattern and generates a plain English explanation of each component, including character classes, quantifiers, groups, and assertions.',
+      },
+      {
+        question: 'Is the regex testing done on the server?',
+        answer:
+          'No, regex testing and match highlighting happen entirely in your browser for instant feedback. Only AI explanation and cross-language conversion use the server.',
+      },
+      {
+        question: 'Does it support named capture groups?',
+        answer:
+          'Yes, the tester fully supports named capture groups and displays them separately in the match details panel with their group names.',
+      },
+    ],
+    howToSteps: [
+      'Enter your regex pattern in the input field at the top',
+      'Toggle flags (g, i, m, s, u, y) as needed',
+      'Paste your test string in the editor to see live match highlighting',
+      'Click Explain to get an AI-powered plain English explanation',
+      'Use the Convert tab to see equivalent patterns in other languages',
+    ],
+  },
   'proptypes-to-ts': {
     id: 'proptypes-to-ts',
     path: '/proptypes-to-typescript',
-    metaTitle: 'PropTypes to TypeScript Converter — Free Online Tool',
+    metaTitle: 'PropTypes to TypeScript Converter  Free Online Tool',
     description:
       'Convert React PropTypes to TypeScript interfaces instantly. Handles shape, arrayOf, oneOf, isRequired, and defaultProps. Free online PropTypes to TS converter.',
     source: 'React PropTypes',
@@ -604,7 +658,7 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       {
         question: 'Is this PropTypes to TypeScript converter free?',
         answer:
-          "Yes, DevShift's PropTypes to TypeScript converter is completely free with no signup required. Convert unlimited React PropTypes to TypeScript interfaces.",
+          "Yes, SnipShift's PropTypes to TypeScript converter is completely free with no signup required. Convert unlimited React PropTypes to TypeScript interfaces.",
       },
       {
         question: 'What PropTypes does it handle?',
@@ -626,6 +680,212 @@ export const TOOL_SEO_DATA: Record<string, ToolSeoData> = {
       'Paste your React component with PropTypes in the left editor',
       'Click Convert to generate TypeScript interfaces',
       'Copy the converted TypeScript component from the right editor',
+    ],
+  },
+  'package-to-badges': {
+    id: 'package-to-badges',
+    path: '/package-to-badges',
+    metaTitle: 'Package.json to README Badges Generator \u2014 Auto-Generate Shields.io Badges | SnipShift',
+    description:
+      'Generate shields.io markdown badges from your package.json automatically. Detects frameworks, testing tools, TypeScript, linting, and more. Free online badge generator, no signup required.',
+    source: 'Package.json',
+    target: 'README Badges',
+    keywords: [
+      'readme badges generator',
+      'shields.io badge generator',
+      'package.json to badges',
+      'npm readme badges',
+      'github badges generator',
+      'shields.io markdown badges',
+      'auto generate readme badges',
+      'package json badge generator',
+    ],
+    relatedTools: ['json-to-yaml', 'json-to-ts', 'html-to-jsx', 'json-to-zod'],
+    faqItems: [
+      {
+        question: 'Is this badge generator free?',
+        answer:
+          "Yes, SnipShift's Package.json to Badges generator is completely free with no signup required. Generate unlimited badge sets from your package.json.",
+      },
+      {
+        question: 'Is my package.json data sent to a server?',
+        answer:
+          'No. The badge generation happens entirely in your browser using JavaScript. Your package.json data never leaves your machine.',
+      },
+      {
+        question: 'What badge types does it detect?',
+        answer:
+          'The generator detects npm package info, Node engine version, TypeScript, frameworks (React, Next.js, Vue, Svelte, Angular, Express, etc.), testing tools (Jest, Vitest, Cypress, Playwright), linters (ESLint, Prettier, Biome), build tools (Vite, Webpack, esbuild, Turbo), and generates npm downloads and bundle size badges.',
+      },
+      {
+        question: 'Can I customize the badge style?',
+        answer:
+          'Yes, you can choose from five shields.io styles (flat, flat-square, for-the-badge, plastic, social), set a custom color, select output format (Markdown, HTML, RST), and toggle individual badge categories on or off.',
+      },
+      {
+        question: 'Does it work with private packages?',
+        answer:
+          'Yes. For private packages, it generates static version and license badges instead of npm-linked badges, and skips npm downloads and bundle size badges since those require a public npm package.',
+      },
+    ],
+    howToSteps: [
+      'Paste your package.json in the left editor',
+      'Customize badge style, format, and categories in the options bar',
+      'Copy the generated badge markdown from the right editor into your README',
+    ],
+  },
+  'markdown-table-converter': {
+    id: 'markdown-table-converter',
+    path: '/markdown-table-converter',
+    metaTitle: 'Markdown Table to JSON/CSV Converter  Free Online Tool | SnipShift',
+    description:
+      'Convert between Markdown tables, JSON, and CSV instantly. Auto-detects input format. Handles quoted fields, escaped characters, and alignment. Free, no signup required.',
+    source: 'Markdown Table',
+    target: 'JSON/CSV',
+    keywords: [
+      'markdown table to json',
+      'csv to markdown table',
+      'json to markdown table',
+      'markdown table generator',
+      'convert csv to markdown',
+      'markdown table converter',
+      'json to csv converter',
+      'csv to json converter',
+    ],
+    relatedTools: ['json-to-yaml', 'yaml-to-json', 'json-to-ts', 'html-to-jsx'],
+    faqItems: [
+      {
+        question: 'Is this Markdown Table converter free?',
+        answer:
+          "Yes, SnipShift's Markdown Table converter is completely free with no signup required. Convert unlimited tables between Markdown, JSON, and CSV formats.",
+      },
+      {
+        question: 'Is my data sent to a server?',
+        answer:
+          'No. All conversions happen entirely in your browser using JavaScript. Your data never leaves your machine.',
+      },
+      {
+        question: 'What input formats are supported?',
+        answer:
+          'The converter auto-detects Markdown tables (pipe-delimited), JSON (array of objects or array of arrays), and CSV (with configurable delimiters including comma, tab, semicolon, and pipe).',
+      },
+      {
+        question: 'Does it handle special characters in CSV?',
+        answer:
+          'Yes! The converter properly handles quoted fields, escaped commas within quotes, escaped double-quotes, newlines within quoted fields, and Unicode characters.',
+      },
+      {
+        question: 'Can I convert in any direction?',
+        answer:
+          'Yes, the converter is fully bidirectional. Paste any of the three formats and get the other two as outputs. It auto-detects your input format or you can specify it manually.',
+      },
+    ],
+    howToSteps: [
+      'Paste your Markdown table, JSON array, or CSV data in the input editor',
+      'The converter auto-detects the format and generates both alternative outputs',
+      'Switch between output tabs to view JSON or CSV (or Markdown), then copy or download',
+    ],
+  },
+  'env-to-types': {
+    id: 'env-to-types',
+    path: '/env-to-types',
+    metaTitle: 'Env to TypeScript / Zod Converter  Type Your Environment Variables | SnipShift',
+    description:
+      'Convert .env files to TypeScript interfaces, Zod schemas, t3-env configs, or Valibot schemas. Infers types from values automatically. Free online tool, no signup.',
+    source: '.env',
+    target: 'TypeScript / Zod',
+    keywords: [
+      'env to typescript',
+      'dotenv to zod',
+      'type process.env',
+      't3 env generator',
+      'env validation typescript',
+      'env to zod schema',
+      'environment variables typescript',
+      'valibot env schema',
+    ],
+    relatedTools: ['json-to-ts', 'json-to-zod', 'js-to-ts', 'openapi-to-ts'],
+    faqItems: [
+      {
+        question: 'Is this .env to TypeScript converter free?',
+        answer:
+          "Yes, SnipShift's Env to Types converter is completely free with no signup required. Convert unlimited .env files to TypeScript, Zod, t3-env, or Valibot schemas.",
+      },
+      {
+        question: 'Is my .env data sent to a server?',
+        answer:
+          'No. The conversion happens entirely in your browser. No environment variables or secrets ever leave your machine.',
+      },
+      {
+        question: 'How does type inference work?',
+        answer:
+          'The converter analyzes each value: numeric values like PORT=3000 become number, boolean-ish values like DEBUG=true become boolean, URL patterns become string with .url() validation, and everything else becomes string.',
+      },
+      {
+        question: 'What is the t3-env output format?',
+        answer:
+          'The t3-env format generates a createEnv() config compatible with @t3-oss/env-nextjs. It automatically splits variables into server and client sections based on NEXT_PUBLIC_ prefix detection.',
+      },
+      {
+        question: 'Does it handle NEXT_PUBLIC_ variables?',
+        answer:
+          'Yes! When prefix detection is enabled, variables with NEXT_PUBLIC_, VITE_, or REACT_APP_ prefixes are automatically categorized as client variables in the t3-env output format.',
+      },
+    ],
+    howToSteps: [
+      'Paste your .env file content in the left editor',
+      'Choose your output format (TypeScript interface, Zod, t3-env, or Valibot)',
+      'Copy the generated typed schema from the right editor',
+    ],
+  },
+  'curl-to-code': {
+    id: 'curl-to-code',
+    path: '/curl-to-code',
+    metaTitle: 'cURL to Code Converter  JavaScript, Python, Go, Rust & More | SnipShift',
+    description:
+      'Convert cURL commands to JavaScript fetch, axios, Python requests, Go, Rust, PHP, and Ruby code instantly. AI-powered conversion with instant preview. Free, no signup required.',
+    source: 'cURL',
+    target: 'Code',
+    keywords: [
+      'curl to javascript',
+      'curl to python',
+      'curl to fetch',
+      'curl to axios',
+      'convert curl command to code',
+      'curl to golang',
+      'curl to typescript',
+      'curl to rust',
+      'curl to php',
+      'curl converter online',
+    ],
+    relatedTools: ['openapi-to-ts', 'json-to-ts', 'js-to-ts'],
+    faqItems: [
+      {
+        question: 'What languages does the cURL to Code converter support?',
+        answer:
+          'SnipShift converts cURL commands to 8 languages: JavaScript (fetch and axios), TypeScript (typed fetch), Python (requests), Go (net/http), Rust (reqwest), PHP (curl), and Ruby (net/http).',
+      },
+      {
+        question: 'How do I copy a cURL command from my browser?',
+        answer:
+          'Open DevTools (F12), go to the Network tab, right-click any request, and select "Copy as cURL". Paste it directly into the converter.',
+      },
+      {
+        question: 'Does it handle authentication and cookies?',
+        answer:
+          'Yes! The converter supports Basic auth (-u flag), Bearer tokens (Authorization header), cookies (-b flag), and all standard cURL authentication methods.',
+      },
+      {
+        question: 'Is the conversion done client-side or server-side?',
+        answer:
+          'The instant preview uses client-side parsing for immediate feedback. When you click Convert, the AI generates more idiomatic, production-ready code on the server. Your code is never stored.',
+      },
+    ],
+    howToSteps: [
+      'Paste your cURL command in the left editor (e.g., from browser DevTools "Copy as cURL")',
+      'Select your target language from the tabs above the output panel',
+      'Click Convert or press Ctrl+Enter for AI-powered idiomatic code',
+      'Copy the generated code from the right editor or download it',
     ],
   },
 };

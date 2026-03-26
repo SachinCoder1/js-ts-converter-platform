@@ -17,7 +17,7 @@ interface SidebarState {
 
 const SidebarContext = createContext<SidebarState | null>(null);
 
-const STORAGE_KEY = 'devshift-sidebar-collapsed';
+const STORAGE_KEY = 'snipshift-sidebar-collapsed';
 const ALL_CATEGORIES: ToolCategory[] = ['typescript', 'json', 'css', 'react'];
 
 export function SidebarProvider({ children }: { children: ReactNode }) {

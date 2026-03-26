@@ -5,7 +5,7 @@ export function JsonToZodSeoContent() {
     {
       num: '01',
       title: 'Paste Your JSON',
-      desc: 'Paste any JSON object — API responses, config files, database records. The editor validates your JSON in real-time.',
+      desc: 'Paste any JSON object  API responses, config files, database records. The editor validates your JSON in real-time.',
     },
     {
       num: '02',
@@ -20,7 +20,7 @@ export function JsonToZodSeoContent() {
   ];
 
   const benefits = [
-    { title: 'Type-Safe Validation', desc: 'Zod schemas validate data at runtime and infer TypeScript types at compile time — one source of truth.' },
+    { title: 'Type-Safe Validation', desc: 'Zod schemas validate data at runtime and infer TypeScript types at compile time  one source of truth.' },
     { title: 'Smart Pattern Detection', desc: 'AI detects emails, URLs, dates, UUIDs, and enums from your data and adds the right Zod validators automatically.' },
     { title: 'No Manual Schema Writing', desc: 'Stop writing Zod schemas by hand. Paste your API response and get a production-ready schema in seconds.' },
     { title: 'Production-Ready Output', desc: 'Generated schemas include proper nesting, array types, nullable handling, and optional z.infer type exports.' },
@@ -29,7 +29,7 @@ export function JsonToZodSeoContent() {
   const faqs = [
     {
       q: 'What is Zod?',
-      a: 'Zod is the most popular TypeScript-first schema validation library. It lets you declare schemas, validate data at runtime, and infer static TypeScript types — all from a single schema definition.',
+      a: 'Zod is the most popular TypeScript-first schema validation library. It lets you declare schemas, validate data at runtime, and infer static TypeScript types  all from a single schema definition.',
     },
     {
       q: 'How accurate is the AI-generated schema?',
@@ -41,7 +41,7 @@ export function JsonToZodSeoContent() {
     },
     {
       q: 'Can I use this for API response validation?',
-      a: 'Absolutely — that\'s the most common use case. Paste a sample API response, generate the Zod schema, then use it with z.parse() or z.safeParse() to validate incoming data in your application.',
+      a: 'Absolutely  that\'s the most common use case. Paste a sample API response, generate the Zod schema, then use it with z.parse() or z.safeParse() to validate incoming data in your application.',
     },
     {
       q: 'Does it handle nested objects and arrays?',

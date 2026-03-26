@@ -20,16 +20,16 @@ export function PropTypesToTsSeoContent() {
   ];
 
   const benefits = [
-    { title: 'Accurate Type Mapping', desc: 'Every PropTypes validator maps to the correct TypeScript type — shapes become interfaces, oneOf becomes union literals, arrayOf becomes typed arrays.' },
+    { title: 'Accurate Type Mapping', desc: 'Every PropTypes validator maps to the correct TypeScript type  shapes become interfaces, oneOf becomes union literals, arrayOf becomes typed arrays.' },
     { title: 'Smart Event Inference', desc: 'AI detects event handler patterns like onClick, onChange, and onSubmit, and generates proper React event types instead of generic functions.' },
-    { title: 'defaultProps Handling', desc: 'Automatically merges defaultProps into optional interface fields or keeps them separate — your choice.' },
+    { title: 'defaultProps Handling', desc: 'Automatically merges defaultProps into optional interface fields or keeps them separate  your choice.' },
     { title: 'Production-Ready Output', desc: 'Generated interfaces include proper nesting, React.ReactNode for render props, and compile without TypeScript errors.' },
   ];
 
   const faqs = [
     {
       q: 'Why migrate from PropTypes to TypeScript?',
-      a: 'PropTypes only validate at runtime in development mode. TypeScript catches type errors at compile time, provides IDE autocomplete, and the type information is available across your entire codebase — not just within one component.',
+      a: 'PropTypes only validate at runtime in development mode. TypeScript catches type errors at compile time, provides IDE autocomplete, and the type information is available across your entire codebase  not just within one component.',
     },
     {
       q: 'How does the AI improve over basic conversion?',
@@ -41,7 +41,7 @@ export function PropTypesToTsSeoContent() {
     },
     {
       q: 'What about PropTypes.oneOf and enum types?',
-      a: 'PropTypes.oneOf([\'admin\', \'editor\', \'viewer\']) becomes the union type \'admin\' | \'editor\' | \'viewer\' — preserving the exact allowed values as TypeScript literal types.',
+      a: 'PropTypes.oneOf([\'admin\', \'editor\', \'viewer\']) becomes the union type \'admin\' | \'editor\' | \'viewer\'  preserving the exact allowed values as TypeScript literal types.',
     },
     {
       q: 'Can I convert the entire component or just the interface?',

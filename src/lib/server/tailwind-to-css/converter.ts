@@ -90,7 +90,7 @@ export async function convertTailwind(request: TailwindConversionRequest): Promi
       }
     }
 
-    // All AI providers failed — fall back to rule-based conversion
+    // All AI providers failed  fall back to rule-based conversion
     return ruleBasedFallback(request, startTime);
   } catch {
     return ruleBasedFallback(request, startTime);

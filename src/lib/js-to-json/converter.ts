@@ -353,7 +353,7 @@ function replaceSingleQuotes(text: string): string {
     const ch = text[i];
 
     if (ch === '"') {
-      // Already a double-quoted string — pass through
+      // Already a double-quoted string  pass through
       result += ch;
       i++;
       while (i < text.length) {
@@ -370,7 +370,7 @@ function replaceSingleQuotes(text: string): string {
         }
       }
     } else if (ch === "'") {
-      // Single-quoted string — convert to double quotes
+      // Single-quoted string  convert to double quotes
       result += '"';
       i++;
       while (i < text.length) {

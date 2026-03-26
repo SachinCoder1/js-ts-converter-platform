@@ -15,7 +15,7 @@ const steps = [
   {
     num: '02',
     title: 'Convert Instantly',
-    desc: 'AI-powered conversion generates proper types, interfaces, and schemas. Client-side tools run in your browser — no server needed.',
+    desc: 'AI-powered conversion generates proper types, interfaces, and schemas. Client-side tools run in your browser  no server needed.',
     icon: Sparkles,
   },
   {

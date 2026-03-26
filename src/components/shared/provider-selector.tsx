@@ -1,57 +1,30 @@
 'use client';
 
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-import type { AIProvider } from '@/lib/types';
+import { useIsMac } from '@/hooks/use-is-mac';
 
-interface ProviderSelectorProps {
-  value: AIProvider | 'auto';
-  onChange: (value: AIProvider | 'auto') => void;
-}
-
-export function ProviderSelector({ value, onChange }: ProviderSelectorProps) {
+export function PoweredByIndicator() {
   return (
-    <Select
-      value={value}
-      onValueChange={(v) => onChange(v as AIProvider | 'auto')}
+    <span
+      className="hidden sm:flex items-center gap-1.5 text-[11px]"
+      style={{ color: 'var(--text-tertiary)' }}
     >
-      <SelectTrigger
-        className="h-8 w-[160px] rounded-md border text-xs"
-        style={{
-          borderColor: 'var(--border)',
-          background: 'var(--surface)',
-          color: 'var(--text-secondary)',
-        }}
-      >
-        <SelectValue />
-      </SelectTrigger>
-      <SelectContent>
-        <SelectItem value="auto">Auto (Best Available)</SelectItem>
-        <SelectItem value="gemini">Gemini</SelectItem>
-        <SelectItem value="deepseek">DeepSeek</SelectItem>
-        <SelectItem value="openrouter">OpenRouter Free</SelectItem>
-        <SelectItem value="ast-only">AST Only (No AI)</SelectItem>
-      </SelectContent>
-    </Select>
+      Powered by Gemini &amp; GPT
+    </span>
   );
 }
 
 export function KeyboardShortcutHint() {
+  const isMac = useIsMac();
   return (
     <span
       className="hidden sm:flex items-center gap-1 text-[10px] font-mono"
-      style={{ color: 'var(--text-disabled)', letterSpacing: '0.05em' }}
+      style={{ color: 'var(--text-tertiary)', letterSpacing: '0.05em' }}
     >
       <kbd
         className="rounded px-1.5 py-0.5"
         style={{ background: 'var(--muted)', color: 'var(--text-tertiary)' }}
       >
-        {typeof navigator !== 'undefined' && /Mac/.test(navigator.userAgent) ? '\u2318' : 'Ctrl'}
+        {isMac ? '\u2318' : 'Ctrl'}
       </kbd>
       <span>+</span>
       <kbd

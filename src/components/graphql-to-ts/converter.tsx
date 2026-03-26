@@ -9,7 +9,7 @@ import { useToolConversion } from '@/hooks/use-tool-conversion';
 import { useKeyboardShortcut } from '@/hooks/use-keyboard-shortcut';
 import { computeStatusText, computeStatusState } from '@/lib/converter-utils';
 import { DEFAULT_GRAPHQL_EXAMPLE } from '@/lib/constants';
-import type { AIProvider, GraphqlToTsOptions, GraphqlToTsResult } from '@/lib/types';
+import type { GraphqlToTsOptions, GraphqlToTsResult } from '@/lib/types';
 
 export function GraphqlToTsConverter() {
   const [inputGraphql, setInputGraphql] = useState(DEFAULT_GRAPHQL_EXAMPLE);
@@ -20,7 +20,6 @@ export function GraphqlToTsConverter() {
     readonlyProperties: false,
     rootTypeName: 'Root',
   });
-  const [selectedProvider, setSelectedProvider] = useState<AIProvider | 'auto'>('auto');
   const [isScanning, setIsScanning] = useState(false);
 
   const stableOptions = useMemo(() => options, [
@@ -40,11 +39,10 @@ export function GraphqlToTsConverter() {
   const outputCode = result?.convertedCode || preview;
 
   const handleConvert = useCallback(() => {
-    const provider = selectedProvider === 'auto' ? undefined : selectedProvider;
     setIsScanning(true);
     setTimeout(() => setIsScanning(false), 350);
-    convert({ graphql: inputGraphql, options, preferredProvider: provider });
-  }, [inputGraphql, options, selectedProvider, convert]);
+    convert({ graphql: inputGraphql, options });
+  }, [inputGraphql, options, convert]);
 
   useKeyboardShortcut('Enter', handleConvert, !isConverting && !isRateLimited);
 
@@ -65,10 +63,10 @@ export function GraphqlToTsConverter() {
       isConverting={isConverting}
       error={error}
       isAstFallback={isAstOnly}
-      astFallbackMessage="AI models unavailable — showing basic types. Smart scalar mapping and enhanced types require AI."
+      astFallbackMessage="AI models unavailable  showing basic types. Smart scalar mapping and enhanced types require AI."
       fromCache={fromCache}
       resultKey={result?.convertedCode}
-      statusText={computeStatusText(isConverting, result, selectedProvider)}
+      statusText={computeStatusText(isConverting, result)}
       statusState={computeStatusState(isConverting, result)}
       inputIsScanning={isScanning}
       rateLimitRemaining={rateLimitInfo.remaining}
@@ -77,8 +75,6 @@ export function GraphqlToTsConverter() {
         <GraphqlToTsControlBar
           options={options}
           onOptionsChange={setOptions}
-          selectedProvider={selectedProvider}
-          onProviderChange={setSelectedProvider}
           onConvert={handleConvert}
           isConverting={isConverting || isRateLimited}
         />

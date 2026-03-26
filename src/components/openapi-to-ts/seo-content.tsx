@@ -18,8 +18,8 @@ export function OpenApiToTsSeoContent() {
   ];
 
   const benefits = [
-    { title: 'Type-Safe API Consumers', desc: 'Generated types ensure your frontend API calls match the spec exactly — catch breaking changes at compile time, not in production.' },
-    { title: 'Handles $ref, allOf, oneOf', desc: 'Complex schema compositions are resolved correctly — intersection types for allOf, union types for oneOf/anyOf, and recursive $ref resolution.' },
+    { title: 'Type-Safe API Consumers', desc: 'Generated types ensure your frontend API calls match the spec exactly  catch breaking changes at compile time, not in production.' },
+    { title: 'Handles $ref, allOf, oneOf', desc: 'Complex schema compositions are resolved correctly  intersection types for allOf, union types for oneOf/anyOf, and recursive $ref resolution.' },
     { title: 'No Manual Type Writing', desc: 'Stop maintaining TypeScript types by hand. Paste your spec and get production-ready interfaces in seconds.' },
     { title: 'Flexible Output', desc: 'Choose between TypeScript enums or union types, toggle JSDoc comments, and optionally generate typed API client functions.' },
   ];

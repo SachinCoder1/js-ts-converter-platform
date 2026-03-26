@@ -17,7 +17,7 @@ import { MAX_CODE_SIZE } from '@/lib/constants';
 import type { AIProvider, FileType } from '@/lib/types';
 
 const VALID_FILE_TYPES: FileType[] = ['js', 'jsx'];
-const VALID_PROVIDERS: AIProvider[] = ['gemini', 'deepseek', 'openrouter', 'ast-only'];
+const VALID_PROVIDERS: AIProvider[] = ['gemini', 'openai', 'kimi', 'deepseek', 'openrouter', 'ast-only'];
 
 export async function POST(request: NextRequest) {
   const ip = getClientIP(request);

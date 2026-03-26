@@ -9,7 +9,7 @@ import { useToolConversion } from '@/hooks/use-tool-conversion';
 import { useKeyboardShortcut } from '@/hooks/use-keyboard-shortcut';
 import { DEFAULT_CSS_EXAMPLE } from '@/lib/constants';
 import { computeStatusText, computeStatusState } from '@/lib/converter-utils';
-import type { AIProvider, CssToTailwindOptions, CssToTailwindResult } from '@/lib/types';
+import type { CssToTailwindOptions, CssToTailwindResult } from '@/lib/types';
 
 export function CssToTailwindConverter() {
   const [inputCss, setInputCss] = useState(DEFAULT_CSS_EXAMPLE);
@@ -20,7 +20,6 @@ export function CssToTailwindConverter() {
     prefix: '',
     colorFormat: 'named',
   });
-  const [selectedProvider, setSelectedProvider] = useState<AIProvider | 'auto'>('auto');
   const [isScanning, setIsScanning] = useState(false);
 
   const stableOptions = useMemo(() => options, [
@@ -44,11 +43,10 @@ export function CssToTailwindConverter() {
   const outputFileType = options.outputFormat === 'apply' ? 'CSS' : 'TW';
 
   const handleConvert = useCallback(() => {
-    const provider = selectedProvider === 'auto' ? undefined : selectedProvider;
     setIsScanning(true);
     setTimeout(() => setIsScanning(false), 350);
-    convert({ css: inputCss, options, preferredProvider: provider });
-  }, [inputCss, options, selectedProvider, convert]);
+    convert({ css: inputCss, options });
+  }, [inputCss, options, convert]);
 
   useKeyboardShortcut('Enter', handleConvert, !isConverting && !isRateLimited);
 
@@ -69,12 +67,11 @@ export function CssToTailwindConverter() {
       isConverting={isConverting}
       error={error}
       isAstFallback={isAstOnly}
-      astFallbackMessage="AI models unavailable — showing basic conversion. Complex CSS properties may need manual review."
+      astFallbackMessage="AI models unavailable  showing basic conversion. Complex CSS properties may need manual review."
       fromCache={fromCache}
       resultKey={result?.convertedCode}
-      statusText={computeStatusText(isConverting, result, selectedProvider)}
+      statusText={computeStatusText(isConverting, result)}
       statusState={computeStatusState(isConverting, result)}
-      modelIndicator={selectedProvider === 'auto' ? 'Auto' : selectedProvider}
       inputIsScanning={isScanning}
       rateLimitRemaining={rateLimitInfo.remaining}
       rateLimitTotal={rateLimitInfo.limit}
@@ -82,8 +79,6 @@ export function CssToTailwindConverter() {
         <CssToTailwindControlBar
           options={options}
           onOptionsChange={setOptions}
-          selectedProvider={selectedProvider}
-          onProviderChange={setSelectedProvider}
           onConvert={handleConvert}
           isConverting={isConverting || isRateLimited}
         />

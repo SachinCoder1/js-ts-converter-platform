@@ -34,7 +34,7 @@ export function ScssSeoContent() {
     },
     {
       title: 'Full Sass Support',
-      desc: 'Powered by Dart Sass — the official, primary implementation. Supports all modern Sass features.',
+      desc: 'Powered by Dart Sass  the official, primary implementation. Supports all modern Sass features.',
     },
   ];
 

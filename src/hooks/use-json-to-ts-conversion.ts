@@ -73,7 +73,7 @@ export function useJsonToTsConversion(): UseJsonToTsConversionResult {
     try {
       const response = await fetch('/api/json-to-typescript', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'X-DevShift-Client': 'web' },
+        headers: { 'Content-Type': 'application/json', 'X-SnipShift-Client': 'web' },
         body: JSON.stringify({ json, options, preferredProvider: provider }),
       });
 

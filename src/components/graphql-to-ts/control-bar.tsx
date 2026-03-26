@@ -9,14 +9,12 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { ConvertButton } from '@/components/shared/convert-button';
-import { ProviderSelector, KeyboardShortcutHint } from '@/components/shared/provider-selector';
-import type { AIProvider, GraphqlToTsOptions } from '@/lib/types';
+import { PoweredByIndicator, KeyboardShortcutHint } from '@/components/shared/provider-selector';
+import type { GraphqlToTsOptions } from '@/lib/types';
 
 interface ControlBarProps {
   options: GraphqlToTsOptions;
   onOptionsChange: (options: GraphqlToTsOptions) => void;
-  selectedProvider: AIProvider | 'auto';
-  onProviderChange: (provider: AIProvider | 'auto') => void;
   onConvert: () => void;
   isConverting: boolean;
 }
@@ -51,8 +49,6 @@ function OptionSwitch({
 export function GraphqlToTsControlBar({
   options,
   onOptionsChange,
-  selectedProvider,
-  onProviderChange,
   onConvert,
   isConverting,
 }: ControlBarProps) {
@@ -75,7 +71,7 @@ export function GraphqlToTsControlBar({
             className="h-8 w-[150px] rounded-md border text-xs"
             style={{ borderColor: 'var(--border)', background: 'var(--surface)', color: 'var(--text-secondary)' }}
           >
-            <SelectValue />
+            <span>{options.enumStyle === 'enum' ? 'TS enum' : 'Union type'}</span>
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="enum">TS enum</SelectItem>
@@ -89,12 +85,12 @@ export function GraphqlToTsControlBar({
 
         <div className="hidden sm:block h-5 w-px" style={{ background: 'var(--border)' }} />
 
-        <ProviderSelector value={selectedProvider} onChange={onProviderChange} />
+        <PoweredByIndicator />
 
         <KeyboardShortcutHint />
       </div>
 
-      {/* Second row — toggle options */}
+      {/* Second row  toggle options */}
       <div className="flex flex-wrap items-center gap-2 pb-1">
         <OptionSwitch
           label={options.nullableStyle === 'maybe' ? 'Maybe<T>' : '| null'}

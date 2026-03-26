@@ -79,7 +79,7 @@ export function TailwindSeoContent() {
             style={{ color: 'var(--text-secondary)' }}
           >
             Convert Tailwind CSS utility classes to vanilla CSS instantly.
-            See exactly what CSS your Tailwind classes generate — perfect for learning, debugging, and migration.
+            See exactly what CSS your Tailwind classes generate  perfect for learning, debugging, and migration.
           </p>
         </div>
 

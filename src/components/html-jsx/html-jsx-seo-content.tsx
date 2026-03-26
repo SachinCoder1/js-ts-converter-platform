@@ -40,7 +40,7 @@ export function HtmlJsxSeoContent() {
   const faqs = [
     {
       q: 'Is the HTML to JSX converter free?',
-      a: 'Yes, this tool is completely free with no signup required. All conversion happens in your browser — nothing is sent to a server.',
+      a: 'Yes, this tool is completely free with no signup required. All conversion happens in your browser  nothing is sent to a server.',
     },
     {
       q: 'Does it handle SVG attributes?',

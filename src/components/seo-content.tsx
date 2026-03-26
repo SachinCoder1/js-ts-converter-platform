@@ -28,12 +28,12 @@ export function SeoContent() {
 
   const faqs = [
     {
-      q: 'Is DevShift free to use?',
-      a: 'Yes, DevShift is completely free with no signup required. Just paste your code and convert.',
+      q: 'Is SnipShift free to use?',
+      a: 'Yes, SnipShift is completely free with no signup required. Just paste your code and convert.',
     },
     {
       q: 'How accurate is the AI conversion?',
-      a: 'DevShift uses multiple AI models (Gemini, DeepSeek) for high-quality type inference. It creates named interfaces, proper React typing, and avoids using "any" types. Results are validated to ensure they parse as valid TypeScript.',
+      a: 'SnipShift uses multiple AI models (Gemini, DeepSeek) for high-quality type inference. It creates named interfaces, proper React typing, and avoids using "any" types. Results are validated to ensure they parse as valid TypeScript.',
     },
     {
       q: 'Is my code stored or shared?',
@@ -41,11 +41,11 @@ export function SeoContent() {
     },
     {
       q: 'What happens if AI models are unavailable?',
-      a: 'DevShift falls back to AST-based conversion which runs locally. While less sophisticated than AI conversion, it still handles import/export conversion, basic type inference, and JSDoc extraction.',
+      a: 'SnipShift falls back to AST-based conversion which runs locally. While less sophisticated than AI conversion, it still handles import/export conversion, basic type inference, and JSDoc extraction.',
     },
     {
       q: 'Can I convert large files?',
-      a: 'DevShift supports files up to 50KB. For very large codebases, we recommend converting files individually or using tools like ts-migrate for bulk conversion.',
+      a: 'SnipShift supports files up to 50KB. For very large codebases, we recommend converting files individually or using tools like ts-migrate for bulk conversion.',
     },
   ];
 
@@ -86,8 +86,8 @@ export function SeoContent() {
         {/* How It Works */}
         <div className="space-y-8">
           <h2
-            className="text-lg font-semibold text-center uppercase"
-            style={{ color: 'var(--text-tertiary)', letterSpacing: '0.1em', fontSize: '11px' }}
+            className="text-[11px] font-semibold text-center uppercase tracking-[0.1em]"
+            style={{ color: 'var(--text-tertiary)' }}
           >
             How It Works
           </h2>
@@ -120,8 +120,8 @@ export function SeoContent() {
         {/* Why TypeScript */}
         <div className="space-y-8">
           <h2
-            className="text-lg font-semibold text-center uppercase"
-            style={{ color: 'var(--text-tertiary)', letterSpacing: '0.1em', fontSize: '11px' }}
+            className="text-[11px] font-semibold text-center uppercase tracking-[0.1em]"
+            style={{ color: 'var(--text-tertiary)' }}
           >
             Why Convert to TypeScript
           </h2>
@@ -160,8 +160,8 @@ export function SeoContent() {
         {/* Supported Conversions */}
         <div className="space-y-6">
           <h2
-            className="text-lg font-semibold text-center uppercase"
-            style={{ color: 'var(--text-tertiary)', letterSpacing: '0.1em', fontSize: '11px' }}
+            className="text-[11px] font-semibold text-center uppercase tracking-[0.1em]"
+            style={{ color: 'var(--text-tertiary)' }}
           >
             Supported Conversions
           </h2>
@@ -186,8 +186,8 @@ export function SeoContent() {
         {/* FAQ */}
         <div className="space-y-6">
           <h2
-            className="text-lg font-semibold text-center uppercase"
-            style={{ color: 'var(--text-tertiary)', letterSpacing: '0.1em', fontSize: '11px' }}
+            className="text-[11px] font-semibold text-center uppercase tracking-[0.1em]"
+            style={{ color: 'var(--text-tertiary)' }}
           >
             FAQ
           </h2>

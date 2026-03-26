@@ -91,7 +91,7 @@ export function JsonYamlSeoContent() {
             style={{ color: 'var(--text-secondary)' }}
           >
             Convert JSON to YAML instantly in your browser. Customize indentation, quoting,
-            and key sorting — no server, no signup, completely free.
+            and key sorting  no server, no signup, completely free.
           </p>
         </div>
 

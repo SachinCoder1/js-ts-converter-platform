@@ -10,7 +10,7 @@ export async function callGemini(prompt: PromptParts): Promise<string> {
 
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({
-    model: 'gemini-2.5-pro-preview-05-06',
+    model: 'gemini-2.5-flash',
     generationConfig: {
       temperature: 0,
       maxOutputTokens: 8192,

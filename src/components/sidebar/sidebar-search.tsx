@@ -2,11 +2,13 @@
 
 import { useRef, useEffect } from 'react';
 import { Search } from 'lucide-react';
+import { useIsMac } from '@/hooks/use-is-mac';
 import { useSidebar } from './sidebar-context';
 
 export function SidebarSearch() {
   const { searchQuery, setSearchQuery, isCollapsed } = useSidebar();
   const inputRef = useRef<HTMLInputElement>(null);
+  const isMac = useIsMac();
 
   // Cmd+K global shortcut
   useEffect(() => {
@@ -61,7 +63,7 @@ export function SidebarSearch() {
           className="absolute right-2 top-1/2 -translate-y-1/2 rounded px-1.5 py-0.5 text-[10px] font-mono pointer-events-none"
           style={{ background: 'var(--elevated)', color: 'var(--text-disabled)' }}
         >
-          {typeof navigator !== 'undefined' && /Mac/.test(navigator.userAgent) ? '\u2318K' : 'Ctrl+K'}
+          {isMac ? '\u2318K' : 'Ctrl+K'}
         </kbd>
       </div>
     </div>

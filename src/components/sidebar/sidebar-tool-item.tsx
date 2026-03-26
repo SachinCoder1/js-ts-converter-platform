@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import type { ToolConfig } from '@/lib/tool-config';
 import { useSidebar } from './sidebar-context';
 
@@ -30,7 +31,7 @@ export function SidebarToolItem({ config }: { config: ToolConfig }) {
   const isActive = pathname === config.path;
   const isAI = config.tags.includes('AI-Powered');
 
-  return (
+  const link = (
     <Link
       href={config.path}
       onClick={() => setMobileOpen(false)}
@@ -71,4 +72,22 @@ export function SidebarToolItem({ config }: { config: ToolConfig }) {
       )}
     </Link>
   );
+
+  if (isCollapsed) {
+    return (
+      <Tooltip>
+        <TooltipTrigger
+          className="block w-full"
+          render={<div />}
+        >
+          {link}
+        </TooltipTrigger>
+        <TooltipContent side="right" sideOffset={8}>
+          {config.name}
+        </TooltipContent>
+      </Tooltip>
+    );
+  }
+
+  return link;
 }

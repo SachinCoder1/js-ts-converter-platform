@@ -125,11 +125,11 @@ export function EditorPair({
         initial="hidden"
         animate="visible"
         transition={{ delay: 0.05 }}
-        className={`${mobileTab === 'output' ? 'hidden md:flex' : 'flex'}`}
+        className={`min-w-0 ${mobileTab === 'output' ? 'hidden md:flex' : 'flex'}`}
         style={{ flex: `${splitRatio} 1 0%` }}
       >
         <div
-          className="flex-1 flex flex-col transition-opacity duration-150"
+          className="flex-1 flex flex-col min-w-0 transition-opacity duration-150"
           style={{ opacity: isConverting ? 0.6 : 1 }}
         >
           <EditorPanel
@@ -153,7 +153,7 @@ export function EditorPair({
         initial="hidden"
         animate="visible"
         transition={{ delay: 0.1 }}
-        className={`${mobileTab === 'input' ? 'hidden md:flex' : 'flex'}`}
+        className={`min-w-0 ${mobileTab === 'input' ? 'hidden md:flex' : 'flex'}`}
         style={{ flex: `${1 - splitRatio} 1 0%` }}
       >
         <div className={`relative flex-1 flex flex-col ${showReveal ? (isLiveMode ? 'typewriter-reveal-fast' : 'typewriter-reveal') : ''}`}>

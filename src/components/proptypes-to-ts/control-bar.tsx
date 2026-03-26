@@ -9,14 +9,12 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { ConvertButton } from '@/components/shared/convert-button';
-import { ProviderSelector, KeyboardShortcutHint } from '@/components/shared/provider-selector';
-import type { AIProvider, PropTypesToTsOptions } from '@/lib/types';
+import { PoweredByIndicator, KeyboardShortcutHint } from '@/components/shared/provider-selector';
+import type { PropTypesToTsOptions } from '@/lib/types';
 
 interface ControlBarProps {
   options: PropTypesToTsOptions;
   onOptionsChange: (options: PropTypesToTsOptions) => void;
-  selectedProvider: AIProvider | 'auto';
-  onProviderChange: (provider: AIProvider | 'auto') => void;
   onConvert: () => void;
   isConverting: boolean;
 }
@@ -58,15 +56,11 @@ function OptionSwitch({
 export function PropTypesToTsControlBar({
   options,
   onOptionsChange,
-  selectedProvider,
-  onProviderChange,
   onConvert,
   isConverting,
 }: ControlBarProps) {
   const update = (partial: Partial<PropTypesToTsOptions>) =>
     onOptionsChange({ ...options, ...partial });
-
-  const isAstOnly = selectedProvider === 'ast-only';
 
   return (
     <motion.div
@@ -84,7 +78,7 @@ export function PropTypesToTsControlBar({
             className="h-8 w-[180px] rounded-md border text-xs"
             style={{ borderColor: 'var(--border)', background: 'var(--surface)', color: 'var(--text-secondary)' }}
           >
-            <SelectValue />
+            <span>{options.outputMode === 'interface-only' ? 'Interface only' : 'Interface + Component'}</span>
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="interface-only">Interface only</SelectItem>
@@ -98,12 +92,12 @@ export function PropTypesToTsControlBar({
 
         <div className="hidden sm:block h-5 w-px" style={{ background: 'var(--border)' }} />
 
-        <ProviderSelector value={selectedProvider} onChange={onProviderChange} />
+        <PoweredByIndicator />
 
         <KeyboardShortcutHint />
       </div>
 
-      {/* Second row — toggle options */}
+      {/* Second row  toggle options */}
       <div className="flex flex-wrap items-center gap-2 pb-1">
         <OptionSwitch
           label="Merge defaultProps"
@@ -114,7 +108,7 @@ export function PropTypesToTsControlBar({
           label="Infer event types"
           checked={options.functionTypes === 'event-inference'}
           onChange={(v) => update({ functionTypes: v ? 'event-inference' : 'generic' })}
-          disabled={isAstOnly}
+          disabled={false}
         />
       </div>
     </motion.div>

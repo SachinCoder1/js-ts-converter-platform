@@ -1,22 +1,22 @@
 'use client';
 
-import { useEffect, useState, useRef, useCallback } from 'react';
+import { useEffect, useState, useRef, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
-
-const isMac = typeof navigator !== 'undefined' && /Mac/.test(navigator.userAgent);
-const mod = isMac ? '\u2318' : 'Ctrl';
-
-const SHORTCUTS = [
-  { keys: `${mod}+Enter`, description: 'Convert code' },
-  { keys: `${mod}+K`, description: 'Search tools' },
-  { keys: `${mod}+B`, description: 'Toggle sidebar' },
-  { keys: '?', description: 'Show keyboard shortcuts' },
-  { keys: 'Escape', description: 'Close modal / sidebar' },
-];
+import { useIsMac } from '@/hooks/use-is-mac';
 
 export function KeyboardShortcutsModal() {
   const [isOpen, setIsOpen] = useState(false);
+  const isMac = useIsMac();
+  const mod = isMac ? '\u2318' : 'Ctrl';
+
+  const SHORTCUTS = useMemo(() => [
+    { keys: `${mod}+Enter`, description: 'Convert code' },
+    { keys: `${mod}+K`, description: 'Search tools' },
+    { keys: `${mod}+B`, description: 'Toggle sidebar' },
+    { keys: '?', description: 'Show keyboard shortcuts' },
+    { keys: 'Escape', description: 'Close modal / sidebar' },
+  ], [mod]);
   const closeRef = useRef<HTMLButtonElement>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
 

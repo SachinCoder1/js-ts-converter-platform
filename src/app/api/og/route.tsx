@@ -8,7 +8,7 @@ export async function GET(request: NextRequest) {
   const { searchParams } = request.nextUrl;
   const toolId = searchParams.get('tool');
 
-  let title = 'DevShift';
+  let title = 'SnipShift';
   let subtitle = 'Free Online Developer Converter Tools';
   let description = 'JS to TS, JSON to Zod, CSS to Tailwind & 13+ more tools';
 
@@ -68,7 +68,7 @@ export async function GET(request: NextRequest) {
               color: '#0c0f14',
             }}
           >
-            D
+            S
           </div>
           <span
             style={{
@@ -78,7 +78,7 @@ export async function GET(request: NextRequest) {
               letterSpacing: '-0.02em',
             }}
           >
-            DevShift
+            SnipShift
           </span>
         </div>
 
@@ -130,7 +130,7 @@ export async function GET(request: NextRequest) {
             color: '#6b7280',
           }}
         >
-          devshift.dev
+          snipshift.dev
         </div>
       </div>
     ),

@@ -35,11 +35,11 @@ interface CodeEditorProps {
 
 // Custom dark theme matching our design system
 function defineCustomThemes(monaco: Parameters<OnMount>[1]) {
-  monaco.editor.defineTheme('devshift-dark', {
+  monaco.editor.defineTheme('snipshift-dark', {
     base: 'vs-dark',
     inherit: true,
     rules: [
-      { token: 'comment', foreground: '4a5568', fontStyle: 'italic' },
+      { token: 'comment', foreground: '6b7a8a', fontStyle: 'italic' },
       { token: 'keyword', foreground: 'c9a14a' },
       { token: 'string', foreground: '7ec699' },
       { token: 'number', foreground: 'e2995c' },
@@ -74,7 +74,7 @@ function defineCustomThemes(monaco: Parameters<OnMount>[1]) {
     },
   });
 
-  monaco.editor.defineTheme('devshift-light', {
+  monaco.editor.defineTheme('snipshift-light', {
     base: 'vs',
     inherit: true,
     rules: [
@@ -109,7 +109,25 @@ export function CodeEditor({ value, onChange, language, readOnly = false }: Code
   const handleMount: OnMount = useCallback((editor, monaco) => {
     monacoRef.current = monaco;
     defineCustomThemes(monaco);
-    monaco.editor.setTheme(isDark ? 'devshift-dark' : 'devshift-light');
+    monaco.editor.setTheme(isDark ? 'snipshift-dark' : 'snipshift-light');
+
+    // For read-only (output) editor: clear diagnostics markers whenever they appear
+    // This prevents grayed-out "unreachable code" warnings without affecting the input editor
+    if (readOnly) {
+      const model = editor.getModel();
+      if (model) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const disposable = monaco.editor.onDidChangeMarkers((uris: any) => {
+          for (const uri of uris) {
+            if (uri.toString() === model.uri.toString()) {
+              monaco.editor.setModelMarkers(model, 'typescript', []);
+              monaco.editor.setModelMarkers(model, 'javascript', []);
+            }
+          }
+        });
+        editor.onDidDispose(() => disposable.dispose());
+      }
+    }
 
     // Configure scrollbar appearance
     editor.updateOptions({
@@ -121,15 +139,16 @@ export function CodeEditor({ value, onChange, language, readOnly = false }: Code
         useShadows: false,
       },
     });
-  }, [isDark]);
+  }, [isDark, readOnly]);
 
   // Update theme when it changes
-  const theme = isDark ? 'devshift-dark' : 'devshift-light';
+  const theme = isDark ? 'snipshift-dark' : 'snipshift-light';
   if (monacoRef.current) {
     try { monacoRef.current.editor.setTheme(theme); } catch { /* theme not yet defined */ }
   }
 
-  const fontSize = typeof window !== 'undefined' && window.innerWidth < 768 ? 14 : 13;
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  const fontSize = isMobile ? 14 : 13;
 
   return (
     <MonacoEditor
@@ -146,14 +165,14 @@ export function CodeEditor({ value, onChange, language, readOnly = false }: Code
         fontSize,
         lineHeight: 22,
         letterSpacing: 0.3,
-        padding: { top: 16, bottom: 16 },
+        padding: { top: isMobile ? 8 : 16, bottom: isMobile ? 8 : 16 },
         scrollBeyondLastLine: false,
         automaticLayout: true,
         tabSize: 2,
         renderLineHighlight: readOnly ? 'none' : 'line',
         domReadOnly: readOnly,
         lineNumbers: 'on',
-        lineNumbersMinChars: 3,
+        lineNumbersMinChars: isMobile ? 1 : 2,
         glyphMargin: false,
         folding: true,
         bracketPairColorization: { enabled: true },

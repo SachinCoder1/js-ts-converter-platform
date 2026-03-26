@@ -36,7 +36,7 @@ export function RelatedTools({ currentToolId }: { currentToolId: string }) {
           lineHeight: 1.7,
         }}
       >
-        Check out these other free developer converter tools from DevShift:
+        Check out these other free developer converter tools from SnipShift:
       </p>
       <div
         style={{
@@ -49,14 +49,10 @@ export function RelatedTools({ currentToolId }: { currentToolId: string }) {
           <Link
             key={tool.id}
             href={tool.path}
+            className="block rounded-xl border border-[var(--border)] bg-[var(--surface)] transition-all duration-200 hover:border-[var(--primary)] hover:shadow-md hover:-translate-y-0.5"
             style={{
-              display: 'block',
               padding: '1rem 1.25rem',
-              borderRadius: '0.75rem',
-              border: '1px solid var(--border)',
-              background: 'var(--surface)',
               textDecoration: 'none',
-              transition: 'border-color 0.2s',
             }}
           >
             <span

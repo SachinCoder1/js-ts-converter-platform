@@ -100,7 +100,7 @@ export function convertYamlToJson(
         : documents;
       result = JSON.stringify(data, null, indent);
     } else {
-      // 'separate' mode — each document as its own JSON block
+      // 'separate' mode  each document as its own JSON block
       result = documents
         .map((doc) => {
           const data = options.sortKeys ? sortObjectKeys(doc) : doc;

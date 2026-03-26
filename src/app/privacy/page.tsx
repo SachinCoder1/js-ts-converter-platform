@@ -7,7 +7,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
-    'Privacy Policy for DevShift — how we handle your data. No accounts, no tracking, no ads.',
+    'Privacy Policy for SnipShift  how we handle your data. No accounts, no tracking, no ads.',
   robots: { index: false, follow: true },
 };
 
@@ -102,7 +102,7 @@ export default function PrivacyPage() {
             <h2 style={h2Style}>What We Collect</h2>
             <p style={{ ...pStyle, marginBottom: '0.75rem' }}>
               <strong style={strongStyle}>Server logs:</strong> IP address, user agent, timestamp,
-              and request URL — standard server logs for security and abuse prevention. These are
+              and request URL  standard server logs for security and abuse prevention. These are
               retained for a maximum of 30 days.
             </p>
             <p style={{ ...pStyle, marginBottom: '0.75rem' }}>
@@ -117,7 +117,7 @@ export default function PrivacyPage() {
             <p style={pStyle}>
               <strong style={strongStyle}>Analytics:</strong> We use Vercel Analytics and/or
               Cloudflare Analytics for aggregate traffic data (page views, countries, devices). These
-              are privacy-friendly — no cookies, no personal data, no individual tracking.
+              are privacy-friendly  no cookies, no personal data, no individual tracking.
             </p>
           </section>
 
@@ -127,11 +127,11 @@ export default function PrivacyPage() {
             <ul style={ulStyle}>
               <li>No accounts, no emails, no passwords</li>
               <li>
-                No cookies for tracking — we may use a cookie for theme preference (dark/light mode),
+                No cookies for tracking  we may use a cookie for theme preference (dark/light mode),
                 which contains no personal data
               </li>
               <li>
-                No third-party tracking scripts — no Google Analytics, no Facebook Pixel, no ad
+                No third-party tracking scripts  no Google Analytics, no Facebook Pixel, no ad
                 trackers
               </li>
               <li>We do not store your source code after conversion is complete</li>
@@ -178,7 +178,7 @@ export default function PrivacyPage() {
               </li>
             </ul>
             <p style={{ ...pStyle, marginBottom: '0.75rem' }}>
-              We send only the code you submit — no personal information, IP addresses, or metadata
+              We send only the code you submit  no personal information, IP addresses, or metadata
               is forwarded to AI providers. Each provider has their own data handling policies; please
               refer to the links above.
             </p>
@@ -222,7 +222,7 @@ export default function PrivacyPage() {
           <section style={sectionStyle}>
             <h2 style={h2Style}>Children&apos;s Privacy</h2>
             <p style={pStyle}>
-              DevShift is not directed at children under 13. We do not knowingly collect data from
+              SnipShift is not directed at children under 13. We do not knowingly collect data from
               children. If you believe a child has submitted data through our Service, please contact
               us so we can address it.
             </p>
@@ -242,8 +242,8 @@ export default function PrivacyPage() {
             <h2 style={h2Style}>Contact</h2>
             <p style={pStyle}>
               Privacy questions? Reach out to us at{' '}
-              <a href="mailto:hello@devshift.dev" style={linkStyle}>
-                hello@devshift.dev
+              <a href="mailto:hello@snipshift.dev" style={linkStyle}>
+                hello@snipshift.dev
               </a>{' '}
               or visit our{' '}
               <Link href="/contact" style={linkStyle}>
@@ -263,7 +263,7 @@ export default function PrivacyPage() {
               paddingTop: '1.5rem',
             }}
           >
-            DevShift is operated by Annotara (Apexlayer Technologies Pvt Ltd), based in India.
+            SnipShift is operated by Annotara (Apexlayer Technologies Pvt Ltd), based in India.
           </p>
         </article>
       </main>

@@ -21,7 +21,7 @@ interface HtmlJsxControlBarProps {
   onQuoteStyleChange: (style: QuoteStyle) => void;
 }
 
-/* ─── Segment toggle — iOS-style ─── */
+/* ─── Segment toggle  iOS-style ─── */
 function SegmentToggle<T extends string>({
   value,
   options,
@@ -108,7 +108,7 @@ export function HtmlJsxControlBar({
             color: 'var(--text-secondary)',
           }}
         >
-          <SelectValue />
+          <span>{{ none: 'No Wrapper', function: 'Function Component', arrow: 'Arrow Component' }[componentWrapper]}</span>
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="none">No Wrapper</SelectItem>

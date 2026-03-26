@@ -91,7 +91,7 @@ export function YamlJsonSeoContent() {
             style={{ color: 'var(--text-secondary)' }}
           >
             Convert YAML to JSON instantly in your browser. Supports multi-document YAML,
-            anchors, aliases, and all YAML features — no server, no signup, completely free.
+            anchors, aliases, and all YAML features  no server, no signup, completely free.
           </p>
         </div>
 

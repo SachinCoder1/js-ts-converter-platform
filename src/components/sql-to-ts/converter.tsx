@@ -9,7 +9,7 @@ import { useToolConversion } from '@/hooks/use-tool-conversion';
 import { useKeyboardShortcut } from '@/hooks/use-keyboard-shortcut';
 import { computeStatusText, computeStatusState } from '@/lib/converter-utils';
 import { DEFAULT_SQL_EXAMPLE } from '@/lib/constants';
-import type { AIProvider, SqlToTsOptions, SqlToTsResult } from '@/lib/types';
+import type { SqlToTsOptions, SqlToTsResult } from '@/lib/types';
 
 export function SqlToTsConverter() {
   const [inputSql, setInputSql] = useState(DEFAULT_SQL_EXAMPLE);
@@ -20,7 +20,6 @@ export function SqlToTsConverter() {
     outputFormat: 'interfaces',
     generateMode: 'select-only',
   });
-  const [selectedProvider, setSelectedProvider] = useState<AIProvider | 'auto'>('auto');
   const [isScanning, setIsScanning] = useState(false);
 
   const stableOptions = useMemo(() => options, [
@@ -40,11 +39,10 @@ export function SqlToTsConverter() {
   const outputCode = result?.convertedCode || preview;
 
   const handleConvert = useCallback(() => {
-    const provider = selectedProvider === 'auto' ? undefined : selectedProvider;
     setIsScanning(true);
     setTimeout(() => setIsScanning(false), 350);
-    convert({ sql: inputSql, options, preferredProvider: provider });
-  }, [inputSql, options, selectedProvider, convert]);
+    convert({ sql: inputSql, options });
+  }, [inputSql, options, convert]);
 
   useKeyboardShortcut('Enter', handleConvert, !isConverting && !isRateLimited);
 
@@ -65,10 +63,10 @@ export function SqlToTsConverter() {
       isConverting={isConverting}
       error={error}
       isAstFallback={isAstOnly}
-      astFallbackMessage="AI models unavailable — showing basic type mapping. Relation inference, Prisma/Drizzle output, and enhanced types require AI."
+      astFallbackMessage="AI models unavailable  showing basic type mapping. Relation inference, Prisma/Drizzle output, and enhanced types require AI."
       fromCache={fromCache}
       resultKey={result?.convertedCode}
-      statusText={computeStatusText(isConverting, result, selectedProvider)}
+      statusText={computeStatusText(isConverting, result)}
       statusState={computeStatusState(isConverting, result)}
       inputIsScanning={isScanning}
       rateLimitRemaining={rateLimitInfo.remaining}
@@ -77,8 +75,6 @@ export function SqlToTsConverter() {
         <SqlToTsControlBar
           options={options}
           onOptionsChange={setOptions}
-          selectedProvider={selectedProvider}
-          onProviderChange={setSelectedProvider}
           onConvert={handleConvert}
           isConverting={isConverting || isRateLimited}
         />

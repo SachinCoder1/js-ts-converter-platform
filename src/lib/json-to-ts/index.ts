@@ -22,7 +22,7 @@ export function jsonToTypeScript(jsonString: string, options: JsonToTsOptions): 
     const parsed: unknown = JSON.parse(jsonString);
 
     if (parsed === null || typeof parsed !== 'object') {
-      // Primitive JSON value — just return the type
+      // Primitive JSON value  just return the type
       const primitiveType = parsed === null ? 'null'
         : typeof parsed === 'string' ? 'string'
         : typeof parsed === 'number' ? 'number'
@@ -37,7 +37,7 @@ export function jsonToTypeScript(jsonString: string, options: JsonToTsOptions): 
     const collector = new InterfaceCollector(options);
 
     if (Array.isArray(parsed)) {
-      // Root is an array — process as array type
+      // Root is an array  process as array type
       const elementType = parsed.length > 0 && typeof parsed[0] === 'object' && parsed[0] !== null
         ? collector.processValue(parsed[0], options.rootTypeName + 'Item')
         : collector.processValue(parsed, options.rootTypeName);

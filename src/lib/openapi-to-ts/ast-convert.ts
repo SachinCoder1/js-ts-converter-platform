@@ -127,7 +127,7 @@ function resolveType(
     if (options.enumStyle === 'union') {
       return schema.enum.map((v) => typeof v === 'string' ? `'${v}'` : String(v)).join(' | ');
     }
-    // Inline enum — just use union for inline cases
+    // Inline enum  just use union for inline cases
     return schema.enum.map((v) => typeof v === 'string' ? `'${v}'` : String(v)).join(' | ');
   }
 
@@ -217,14 +217,14 @@ function buildSchemaInterface(
     return `export type ${name} = ${members};`;
   }
 
-  // Handle allOf — intersection type
+  // Handle allOf  intersection type
   if (schema.allOf) {
     const types = schema.allOf.map((s) => resolveType(s, options, stats, ''));
     stats.schemasConverted++;
     return `export type ${name} = ${types.join(' & ')};`;
   }
 
-  // Handle oneOf/anyOf — union type
+  // Handle oneOf/anyOf  union type
   if (schema.oneOf || schema.anyOf) {
     const schemas = schema.oneOf || schema.anyOf || [];
     const types = schemas.map((s) => resolveType(s, options, stats, ''));
@@ -306,7 +306,7 @@ function buildEndpointTypes(
         if (contentType?.schema) {
           const type = resolveType(contentType.schema, options, stats, '');
           if (!type.startsWith('{') && !type.includes(' | ') && !type.includes(' & ')) {
-            // Simple ref — just alias
+            // Simple ref  just alias
             output.push(`export type ${operationName}Body = ${type};`);
           } else {
             output.push(`export type ${operationName}Body = ${type};`);

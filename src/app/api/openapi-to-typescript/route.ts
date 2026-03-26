@@ -122,7 +122,7 @@ export async function POST(request: NextRequest) {
       }
     } catch {
       recordFailure(ip);
-      return NextResponse.json({ error: 'Invalid spec format — could not parse as JSON or YAML' }, { status: 400 });
+      return NextResponse.json({ error: 'Invalid spec format  could not parse as JSON or YAML' }, { status: 400 });
     }
 
     // Validate options

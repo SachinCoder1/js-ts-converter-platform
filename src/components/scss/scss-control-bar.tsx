@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useIsMac } from '@/hooks/use-is-mac';
 import type { ScssSyntax, ScssOutputStyle } from '@/lib/types';
 
 interface ScssControlBarProps {
@@ -12,7 +13,7 @@ interface ScssControlBarProps {
   isConverting: boolean;
 }
 
-/* ─── Segment toggle — iOS-style ─── */
+/* ─── Segment toggle  iOS-style ─── */
 function SegmentToggle<T extends string>({
   value,
   options,
@@ -141,6 +142,7 @@ export function ScssControlBar({
   onConvert,
   isConverting,
 }: ScssControlBarProps) {
+  const isMac = useIsMac();
   return (
     <div className="flex flex-wrap items-center gap-3 py-2">
       <SegmentToggle
@@ -186,9 +188,7 @@ export function ScssControlBar({
             color: 'var(--text-tertiary)',
           }}
         >
-          {typeof navigator !== 'undefined' && /Mac/.test(navigator.userAgent)
-            ? '\u2318'
-            : 'Ctrl'}
+          {isMac ? '\u2318' : 'Ctrl'}
         </kbd>
         <span>+</span>
         <kbd

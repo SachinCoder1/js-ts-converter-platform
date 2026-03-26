@@ -9,14 +9,12 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { ConvertButton } from '@/components/shared/convert-button';
-import { ProviderSelector, KeyboardShortcutHint } from '@/components/shared/provider-selector';
-import type { AIProvider, CssToTailwindOptions } from '@/lib/types';
+import { PoweredByIndicator, KeyboardShortcutHint } from '@/components/shared/provider-selector';
+import type { CssToTailwindOptions } from '@/lib/types';
 
 interface ControlBarProps {
   options: CssToTailwindOptions;
   onOptionsChange: (options: CssToTailwindOptions) => void;
-  selectedProvider: AIProvider | 'auto';
-  onProviderChange: (provider: AIProvider | 'auto') => void;
   onConvert: () => void;
   isConverting: boolean;
 }
@@ -24,8 +22,6 @@ interface ControlBarProps {
 export function CssToTailwindControlBar({
   options,
   onOptionsChange,
-  selectedProvider,
-  onProviderChange,
   onConvert,
   isConverting,
 }: ControlBarProps) {
@@ -48,7 +44,7 @@ export function CssToTailwindControlBar({
             className="h-8 w-[100px] rounded-md border text-xs"
             style={{ borderColor: 'var(--border)', background: 'var(--surface)', color: 'var(--text-secondary)' }}
           >
-            <SelectValue />
+            <span>{options.tailwindVersion === 'v3' ? 'Tailwind v3' : 'Tailwind v4'}</span>
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="v3">Tailwind v3</SelectItem>
@@ -62,12 +58,12 @@ export function CssToTailwindControlBar({
 
         <div className="hidden sm:block h-5 w-px" style={{ background: 'var(--border)' }} />
 
-        <ProviderSelector value={selectedProvider} onChange={onProviderChange} />
+        <PoweredByIndicator />
 
         <KeyboardShortcutHint />
       </div>
 
-      {/* Second row — options */}
+      {/* Second row  options */}
       <div className="flex flex-wrap items-center gap-2 pb-1">
         {/* Arbitrary values */}
         <Select
@@ -78,7 +74,7 @@ export function CssToTailwindControlBar({
             className="h-7 w-[140px] rounded-md border text-[11px]"
             style={{ borderColor: 'var(--border)', background: 'var(--muted)', color: 'var(--text-tertiary)' }}
           >
-            <SelectValue />
+            <span>{options.arbitraryValues === 'allow' ? 'Allow [custom]' : 'Closest match'}</span>
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="allow">Allow [custom]</SelectItem>
@@ -95,7 +91,7 @@ export function CssToTailwindControlBar({
             className="h-7 w-[130px] rounded-md border text-[11px]"
             style={{ borderColor: 'var(--border)', background: 'var(--muted)', color: 'var(--text-tertiary)' }}
           >
-            <SelectValue />
+            <span>{{ 'classes-only': 'Classes only', 'html-structure': 'HTML structure', apply: '@apply syntax' }[options.outputFormat]}</span>
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="classes-only">Classes only</SelectItem>
@@ -113,7 +109,7 @@ export function CssToTailwindControlBar({
             className="h-7 w-[130px] rounded-md border text-[11px]"
             style={{ borderColor: 'var(--border)', background: 'var(--muted)', color: 'var(--text-tertiary)' }}
           >
-            <SelectValue />
+            <span>{options.colorFormat === 'named' ? 'Named colors' : 'Arbitrary hex'}</span>
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="named">Named colors</SelectItem>

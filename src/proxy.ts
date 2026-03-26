@@ -34,7 +34,7 @@ export function proxy(request: NextRequest) {
     'camera=(), microphone=(), geolocation=(), interest-cohort=(), payment=()'
   );
 
-  // Content Security Policy — nonce-based for inline scripts
+  // Content Security Policy  nonce-based for inline scripts
   // Monaco editor requires unsafe-eval and blob: for web workers
   const csp = [
     "default-src 'self'",
@@ -44,7 +44,7 @@ export function proxy(request: NextRequest) {
     "img-src 'self' data: blob:",
     "worker-src 'self' blob:",
     "child-src 'self' blob:",
-    "connect-src 'self'",
+    "connect-src 'self' https://cdn.jsdelivr.net",
     "frame-ancestors 'none'",
     "base-uri 'self'",
     "form-action 'self'",
@@ -65,9 +65,9 @@ export function proxy(request: NextRequest) {
     response.headers.set('Cache-Control', 'no-store');
 
     // Flag requests without the custom client header for stricter handling
-    const devShiftClient = request.headers.get('x-devshift-client');
-    if (!devShiftClient || devShiftClient !== 'web') {
-      response.headers.set('X-DevShift-Untrusted', '1');
+    const snipShiftClient = request.headers.get('x-snipshift-client');
+    if (!snipShiftClient || snipShiftClient !== 'web') {
+      response.headers.set('X-SnipShift-Untrusted', '1');
     }
   }
 

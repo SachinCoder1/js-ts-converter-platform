@@ -9,12 +9,11 @@ import { useJsonToTsConversion } from '@/hooks/use-json-to-ts-conversion';
 import { useKeyboardShortcut } from '@/hooks/use-keyboard-shortcut';
 import { DEFAULT_JSON_TO_TS_EXAMPLE, DEFAULT_JSON_TO_TS_OPTIONS } from '@/lib/constants';
 import { computeStatusText, computeStatusState } from '@/lib/converter-utils';
-import type { AIProvider, JsonToTsOptions } from '@/lib/types';
+import type { JsonToTsOptions } from '@/lib/types';
 
 export function JsonToTsConverter() {
   const [inputJson, setInputJson] = useState(DEFAULT_JSON_TO_TS_EXAMPLE);
   const [options, setOptions] = useState<JsonToTsOptions>(DEFAULT_JSON_TO_TS_OPTIONS);
-  const [selectedProvider, setSelectedProvider] = useState<AIProvider | 'auto'>('auto');
   const [isScanning, setIsScanning] = useState(false);
 
   // Memoize options to prevent excessive re-renders
@@ -32,19 +31,18 @@ export function JsonToTsConverter() {
   const outputCode = result?.convertedCode || preview;
 
   const handleConvert = useCallback(() => {
-    const provider = selectedProvider === 'auto' ? undefined : selectedProvider;
     setIsScanning(true);
     setTimeout(() => setIsScanning(false), 350);
-    convert(inputJson, options, provider);
-  }, [inputJson, options, selectedProvider, convert]);
+    convert(inputJson, options);
+  }, [inputJson, options, convert]);
 
   useKeyboardShortcut('Enter', handleConvert, !isConverting && !isRateLimited);
 
   const isAstOnly = result?.provider === 'ast-only';
 
-  // Compute status bar text — JSON-to-TS uses "Generating" wording
+  // Compute status bar text  JSON-to-TS uses "Generating" wording
   const statusText = isConverting
-    ? `Generating via ${selectedProvider === 'auto' ? 'AI' : selectedProvider}...`
+    ? 'Generating via AI...'
     : result
       ? `Generated in ${result.duration < 1000 ? result.duration + 'ms' : (result.duration / 1000).toFixed(1) + 's'}`
       : 'Ready';
@@ -66,7 +64,7 @@ export function JsonToTsConverter() {
       isConverting={isConverting}
       error={displayError}
       isAstFallback={isAstOnly && !error && !parseError}
-      astFallbackMessage="AI models unavailable — showing basic interface generation. Names may need manual refinement."
+      astFallbackMessage="AI models unavailable  showing basic interface generation. Names may need manual refinement."
       fromCache={fromCache}
       resultKey={result?.convertedCode}
       statusText={statusText}
@@ -78,8 +76,6 @@ export function JsonToTsConverter() {
         <JsonToTsControlBar
           options={options}
           onOptionsChange={setOptions}
-          selectedProvider={selectedProvider}
-          onProviderChange={setSelectedProvider}
           onConvert={handleConvert}
           isConverting={isConverting || isRateLimited}
         />

@@ -7,7 +7,7 @@ import { Mail, Github, Twitter, ShieldAlert, Lightbulb } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    'Get in touch with the DevShift team. Report bugs, request features, or ask questions about our free developer tools.',
+    'Get in touch with the SnipShift team. Report bugs, request features, or ask questions about our free developer tools.',
   robots: { index: true, follow: true },
 };
 
@@ -56,7 +56,7 @@ export default function ContactPage() {
           >
             {/* Email Card */}
             <a
-              href="mailto:hello@devshift.dev"
+              href="mailto:hello@snipshift.dev"
               style={{
                 padding: '1.5rem',
                 borderRadius: '0.75rem',
@@ -100,7 +100,7 @@ export default function ContactPage() {
                   marginBottom: '0.5rem',
                 }}
               >
-                hello@devshift.dev
+                hello@snipshift.dev
               </p>
               <p
                 style={{
@@ -115,7 +115,7 @@ export default function ContactPage() {
 
             {/* GitHub Card */}
             <a
-              href="https://github.com/AmanVarshney01/devshift"
+              href="https://github.com/AmanVarshney01/snipshift"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -161,7 +161,7 @@ export default function ContactPage() {
                   marginBottom: '0.5rem',
                 }}
               >
-                devshift
+                snipshift
               </p>
               <p
                 style={{
@@ -170,14 +170,14 @@ export default function ContactPage() {
                   lineHeight: 1.5,
                 }}
               >
-                Open an issue for bug reports or feature requests. Star us if you find DevShift
+                Open an issue for bug reports or feature requests. Star us if you find SnipShift
                 useful.
               </p>
             </a>
 
             {/* Twitter/X Card */}
             <a
-              href="https://x.com/devshift_dev"
+              href="https://x.com/snipshift_dev"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -223,7 +223,7 @@ export default function ContactPage() {
                   marginBottom: '0.5rem',
                 }}
               >
-                @devshift_dev
+                @snipshift_dev
               </p>
               <p
                 style={{
@@ -268,8 +268,8 @@ export default function ContactPage() {
                 }}
               >
                 If you&apos;ve found a security issue, please email{' '}
-                <a href="mailto:security@devshift.dev" style={linkStyle}>
-                  security@devshift.dev
+                <a href="mailto:security@snipshift.dev" style={linkStyle}>
+                  security@snipshift.dev
                 </a>
                 . Do not open a public GitHub issue for security vulnerabilities.
               </p>
@@ -298,12 +298,12 @@ export default function ContactPage() {
                 }}
               >
                 Want us to build a specific converter? Let us know at{' '}
-                <a href="mailto:hello@devshift.dev" style={linkStyle}>
-                  hello@devshift.dev
+                <a href="mailto:hello@snipshift.dev" style={linkStyle}>
+                  hello@snipshift.dev
                 </a>{' '}
                 or{' '}
                 <a
-                  href="https://github.com/AmanVarshney01/devshift/issues"
+                  href="https://github.com/AmanVarshney01/snipshift/issues"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={linkStyle}

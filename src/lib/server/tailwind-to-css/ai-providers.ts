@@ -38,6 +38,6 @@ export async function callTailwindGemini(prompt: PromptParts): Promise<string> {
   }
 }
 
-// Re-export DeepSeek and OpenRouter — they already accept generic PromptParts
+// Re-export DeepSeek and OpenRouter  they already accept generic PromptParts
 export { callDeepSeek as callTailwindDeepSeek } from '../ai-providers/deepseek';
 export { callOpenRouter as callTailwindOpenRouter } from '../ai-providers/openrouter';

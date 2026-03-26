@@ -105,7 +105,7 @@ function processDefinition(
   switch (def.kind) {
     case Kind.OBJECT_TYPE_DEFINITION: {
       const name = def.name.value;
-      // Skip Query/Mutation/Subscription root types — we handle them separately
+      // Skip Query/Mutation/Subscription root types  we handle them separately
       if (['Query', 'Mutation', 'Subscription'].includes(name) && def.fields) {
         // Generate argument types for operations
         const argTypes: string[] = [];
