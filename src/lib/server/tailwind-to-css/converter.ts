@@ -4,7 +4,7 @@ import type { TailwindConversionRequest, TailwindConversionResult, TailwindConve
 import { hashCode, stripMarkdownFences, sanitizeOutput, checkOutputRatio } from '../../utils';
 import { getFromCache, setCache } from '../cache';
 import { buildTailwindPrompt } from './ai-prompt';
-import { callTailwindGemini, callTailwindDeepSeek, callTailwindOpenRouter } from './ai-providers';
+import { callTailwindGemini, callTailwindOpenAI, callTailwindKimi, callTailwindDeepSeek, callTailwindOpenRouter } from './ai-providers';
 import { convertTailwindToCSS } from '../../tailwind';
 import { logSecurityEvent } from '@/lib/server/security-logger';
 
@@ -12,11 +12,13 @@ type ProviderFn = (prompt: { system: string; user: string; delimiter: string }) 
 
 const providerMap: Record<Exclude<AIProvider, 'ast-only'>, ProviderFn> = {
   gemini: callTailwindGemini,
+  openai: callTailwindOpenAI,
+  kimi: callTailwindKimi,
   deepseek: callTailwindDeepSeek,
   openrouter: callTailwindOpenRouter,
 };
 
-const defaultChain: Exclude<AIProvider, 'ast-only'>[] = ['gemini', 'deepseek', 'openrouter'];
+const defaultChain: Exclude<AIProvider, 'ast-only'>[] = ['gemini', 'openai', 'kimi', 'deepseek', 'openrouter'];
 
 export async function convertTailwind(request: TailwindConversionRequest): Promise<TailwindConversionResult> {
   const startTime = Date.now();

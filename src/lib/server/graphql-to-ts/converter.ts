@@ -3,6 +3,8 @@ import type { GraphqlToTsRequest, GraphqlToTsResult, AIProvider, GraphqlToTsStat
 import { hashCode, stripMarkdownFences, sanitizeOutput, checkOutputRatio } from '../../utils';
 import { getFromCache, setCache } from '../cache';
 import { callGemini } from '../ai-providers/gemini';
+import { callOpenAI } from '../ai-providers/openai';
+import { callKimi } from '../ai-providers/kimi';
 import { callDeepSeek } from '../ai-providers/deepseek';
 import { callOpenRouter } from '../ai-providers/openrouter';
 import { buildGraphqlToTsPrompt } from '../../graphql-to-ts/ai-prompt';
@@ -15,11 +17,13 @@ type ProviderCallFn = (prompt: PromptParts) => Promise<string>;
 
 const providerMap: Record<Exclude<AIProvider, 'ast-only'>, ProviderCallFn> = {
   gemini: callGemini,
+  openai: callOpenAI,
+  kimi: callKimi,
   deepseek: callDeepSeek,
   openrouter: callOpenRouter,
 };
 
-const defaultChain: Exclude<AIProvider, 'ast-only'>[] = ['gemini', 'deepseek', 'openrouter'];
+const defaultChain: Exclude<AIProvider, 'ast-only'>[] = ['gemini', 'openai', 'kimi', 'deepseek', 'openrouter'];
 
 export async function convertGraphqlToTs(request: GraphqlToTsRequest): Promise<GraphqlToTsResult> {
   const startTime = Date.now();
