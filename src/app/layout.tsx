@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/hooks/use-theme";
@@ -87,6 +88,18 @@ export default async function RootLayout({
             __html: `try{var t=localStorage.getItem('snipshift-theme');if(!t){t=localStorage.getItem('devshift-theme')||localStorage.getItem('typeshift-theme');if(t){localStorage.setItem('snipshift-theme',t);localStorage.removeItem('devshift-theme');localStorage.removeItem('typeshift-theme');}}if(t==='light')document.documentElement.classList.remove('dark');else if(t==='dark'||!t)document.documentElement.classList.add('dark');else if(window.matchMedia('(prefers-color-scheme:light)').matches)document.documentElement.classList.remove('dark');}catch(e){}`,
           }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-8R0CX5P7NB"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8R0CX5P7NB');
+          `}
+        </Script>
       </head>
       <body
         className="min-h-full flex flex-col"
